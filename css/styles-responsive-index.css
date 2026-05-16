@@ -1,35 +1,40 @@
 /* ==========================================================================
-   GLOBAL CONSISTENCY & TYPE SYSTEM (UX OPTIMIZED)
+   ULTIMATE GLOBAL CONSISTENCY (HOME + PROJECT PAGES)
    ========================================================================== */
 
 @media only screen and (max-width : 768px) {
   
-  /* 1. 核心对齐：统一首页与项目内页的左右边距 */
+  /* 1. 强制统一全站左右边距（覆盖首页、项目页底部、About页、页脚） */
   .intro-wrapper, 
   .project-section-wrapper, 
   .about-me-section,
-  .project-information-footer, /* 项目详情页底部的 Other Projects 区域 */
-  .contact-footer {             /* 详情页底部的 Let's Connect 区域 */
+  .project-information-footer, 
+  .contact-footer,
+  .container-fluid.contact-footer /* 增加特异性，确保内页页脚对齐 */ {
     padding-left: 20px !important;
     padding-right: 20px !important;
   }
 
-  /* 2. 标题微调：将项目框标题缩小（从 24px 降至 20px） */
-  /* 同时涵盖首页和项目内页底部的标题 */
+  /* 2. 项目标题一致性：首页标题 + 项目详情页底部标题 */
+  /* 统一缩小到你要求的精致字号（约20px） */
   h1.design-title,
+  .project-information-footer h1.design-title,
   .design-title-footer { 
     font-size: 20px !important; 
     font-weight: 700 !important;
     line-height: 1.25 !important;
-    margin-top: 8px !important;
+    margin-top: 12px !important;
     margin-bottom: 8px !important;
+    display: block !important;
   }
 
-  /* 3. 正文统一：确保所有描述文本（含内页底部）字号一致 */
+  /* 3. 项目描述正文一致性：首页描述 + 项目页底部描述 */
+  /* 确保字号完全并轨到 16px */
   p.index-description, 
   .index-sub-description, 
   h1.design-description, 
-  .design-description-footer, /* 项目页底部的描述 */
+  .project-information-footer h1.design-description,
+  .design-description-footer,
   .about-me-description, 
   .portfolio-section-paragraph, 
   .p-section-text {
@@ -37,31 +42,10 @@
     line-height: 1.6 !important;
     font-weight: 400 !important;
     margin-top: 12px !important;
+    margin-bottom: 16px !important;
   }
 
-  /* 4. 项目日期与间距优化 */
-  .design-date {
-    font-size: 13px !important;
-    color: #666 !important;
-    margin-top: 24px !important; 
-    margin-bottom: 8px !important;
-    display: block !important;
-  }
-
-  /* 5. 按钮与 Tag 布局优化 */
-  .project-information .tag_case_study {
-    margin-bottom: 8px !important;
-    display: inline-block !important;
-  }
-  
-  .design-read-study-btn {
-    display: block !important;
-    width: fit-content !important;
-    margin-top: 20px !important;
-    padding: 10px 20px !important;
-  }
-
-  /* 6. Let's Connect 区域：强制首页与内页完全一致 */
+  /* 4. Let's Connect 部分（首页与项目页底部完全拉齐） */
   .contact-footer {
     padding-top: 40px !important;
     padding-bottom: 60px !important;
@@ -69,23 +53,38 @@
     text-align: center !important;
   }
 
+  /* 针对详情页可能存在的不同 header 级别进行覆盖 */
+  .contact-footer h1.footer-header,
   h1.footer-header {
     font-size: 22px !important;
     margin-top: 32px !important;
     margin-bottom: 12px !important;
     font-weight: 700 !important;
+    display: block !important;
   }
 
+  .contact-footer h3.footer-description,
   h3.footer-description {
     font-size: 15px !important;
     line-height: 1.5 !important;
-    margin-bottom: 24px !important;
+    margin: 12px auto 24px !important;
+    font-weight: 400 !important;
+    max-width: 90% !important; /* 增加移动端阅读舒适度 */
+  }
+
+  /* 5. 链接字号修正 */
+  .footer-links a, 
+  .contact-footer a {
+    font-size: 15px !important;
     font-weight: 400 !important;
   }
 
-  .footer-links, .footer-links a, .contact-footer a {
-    font-size: 15px !important;
-    font-weight: 400 !important;
+  /* 6. 项目日期微调 */
+  .design-date,
+  .project-information-footer .design-date {
+    font-size: 13px !important;
+    margin-top: 20px !important;
+    display: block !important;
   }
 
   /* 7. 首页大问候语 */
@@ -95,16 +94,10 @@
   }
 }
 
-/* 针对超窄屏手机 (400px以下) */
+/* 针对超窄屏手机优化 */
 @media only screen and (max-width : 400px) {
-  .intro-wrapper, .project-section-wrapper, .about-me-section, .project-information-footer {
-    padding-left: 16px !important;
-    padding-right: 16px !important;
-  }
-
-  h1.design-title, .design-title-footer { font-size: 18px !important; }
-  
-  p.index-description, h1.design-description, .design-description-footer, .about-me-description {
+  h1.design-title, .project-information-footer h1.design-title { font-size: 18px !important; }
+  p.index-description, h1.design-description, .project-information-footer h1.design-description {
     font-size: 15px !important;
   }
 }
