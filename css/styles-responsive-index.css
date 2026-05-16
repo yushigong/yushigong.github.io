@@ -37,8 +37,8 @@
     }
 
     .index-sub-description {
-      font-size: 18px;
-      line-height: 1.6;
+      font-size: 16px !important;
+      line-height: 1.5 !important;
     }
 
     .about-me-section {
@@ -70,6 +70,11 @@
 
   .index-heading {
     font-size: 24px;
+  }
+
+  .index-sub-description {
+    font-size: 15px !important;
+    line-height: 1.5 !important;
   }
 
   .project-information .tag_case_study {
@@ -114,8 +119,8 @@
   }
 
   .index-sub-description {
-      font-size: 15px;
-      line-height: 1.5;
+      font-size: 14px !important;
+      line-height: 1.5 !important;
     }
     
   h1.index-heading {

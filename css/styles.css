@@ -1,5 +1,9 @@
 
 /* GLOBAL STYLES */
+html {
+  -webkit-text-size-adjust: 100%; /* 强行关闭 iOS Safari 的文本自动放大机制，完全听从 CSS 指令 */
+}
+
 * {
   font-family: 'DM Sans', 'Helvetica', 'Arial', sans-serif;
   color: #212121;
