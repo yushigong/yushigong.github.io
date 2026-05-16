@@ -1,24 +1,36 @@
 /* ==========================================================================
-   FINAL VISUAL ALIGNMENT (WITH BALANCED PADDING)
+   GLOBAL CONSISTENCY & TYPE SYSTEM (UX OPTIMIZED)
    ========================================================================== */
 
 @media only screen and (max-width : 768px) {
   
-  /* 1. 核心对齐补丁：增加左右内边距，使其与 Nav 里的文字对齐 */
-  /* padding 设置为 20px 左右通常能与大多数导航栏对齐 */
+  /* 1. 核心对齐：统一首页与项目内页的左右边距 */
   .intro-wrapper, 
   .project-section-wrapper, 
-  .about-me-section {
+  .about-me-section,
+  .project-information-footer, /* 项目详情页底部的 Other Projects 区域 */
+  .contact-footer {             /* 详情页底部的 Let's Connect 区域 */
     padding-left: 20px !important;
     padding-right: 20px !important;
   }
 
-  /* 2. 解决正文偏小：将全站正文基准调高到 16px */
+  /* 2. 标题微调：将项目框标题缩小（从 24px 降至 20px） */
+  /* 同时涵盖首页和项目内页底部的标题 */
+  h1.design-title,
+  .design-title-footer { 
+    font-size: 20px !important; 
+    font-weight: 700 !important;
+    line-height: 1.25 !important;
+    margin-top: 8px !important;
+    margin-bottom: 8px !important;
+  }
+
+  /* 3. 正文统一：确保所有描述文本（含内页底部）字号一致 */
   p.index-description, 
   .index-sub-description, 
   h1.design-description, 
+  .design-description-footer, /* 项目页底部的描述 */
   .about-me-description, 
-  .about-description, 
   .portfolio-section-paragraph, 
   .p-section-text {
     font-size: 16px !important; 
@@ -27,7 +39,7 @@
     margin-top: 12px !important;
   }
 
-  /* 3. 解决项目框间距：让 2026... 那一行向下挪，离图片远一点 */
+  /* 4. 项目日期与间距优化 */
   .design-date {
     font-size: 13px !important;
     color: #666 !important;
@@ -36,7 +48,7 @@
     display: block !important;
   }
 
-  /* 4. 解决按钮与 Tag 挤在一行的问题 */
+  /* 5. 按钮与 Tag 布局优化 */
   .project-information .tag_case_study {
     margin-bottom: 8px !important;
     display: inline-block !important;
@@ -46,23 +58,29 @@
     display: block !important;
     width: fit-content !important;
     margin-top: 20px !important;
-    padding: 12px 24px !important;
+    padding: 10px 20px !important;
   }
 
-  /* 5. 页脚压制 */
+  /* 6. Let's Connect 区域：强制首页与内页完全一致 */
   .contact-footer {
     padding-top: 40px !important;
     padding-bottom: 60px !important;
+    border-top: 1px solid #eee !important;
+    text-align: center !important;
   }
 
   h1.footer-header {
     font-size: 22px !important;
+    margin-top: 32px !important;
     margin-bottom: 12px !important;
+    font-weight: 700 !important;
   }
 
   h3.footer-description {
     font-size: 15px !important;
+    line-height: 1.5 !important;
     margin-bottom: 24px !important;
+    font-weight: 400 !important;
   }
 
   .footer-links, .footer-links a, .contact-footer a {
@@ -70,25 +88,23 @@
     font-weight: 400 !important;
   }
 
-  /* 6. 首页 Heading 保持力度 */
+  /* 7. 首页大问候语 */
   .index-heading {
     font-size: 32px !important;
     margin-bottom: 20px !important;
   }
 }
 
-/* 针对超窄屏手机的微调 */
+/* 针对超窄屏手机 (400px以下) */
 @media only screen and (max-width : 400px) {
-  /* 窄屏下稍微缩小边距，给文字更多空间 */
-  .intro-wrapper, .project-section-wrapper, .about-me-section {
+  .intro-wrapper, .project-section-wrapper, .about-me-section, .project-information-footer {
     padding-left: 16px !important;
     padding-right: 16px !important;
   }
 
-  .index-heading { font-size: 28px !important; }
-  h1.design-title { font-size: 22px !important; }
+  h1.design-title, .design-title-footer { font-size: 18px !important; }
   
-  p.index-description, h1.design-description, .about-me-description {
+  p.index-description, h1.design-description, .design-description-footer, .about-me-description {
     font-size: 15px !important;
   }
 }
