@@ -4,9 +4,10 @@
 
 .case-study-section-info-container,
 .case-study-section-info-container-image-below {
-  max-width: 760px;
-  padding: 120px 0;
-  margin: auto;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 120px 40px;
+  box-sizing: border-box;
 }
 
 .case-study-section-info-container-image-below {
@@ -21,13 +22,13 @@
 }
 
 .case-study-small-title {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
   padding: 0;
 }
 
 .case-study-small-text {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   padding: 0;
 }
@@ -35,13 +36,14 @@
 .case-study-small-header {
   font-weight: 700;
   color: #868686;
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 32px;
 }
 
 .case-study-large-header {
   font-weight: 700;
-  font-size: 28px;
+  font-size: 34px;
+  line-height: 1.2;
   color: #101010;
   margin-bottom: 24px;
 }
@@ -49,7 +51,7 @@
 .case-study-paragraph {
   font-weight: 400;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 32px;
   color: #101010;
 }
 
@@ -133,9 +135,8 @@ p.case-study-paragraph-small-less-wide {
 }
 
 div.case-study-wider-container { /* TODO */
-  max-width: 780px;
-  padding: 120px 0;
-  margin: auto;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 /*  UNIQUE */
 
@@ -449,5 +450,5 @@ img.text-image-non-card-image {
   .text-image-card-grid .text-image-container span.text-image-card-title {
     font-size: 20px;
   }
-
 }
+

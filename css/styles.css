@@ -17,46 +17,47 @@ h1.bold {
 }
 
 .description-main {
-  max-width: 880px;
+  max-width: 1100px;
   padding-top: 40px;
   margin: auto;
 }
 
 .about-me-section {
-  max-width: 880px;
-  padding-top: 100px;
+  max-width: 1000px;
   margin: auto;
-}
-
-.about-me-section {
-  max-width: 600px;
+  margin-top: 88px;
+  padding: 0 40px;
 }
 
 .index-heading {
-  font-size: 32px;
-  font-weight: 500;
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -1px;
 }
 
 .index-description {
-  font-size: 1.25em;
-  font-size: 24px;
-  padding: 8px 0;
+  font-size: 28px;
+  line-height: 1.35;
+  padding: 16px 0;
   font-weight: 500;
+  max-width: 1100px;
 }
 
 .index-sub-description {
-  font-size: 18px;
-  padding-bottom: 20px;
+  font-size: 24px;
+  line-height: 1.7;
   font-weight: 500;
+  max-width: 1100px;
 }
 
 
 /* WORK SECTION */
 
 .case-header-section-container {
-	max-width: 780px;
-	margin: auto;
-	padding-top: 80px;
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 120px 40px 0;
 	text-align:center;
 }
 
@@ -73,7 +74,7 @@ h1.bold {
 }
 
 .project-section-wrapper {
-  max-width: 900px;
+  max-width: 1100px;
   margin: auto;
   padding-top: 80px;
 }
@@ -84,7 +85,7 @@ h1.bold {
     border: 1px solid #eee;
     border-radius: 6px;
     cursor: pointer;
-    padding: 26px;
+    padding: 36px;
     margin-bottom: 34px;
     position: relative;
     top: 0;
@@ -96,6 +97,11 @@ h1.bold {
     top: -10px;
   }
 
+  .page-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 40px;
+  }
 
   .project-image-container {
     padding: 0;
@@ -110,46 +116,49 @@ h1.bold {
   .design-date {
     margin: 0;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 18px;
     line-height: 24px;
   }
   
   .design-title {
-    font-size: 28px;
+    font-size: 36px;
     font-weight: 700;
-    margin: 4px 0 0;
+    margin: 8px 0 0;
+    line-height: 1.15;
   }
 
   .design-description {
-    font-size: 17px;
-    margin: 8px 0 8px;
-    line-height: 24px;
+    font-size: 20px;
+    margin: 16px 0 20px;
+    line-height: 1.7;
     font-weight: 400;
   }
   
   .project-information .tag_case_study {
     background-color: #eee;
-    margin: 0 16px 0 0;
+    margin: 0 12px 12px 0;
     color: gray;
-    border-radius: 2px;
-    font-size: 13px;
+    border-radius: 4px;
+    font-size: 14px;
     display: inline-block;
-    padding: 4px 8px;
+    padding: 6px 10px;
   }
   /* #shopify-case-study .tag_case_study {
     color: #385525;
     background-color: #CFEDCB;
   } */
   .design-read-study-btn {
-    color: white;
-    font-size: 14px;
-    font-weight: 500;
-    background-color: #2C2C2C;
-    padding: 8px 16px;
-    margin-top: 24px;
-    border-radius: 2px;
-    border: none;
+    display: inline-block;
 
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: #2C2C2C;
+  padding: 10px 18px;
+  border-radius: 4px;
+  border: none;
+
+  margin-top: 12px;
   }
 
   .design-read-study-btn:hover, .design-read-study-btn:focus, .design-read-study-btn:active {
@@ -167,15 +176,20 @@ h1.bold {
   margin-top: 32px;
 }
 
+.contact-footer a {
+  font-size: 18px;
+  font-weight: 500;
+}
+
 .footer-header {
   font-weight: 700;
-  font-size: 30px;
+  font-size: 36px;
   margin: 32px 0 0;
 }
 
 .footer-description {
   font-weight: 400;
-  font-size: 17px;
+  font-size: 20px;
   margin: 24px 0;
 }
 
@@ -221,13 +235,23 @@ a:hover, a:active, a:focus {
 
 /* nav bar links */
 .nav-bar-nav {
-  padding: 0 210px; /* change for responsive */
+   width: 100%;
   position: fixed;
-  z-index: 1;
-  background-color: transparent;
-  width: 100%;
-  transition:500ms ease;
+  top: 0;
+  left: 0;
+  background: white;
+  border-bottom: 1px solid #eee;
+  z-index: 9999;
 }
+
+.nav-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .nav-bar-list {
   display: inline-block;
   height: 65px;
@@ -406,6 +430,17 @@ a.project-tab-bar-current {
   margin: 16px 0 36px;
 }
 
+.video-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.video-wrapper iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  display: block;
+}
 
 .portfolio-section {
   margin: 72px 0;
@@ -530,7 +565,8 @@ a.project-tab-bar-current {
   /*  about.html*/
 
   .about-me-section {
-    padding: 0 8px;
+    max-width: 1100px;
+    margin: auto;
     margin-top: 88px;
   }
 
@@ -563,17 +599,23 @@ a.project-tab-bar-current {
 }
 
 .profile-image {
-  max-width: 190px;
+  max-width: 220px;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 .about-me-description {
-  font-size: 18px;
+  font-size: 20px;
+  line-height: 1.7;
+  font-weight: 400;
+  margin-bottom: 20px;
 }
 
 
 .about-me-heading {
-  font-size: 26px;
-  padding: 8px 0;
+  font-size: 36px;
+  font-weight: 700;
+  margin: 16px 0 24px;
 }
 
 .bolder {
@@ -586,4 +628,21 @@ a.project-tab-bar-current {
 
 .nav-bar-nav.scrolled {
   background-color: white;
+}
+
+.wave {
+  display: inline-block;
+  transform-origin: 70% 70%;
+  animation: wave-animation 2.5s infinite;
+}
+
+@keyframes wave-animation {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(14deg); }
+  20% { transform: rotate(-8deg); }
+  30% { transform: rotate(14deg); }
+  40% { transform: rotate(-4deg); }
+  50% { transform: rotate(10deg); }
+  60% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
 }
