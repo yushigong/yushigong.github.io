@@ -1,55 +1,94 @@
+/* ==========================================================================
+   FINAL VISUAL ALIGNMENT (WITH BALANCED PADDING)
+   ========================================================================== */
+
 @media only screen and (max-width : 768px) {
   
-  /* 1. 解决左右两边缺少 padding 的问题 */
-  /* 针对首页顶部的 intro 区域增加呼吸感 */
-  .intro-wrapper {
-    padding: 88px 24px 24px !important; /* 增加左右 24px 的内边距 */
+  /* 1. 核心对齐补丁：增加左右内边距，使其与 Nav 里的文字对齐 */
+  /* padding 设置为 20px 左右通常能与大多数导航栏对齐 */
+  .intro-wrapper, 
+  .project-section-wrapper, 
+  .about-me-section {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
   }
 
-  /* 针对项目列表区域也增加同样的 padding */
-  .project-section-wrapper {
-    padding: 24px 24px !important; 
-  }
-
-  /* 2. 缩减项目标题字号，尝试让它在手机上保持一行 */
-  /* 将原本的 24px 降到 18px 或 19px，这在手机上既有标题感又紧凑 */
-  h1.design-title {
-    font-size: 19px !important; 
-    line-height: 1.2 !important;
-    margin: 8px 0 !important;
-    white-space: nowrap; /* 强制不换行，如果还是太长会溢出，配合下面的 overflow 控制 */
-    overflow: hidden;
-    text-overflow: ellipsis; /* 如果标题实在太长，会显示省略号，保证精致感 */
-  }
-
-  /* 3. 首页 Heading 也要增加左右边距的适配 */
-  .index-heading {
-    font-size: 28px !important;
-    margin-bottom: 16px !important;
-    line-height: 1.2 !important;
-  }
-
-  /* 4. 调整正文间距，使其对齐 */
+  /* 2. 解决正文偏小：将全站正文基准调高到 16px */
   p.index-description, 
-  .index-sub-description {
-    font-size: 16px !important;
-    line-height: 1.5 !important;
-    margin-bottom: 16px !important;
+  .index-sub-description, 
+  h1.design-description, 
+  .about-me-description, 
+  .about-description, 
+  .portfolio-section-paragraph, 
+  .p-section-text {
+    font-size: 16px !important; 
+    line-height: 1.6 !important;
+    font-weight: 400 !important;
+    margin-top: 12px !important;
   }
 
-  /* 5. 调整社交图标的大小和间距，防止贴边 */
-  .links-wrapper {
-    padding: 8px 0 !important;
+  /* 3. 解决项目框间距：让 2026... 那一行向下挪，离图片远一点 */
+  .design-date {
+    font-size: 13px !important;
+    color: #666 !important;
+    margin-top: 24px !important; 
+    margin-bottom: 8px !important;
+    display: block !important;
+  }
+
+  /* 4. 解决按钮与 Tag 挤在一行的问题 */
+  .project-information .tag_case_study {
+    margin-bottom: 8px !important;
+    display: inline-block !important;
+  }
+  
+  .design-read-study-btn {
+    display: block !important;
+    width: fit-content !important;
+    margin-top: 20px !important;
+    padding: 12px 24px !important;
+  }
+
+  /* 5. 页脚压制 */
+  .contact-footer {
+    padding-top: 40px !important;
+    padding-bottom: 60px !important;
+  }
+
+  h1.footer-header {
+    font-size: 22px !important;
+    margin-bottom: 12px !important;
+  }
+
+  h3.footer-description {
+    font-size: 15px !important;
+    margin-bottom: 24px !important;
+  }
+
+  .footer-links, .footer-links a, .contact-footer a {
+    font-size: 15px !important;
+    font-weight: 400 !important;
+  }
+
+  /* 6. 首页 Heading 保持力度 */
+  .index-heading {
+    font-size: 32px !important;
+    margin-bottom: 20px !important;
   }
 }
 
-/* 针对更小的屏幕 (如 iPhone SE) */
+/* 针对超窄屏手机的微调 */
 @media only screen and (max-width : 400px) {
-  .intro-wrapper, .project-section-wrapper {
-    padding: 60px 20px 20px !important;
+  /* 窄屏下稍微缩小边距，给文字更多空间 */
+  .intro-wrapper, .project-section-wrapper, .about-me-section {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
   }
 
-  h1.design-title {
-    font-size: 17px !important; /* 屏幕极窄时进一步缩小 */
+  .index-heading { font-size: 28px !important; }
+  h1.design-title { font-size: 22px !important; }
+  
+  p.index-description, h1.design-description, .about-me-description {
+    font-size: 15px !important;
   }
 }
