@@ -42,16 +42,16 @@ h1.bold {
 
 .index-description {
   font-size: 28px;
-  line-height: 1.35;
+  line-height: 1.4;
   padding: 16px 0;
-  font-weight: 500;
+  font-weight: 400;
   max-width: 1100px;
 }
 
 .index-sub-description {
-  font-size: 24px;
-  line-height: 1.7;
-  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.6;
+  font-weight: 400;
   max-width: 1100px;
 }
 
@@ -132,10 +132,10 @@ h1.bold {
   }
 
   .design-description {
-    font-size: 20px;
-    margin: 16px 0 20px;
-    line-height: 1.7;
-    font-weight: 400;
+    font-size: 18px;
+    margin: 12px 0 20px;
+    line-height: 1.6;
+    font-weight: 400; 
   }
   
   .project-information .tag_case_study {

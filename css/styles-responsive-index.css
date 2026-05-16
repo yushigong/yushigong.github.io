@@ -1,182 +1,78 @@
- /* ==========================================================================
-   UNIFIED MOBILE TYPE SYSTEM & LAYOUT (UX OPTIMIZED)
+/* ==========================================================================
+   BRUTAL UNIFIED TYPE SYSTEM (ABSOLUTE FORCED FOR MOBILE)
    ========================================================================== */
 
-/* -------------------------------------------------------------------------
-   1. 主要移动端布局 (平板与大屏手机过渡：768px 以下)
-   ------------------------------------------------------------------------- */
 @media only screen and (max-width : 768px) {
-  /* 页面间距统一优化 */
-  .intro-wrapper {
-    padding: 88px 32px 24px;
-  }
-  .project-section-wrapper {
-    padding: 24px 32px;
-  }
-  .about-me-section {
-    padding: 88px 32px 32px;
-    max-width: none;
-  }
-
-  /* 首页 Hero 区域字体统一 */
-  .index-heading {
-    font-size: 32px !important;
-    line-height: 1.2;
-  }
-  p.index-description {
-    font-size: 16px !important;
-    line-height: 1.6;
-    font-weight: 400;
-  }
-  .index-sub-description {
-    font-size: 16px !important;
-    line-height: 1.6;
-    font-weight: 400;
-  }
-
-  /* 项目卡片区域 (Work Section) 字体统一 */
+  /* -------------------------------------------------------------
+     全站所有区域的【大标题】统一：首页问候语、项目卡片名、About大标题、详情页大标题
+     ------------------------------------------------------------- */
+  .index-heading, 
+  h1.design-title, 
+  .about-me-heading, 
+  .portfolio-section-heading, 
   .section-heading {
     font-size: 24px !important;
-    margin-bottom: 20px;
-  }
-  .design-date {
-    font-size: 13px !important;
-    line-height: 1.4;
-  }
-  h1.design-title {
-    font-size: 24px !important;
-    line-height: 1.2;
-  }
-  h1.design-description {
-    font-size: 15px !important;
-    line-height: 1.5;
-    font-weight: 400;
-    margin: 12px 0 16px;
-  }
-  button.design-read-study-btn {
-    display: inline-block;
-    margin-top: 12px;
+    font-weight: 700 !important;
+    line-height: 1.25 !important;
+    letter-spacing: -0.5px !important;
+    margin-bottom: 16px !important;
   }
 
-  /* About 页 & 其他内页字体统一 */
-  .about-me-heading {
-    font-size: 28px !important;
-    margin: 16px 0 16px;
-  }
+  /* -------------------------------------------------------------
+     全站所有区域的【正文/描述】统一：首页两段介绍、卡片长句描述、About正文、内页段落
+     ------------------------------------------------------------- */
+  p.index-description, 
+  .index-sub-description, 
+  h1.design-description, 
   .about-me-description, 
   .about-description, 
-  .fun-paragraph,
-  .portfolio-section-paragraph {
+  .fun-paragraph, 
+  .portfolio-section-paragraph, 
+  .p-section-text {
     font-size: 15px !important;
-    line-height: 1.6;
-    font-weight: 400;
-  }
-  
-  /* 项目详情页标题类统一 */
-  .portfolio-section-heading { font-size: 24px !important; }
-  .portfolio-section-sub-heading { font-size: 18px !important; }
-  .portfolio-quote { font-size: 18px !important; line-height: 1.5; }
-}
-
-/* -------------------------------------------------------------------------
-   2. 标准手机布局 (主流手机屏幕：576px 以下)
-   ------------------------------------------------------------------------- */
-@media only screen and (max-width : 576px) {
-  .intro-wrapper,
-  .project-section-wrapper,
-  .about-me-section {
-    padding: 24px 20px;
-  }
-  .intro-wrapper {
-    padding-top: 80px;
+    font-weight: 400 !important;
+    line-height: 1.6 !important;
+    letter-spacing: 0 !important;
+    margin-top: 8px !important;
+    margin-bottom: 16px !important;
   }
 
-  /* 首页 Hero 区域 */
-  .index-heading {
-    font-size: 28px !important;
-    letter-spacing: -0.5px;
-  }
-  p.index-description,
-  .index-sub-description {
-    font-size: 15px !important;
-    line-height: 1.5;
-  }
-
-  /* 项目卡片区域 */
-  .row.design-row {
-    padding: 24px 16px; /* 缩小卡片内边距，给文本腾出空间 */
-    margin-bottom: 24px;
-  }
+  /* 辅助弱文本统一 */
   .design-date {
     font-size: 12px !important;
-  }
-  h1.design-title {
-    font-size: 20px !important; /* 统一项目大标题（Thales DPoD 等）*/
-  }
-  h1.design-description {
-    font-size: 14px !important; /* 统一项目描述 body（Enabling users...）*/
-    line-height: 1.5;
+    color: #888888 !important;
   }
   
-  /* About 页 & 内页正文系统完美脱胎 */
-  .about-me-heading {
-    font-size: 24px !important;
-    margin-top: 32px;
-  }
-  .about-me-description, 
-  .about-description, 
-  .fun-paragraph,
-  .portfolio-section-paragraph,
-  .p-section-text {
-    font-size: 14px !important;
-    line-height: 1.6;
-  }
-
-  img.profile-image {
-    width: 120px;
-    margin-top: 12px;
-  }
-
-  /* 页脚统一 */
-  .contact-footer {
-    margin-top: 32px;
-    padding-bottom: 32px;
-  }
-  h1.footer-header {
-    font-size: 20px !important;
-  }
-  h3.footer-description {
-    font-size: 14px !important;
-    margin: 12px 16px;
-    line-height: 1.5;
-    font-weight: 400;
-  }
-  .footer-links {
-    font-size: 14px !important;
-  }
+  /* 布局微调 */
+  .intro-wrapper { padding: 88px 24px 16px; }
+  .project-section-wrapper, .about-me-section { padding: 16px 24px; }
+  .row.design-row { padding: 24px 20px; margin-bottom: 24px; }
 }
 
-/* -------------------------------------------------------------------------
-   3. 微屏极简优化 (小屏手机：400px 以下)
-   ------------------------------------------------------------------------- */
-@media only screen and (max-width : 400px) {
-  .index-heading {
-    font-size: 24px !important;
+@media only screen and (max-width : 480px) {
+  /* -------------------------------------------------------------
+     小屏手机极简微调：确保所有标题和正文在窄屏上各退一级，但依然绝对并轨
+     ------------------------------------------------------------- */
+  .index-heading, 
+  h1.design-title, 
+  .about-me-heading, 
+  .portfolio-section-heading, 
+  .section-heading {
+    font-size: 21px !important;
   }
-  h1.design-title {
-    font-size: 18px !important;
-  }
-  p.index-description,
-  .index-sub-description,
-  h1.design-description,
-  .about-me-description,
-  .portfolio-section-paragraph {
+
+  p.index-description, 
+  .index-sub-description, 
+  h1.design-description, 
+  .about-me-description, 
+  .about-description, 
+  .fun-paragraph, 
+  .portfolio-section-paragraph, 
+  .p-section-text,
+  h3.footer-description {
     font-size: 14px !important;
-    line-height: 1.45;
+    line-height: 1.5 !important;
   }
-  .project-information .tag_case_study {
-    margin-right: 4px;
-    padding: 4px 6px;
-    font-size: 11px;
-  }
+  
+  .intro-wrapper, .project-section-wrapper, .about-me-section { padding: 16px; }
 }
