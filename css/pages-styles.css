@@ -1878,6 +1878,17 @@ img.text-image-non-card-image {
   color: var(--case-coral) !important;
 }
 
+/* Separate grouped subsections using the standard section rhythm. */
+.case-study-redesign.unified-case-page .case-study-large-header.grouped-section-heading {
+  margin-top: 96px !important;
+}
+
+@media (max-width: 1000px) {
+  .case-study-redesign.unified-case-page .case-study-large-header.grouped-section-heading {
+    margin-top: 72px !important;
+  }
+}
+
 /* Match the About page's selected navigation treatment on case studies. */
 .case-study-redesign .nav-links a,
 .case-study-redesign .nav-links a:visited {
