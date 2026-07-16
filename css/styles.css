@@ -21,16 +21,16 @@ h1.bold {
 }
 
 .description-main {
-  max-width: 1100px;
+  max-width: 1060px;
   padding-top: 40px;
   margin: auto;
 }
 
 .about-me-section {
-  max-width: 1000px;
+  max-width: 960px;
   margin: auto;
   margin-top: 88px;
-  padding: 0 40px;
+  padding: 0 48px;
 }
 
 .index-heading {
@@ -59,7 +59,7 @@ h1.bold {
 /* WORK SECTION */
 
 .case-header-section-container {
-	max-width: 1100px;
+	max-width: 1060px;
 	margin: 0 auto;
 	padding: 120px 40px 0;
 	text-align:center;
@@ -78,7 +78,7 @@ h1.bold {
 }
 
 .project-section-wrapper {
-  max-width: 1100px;
+  max-width: 1060px;
   margin: auto;
   padding-top: 80px;
 }
@@ -102,9 +102,9 @@ h1.bold {
   }
 
   .page-container {
-  max-width: 1100px;
+  max-width: 1060px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 48px;
   }
 
   .project-image-container {
@@ -249,7 +249,7 @@ a:hover, a:active, a:focus {
 }
 
 .nav-inner {
-  max-width: 1100px;
+  max-width: 1060px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -649,4 +649,1411 @@ a.project-tab-bar-current {
   50% { transform: rotate(10deg); }
   60% { transform: rotate(0deg); }
   100% { transform: rotate(0deg); }
+}
+
+/* =========================================================
+   2026 HOME PAGE REDESIGN
+   Scoped to .home-redesign so existing case-study pages remain intact.
+   ========================================================= */
+:root {
+  --coral: #ff6658;
+  --coral-dark: #ee574b;
+  --ink: #0b0b0b;
+  --muted: #686868;
+  --line: #ebebeb;
+  --soft: #f5f5f3;
+}
+
+html { scroll-behavior: smooth; }
+
+body.home-redesign {
+  margin: 0;
+  background: #fff;
+  color: var(--ink);
+  font-family: 'Inter', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: geometricPrecision;
+}
+
+.home-redesign *,
+.home-redesign *::before,
+.home-redesign *::after {
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.home-redesign a { color: inherit; text-decoration: none; }
+.home-redesign a:hover,
+.home-redesign a:focus { text-decoration: none; }
+
+.page-shell { width: min(1184px, calc(100% - 64px)); margin-inline: auto; }
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(255,255,255,.96);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--line);
+}
+
+.site-nav { min-height: 58px; display: flex; align-items: center; justify-content: space-between; }
+.wordmark { font-size: 11px; font-weight: 800; letter-spacing: -.035em; }
+.nav-links { display: flex; gap: 31px; }
+.nav-links a { font-size: 9px; font-weight: 600; letter-spacing: .045em; transition: color .2s ease; }
+.nav-links a:hover,
+.nav-links a:focus-visible { color: var(--coral); }
+
+.hero { padding-top: 61px; padding-bottom: 86px; }
+.eyebrow { margin: 0 0 22px; color: #777; font-size: 8px; font-weight: 500; letter-spacing: .105em; }
+.hero h1 {
+  margin: 0;
+  width: max-content;
+  max-width: 100%;
+  color: var(--ink);
+  font-size: clamp(52px, 5.25vw, 74px);
+  font-weight: 750;
+  line-height: .94;
+  letter-spacing: -.066em;
+}
+.hero-line { display: block; white-space: nowrap; color: inherit; font: inherit; letter-spacing: inherit; }
+.hero h1 em { color: var(--coral); font-style: normal; font-weight: inherit; }
+.values-section h2 span { color: var(--coral); }
+.hero-copy { max-width: 515px; margin: 27px 0 0; color: #656565; font-size: 14px; line-height: 1.55; letter-spacing: -.01em; }
+.hero-actions { display: flex; gap: 10px; margin-top: 28px; }
+.button { min-height: 36px; padding: 0 17px; display: inline-flex; align-items: center; justify-content: center; border: 1px solid #d7d7d7; font-size: 9px; font-weight: 650; transition: background .2s ease, color .2s ease, border-color .2s ease, transform .2s ease; }
+.button:active { transform: translateY(1px); }
+.button-primary { color: #fff !important; background: var(--ink); border-color: var(--ink); }
+.button-primary:hover,
+.button-primary:focus-visible { background: var(--coral); border-color: var(--coral); }
+.button-secondary { background: #fff; }
+.button-secondary:hover,
+.button-secondary:focus-visible { background: #f0f0ee; border-color: #cfcfcb; }
+
+.work-section { padding-bottom: 105px; scroll-margin-top: 72px; }
+.section-heading-row { padding-bottom: 25px; margin-bottom: 39px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--line); }
+.section-heading-row h2 { margin: 0; font-size: 12px; font-weight: 750; letter-spacing: -.02em; }
+.section-heading-row span { color: #999; font-size: 7px; letter-spacing: .1em; }
+
+.project-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1.28fr) minmax(340px, .92fr);
+  gap: 39px;
+  align-items: start;
+  margin-bottom: 89px;
+}
+.project-row-reverse .project-media { order: 2; }
+.project-row-reverse .project-summary { order: 1; }
+.project-media { display: block; overflow: hidden; background: var(--soft); aspect-ratio: 1.44 / 1; }
+.project-media img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .5s cubic-bezier(.2,.7,.2,1); }
+.project-media:hover img,
+.project-media:focus-visible img { transform: scale(1.025); }
+.project-summary { display: block; padding: 2px 0 0; }
+.project-meta { margin: 0 0 15px; color: #8d8d8d; font-size: 8px; line-height: 1.45; letter-spacing: .075em; }
+.project-summary h3 { margin: 0 0 13px; color: var(--ink); font-size: 28px; font-weight: 750; line-height: 1.02; letter-spacing: -.045em; transition: color .2s ease; }
+.project-copy { margin: 0 0 16px; max-width: 440px; color: #626262; font-size: 13px; line-height: 1.52; letter-spacing: -.012em; }
+.project-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 18px; }
+.project-tags span { padding: 4px 7px; background: #f2f2f0; color: #595959; font-size: 7px; font-weight: 650; letter-spacing: .025em; }
+.case-link { display: inline-block; color: var(--ink); border-bottom: 1px solid currentColor; font-size: 9px; font-weight: 750; line-height: 1.45; transition: color .2s ease; }
+.project-summary:hover h3,
+.project-summary:focus-visible h3 { color: var(--coral); }
+.case-link:hover,
+.case-link:focus-visible { color: var(--coral); }
+
+.values-section { background: #101010; color: #fff; }
+.values-inner { padding-top: 65px; padding-bottom: 67px; }
+.eyebrow.light { color: #999; margin-bottom: 15px; }
+.values-section h2 { margin: 0; color: #fff; font-size: 30px; font-weight: 750; line-height: 1.03; letter-spacing: -.042em; }
+.values-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 61px; margin-top: 49px; }
+.values-grid strong { display: block; margin-bottom: 14px; color: var(--coral); font-size: 19px; font-weight: 700; font-style: italic; }
+.values-grid h3 { margin: 0 0 11px; color: #fff; font-size: 10px; font-weight: 700; letter-spacing: .01em; }
+.values-grid p { margin: 0; color: #aaa; font-size: 9px; line-height: 1.52; }
+
+.site-footer { min-height: 215px; padding-top: 56px; padding-bottom: 38px; display: flex; align-items: flex-start; justify-content: space-between; scroll-margin-top: 72px; }
+.footer-kicker { margin: 0 0 15px; color: #9c9c9c; font-size: 8px; letter-spacing: .095em; }
+.footer-email { display: inline-block; color: var(--ink) !important; font-size: 25px; font-weight: 750; letter-spacing: -.04em; transition: color .2s ease; }
+.footer-email:hover,
+.footer-email:focus-visible { color: var(--coral) !important; }
+.copyright { margin-top: 51px; color: #aaa; font-size: 8px; }
+.footer-right { min-height: 125px; display: flex; flex-direction: column; align-items: flex-end; justify-content: space-between; }
+.footer-links { display: flex; gap: 31px; }
+.footer-links a { color: var(--ink); font-size: 10px; font-weight: 600; letter-spacing: .075em; transition: color .2s ease; }
+.footer-links a:hover,
+.footer-links a:focus-visible { color: var(--coral); }
+.footer-right p { margin: 0; color: #aaa; font-size: 8px; }
+.footer-right p span { color: var(--coral); }
+
+@media (max-width: 900px) {
+  .page-shell { width: min(100% - 40px, 720px); }
+  .hero h1 { font-size: clamp(48px, 8.2vw, 68px); }
+  .project-row { grid-template-columns: minmax(0, 1.15fr) minmax(270px, .85fr); gap: 28px; }
+  .project-summary h3 { font-size: 24px; }
+  .project-copy { font-size: 12px; }
+}
+
+@media (max-width: 720px) {
+  .page-shell { width: min(100% - 34px, 640px); }
+  .nav-links { gap: 18px; }
+  .hero { padding-top: 46px; padding-bottom: 64px; }
+  .hero h1 { width: auto; font-size: clamp(42px, 11vw, 62px); }
+  .hero-line { white-space: normal; }
+  .project-row { grid-template-columns: 1fr; gap: 24px; margin-bottom: 68px; }
+  .project-row-reverse .project-media,
+  .project-row-reverse .project-summary { order: initial; }
+  .project-summary { padding: 0; }
+  .project-summary h3 { font-size: 26px; }
+  .project-copy { font-size: 13px; }
+  .values-grid { grid-template-columns: 1fr; gap: 34px; }
+  .site-footer { gap: 45px; flex-direction: column; }
+  .footer-right { min-height: auto; align-items: flex-start; gap: 42px; }
+  .copyright { margin-top: 35px; }
+}
+
+@media (max-width: 480px) {
+  .site-nav { min-height: 54px; }
+  .nav-links { gap: 13px; }
+  .nav-links a, .wordmark { font-size: 9px; }
+  .hero h1 { font-size: 42px; }
+  .hero-copy { font-size: 14px; }
+  .hero-actions { align-items: stretch; flex-direction: column; max-width: 190px; }
+  .section-heading-row { margin-bottom: 31px; }
+  .project-row { margin-bottom: 58px; }
+  .project-summary h3 { font-size: 24px; }
+  .project-media { aspect-ratio: 1.34 / 1; }
+  .values-section h2 { font-size: 27px; }
+  .footer-email { font-size: 21px; }
+  .footer-links { gap: 22px; flex-wrap: wrap; }
+  .footer-links a { font-size: 10px; }
+}
+
+/* V3 — stronger typography and screenshot-matched proportions */
+@media (min-width: 721px) {
+  .hero { padding-top: 68px; padding-bottom: 98px; }
+  .eyebrow { margin-bottom: 25px; font-size: 9.5px; }
+  .hero h1 {
+    font-size: clamp(66px, 5.85vw, 86px);
+    line-height: .93;
+    letter-spacing: -.067em;
+  }
+  .hero-copy {
+    max-width: 610px;
+    margin-top: 31px;
+    font-size: 17px;
+    line-height: 1.52;
+  }
+  .hero-actions { margin-top: 32px; gap: 12px; }
+  .button { min-height: 42px; padding-inline: 20px; font-size: 11px; }
+
+  .work-section { padding-bottom: 120px; }
+  .section-heading-row { padding-bottom: 28px; margin-bottom: 45px; }
+  .section-heading-row h2 { font-size: 15px; }
+  .section-heading-row span { font-size: 8.5px; }
+
+  .project-row {
+    grid-template-columns: minmax(0, 1.25fr) minmax(370px, .95fr);
+    gap: 42px;
+    margin-bottom: 102px;
+  }
+  .project-summary { padding-top: 1px; }
+  .project-meta {
+    margin-bottom: 18px;
+    font-size: 9.5px;
+    line-height: 1.5;
+  }
+  .project-summary h3 {
+    margin-bottom: 16px;
+    font-size: 34px;
+    line-height: 1.02;
+  }
+  .project-copy {
+    max-width: 470px;
+    margin-bottom: 21px;
+    font-size: 16.5px;
+    line-height: 1.55;
+  }
+  .project-tags { gap: 7px; margin-bottom: 23px; }
+  .project-tags span { padding: 5px 8px; font-size: 8.5px; }
+  .case-link { font-size: 11px; line-height: 1.5; }
+
+  .values-inner { padding-top: 82px; padding-bottom: 86px; }
+  .eyebrow.light { margin-bottom: 18px; font-size: 9.5px; }
+  .values-section h2 {
+    font-size: 38px;
+    line-height: 1.04;
+  }
+  .values-grid { gap: 66px; margin-top: 58px; }
+  .values-grid strong { margin-bottom: 16px; font-size: 23px; }
+  .values-grid h3 { margin-bottom: 13px; font-size: 12px; }
+  .values-grid p { font-size: 11px; line-height: 1.58; }
+
+  .site-footer { min-height: 250px; padding-top: 66px; padding-bottom: 44px; }
+  .footer-kicker { margin-bottom: 17px; font-size: 9px; }
+  .footer-email { font-size: 30px; }
+  .copyright { margin-top: 58px; font-size: 9px; }
+  .footer-right {
+    min-height: 143px;
+    padding-top: 29px;
+  }
+  .footer-links { gap: 36px; }
+  .footer-links a { font-size: 12px; }
+  .footer-right p { font-size: 9px; }
+}
+
+@media (min-width: 721px) and (max-width: 1000px) {
+  .hero h1 { font-size: clamp(60px, 7.8vw, 76px); }
+  .project-row {
+    grid-template-columns: minmax(0, 1.12fr) minmax(310px, .88fr);
+    gap: 31px;
+  }
+  .project-summary h3 { font-size: 29px; }
+  .project-copy { font-size: 14.5px; }
+  .values-section h2 { font-size: 34px; }
+}
+
+@media (max-width: 720px) {
+  .eyebrow { font-size: 9px; }
+  .hero-copy { font-size: 15px; }
+  .section-heading-row h2 { font-size: 14px; }
+  .section-heading-row span { font-size: 8px; }
+  .project-meta { font-size: 9px; }
+  .project-summary h3 { font-size: 29px; }
+  .project-copy { font-size: 15px; }
+  .project-tags span { font-size: 8px; }
+  .case-link { font-size: 10px; }
+  .values-inner { padding-top: 70px; padding-bottom: 74px; }
+  .values-section h2 { font-size: 31px; }
+  .values-grid strong { font-size: 21px; }
+  .values-grid h3 { font-size: 11px; }
+  .values-grid p { font-size: 10.5px; }
+  .footer-kicker { font-size: 9px; }
+  .footer-email { font-size: 25px; }
+  .footer-links a { font-size: 11px; }
+}
+
+/* V4 — amplified typography and footer alignment */
+@media (min-width: 721px) {
+  /* Navigation intentionally remains unchanged. */
+  .eyebrow { font-size: 11px; }
+  .hero h1 {
+    font-size: clamp(76px, 6.55vw, 98px);
+    line-height: .91;
+    letter-spacing: -.069em;
+  }
+  .hero-copy {
+    max-width: 680px;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  .button {
+    min-height: 46px;
+    padding-inline: 23px;
+    font-size: 12.5px;
+  }
+
+  .section-heading-row h2 { font-size: 17px; }
+  .section-heading-row span { font-size: 9.5px; }
+
+  .project-row {
+    grid-template-columns: minmax(0, 1.2fr) minmax(420px, 1fr);
+    gap: 46px;
+    margin-bottom: 110px;
+  }
+  .project-meta {
+    margin-bottom: 20px;
+    font-size: 11px;
+    line-height: 1.5;
+  }
+  .project-summary h3 {
+    margin-bottom: 18px;
+    font-size: 39px;
+    line-height: 1;
+  }
+  .project-copy {
+    max-width: 520px;
+    margin-bottom: 23px;
+    font-size: 19px;
+    line-height: 1.52;
+  }
+  .project-tags { margin-bottom: 25px; }
+  .project-tags span {
+    padding: 6px 9px;
+    font-size: 9.5px;
+  }
+  .case-link { font-size: 12.5px; }
+
+  .values-inner {
+    padding-top: 96px;
+    padding-bottom: 102px;
+  }
+  .eyebrow.light {
+    margin-bottom: 21px;
+    font-size: 11px;
+  }
+  .values-section h2 {
+    font-size: 46px;
+    line-height: 1.02;
+  }
+  .values-grid {
+    gap: 72px;
+    margin-top: 67px;
+  }
+  .values-grid strong {
+    margin-bottom: 18px;
+    font-size: 27px;
+  }
+  .values-grid h3 {
+    margin-bottom: 14px;
+    font-size: 14px;
+  }
+  .values-grid p {
+    font-size: 13px;
+    line-height: 1.58;
+  }
+
+  .site-footer {
+    min-height: 285px;
+    padding-top: 72px;
+    padding-bottom: 48px;
+  }
+  .footer-kicker {
+    margin-bottom: 19px;
+    font-size: 10.5px;
+  }
+  .footer-email { font-size: 35px; }
+  .copyright {
+    margin-top: 65px;
+    font-size: 10px;
+  }
+  .footer-right {
+    min-height: 166px;
+    padding-top: 43px;
+  }
+  .footer-links { gap: 40px; }
+  .footer-links a { font-size: 13.5px; }
+  .footer-right p { font-size: 10px; }
+}
+
+@media (min-width: 721px) and (max-width: 1000px) {
+  .hero h1 { font-size: clamp(66px, 8.5vw, 84px); }
+  .hero-copy { font-size: 18px; }
+  .project-row {
+    grid-template-columns: minmax(0, 1.08fr) minmax(340px, .92fr);
+    gap: 34px;
+  }
+  .project-summary h3 { font-size: 33px; }
+  .project-copy { font-size: 16.5px; }
+  .values-section h2 { font-size: 40px; }
+  .values-grid p { font-size: 11.5px; }
+}
+
+@media (max-width: 720px) {
+  .hero h1 { font-size: clamp(46px, 12vw, 66px); }
+  .hero-copy { font-size: 17px; }
+  .button { font-size: 11.5px; }
+  .section-heading-row h2 { font-size: 16px; }
+  .project-meta { font-size: 10px; }
+  .project-summary h3 { font-size: 33px; }
+  .project-copy { font-size: 17px; }
+  .project-tags span { font-size: 9px; }
+  .case-link { font-size: 11.5px; }
+  .values-section h2 { font-size: 35px; }
+  .values-grid strong { font-size: 24px; }
+  .values-grid h3 { font-size: 12px; }
+  .values-grid p { font-size: 12px; }
+  .footer-kicker { font-size: 10px; }
+  .footer-email { font-size: 28px; }
+  .footer-links a { font-size: 12.5px; }
+}
+
+/* V5 — wider page margins, stronger hierarchy, and timeless contact language */
+@media (min-width: 1001px) {
+  .page-shell {
+    width: min(1100px, calc(100% - 128px));
+  }
+
+  .site-nav {
+    min-height: 72px;
+  }
+  .wordmark {
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: -.045em;
+  }
+  .nav-links {
+    gap: 42px;
+  }
+  .nav-links a {
+    font-size: 13px;
+    font-weight: 650;
+    letter-spacing: .055em;
+  }
+
+  .hero {
+    padding-top: 90px;
+    padding-bottom: 126px;
+  }
+  .hero .eyebrow {
+    margin-bottom: 34px;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: .095em;
+  }
+  .hero h1 {
+    font-size: clamp(76px, 6.7vw, 102px);
+    font-weight: 560;
+    line-height: 1.01;
+    letter-spacing: -.061em;
+  }
+  .hero-copy {
+    max-width: 760px;
+    margin-top: 42px;
+    font-size: 23px;
+    line-height: 1.58;
+  }
+  .hero-actions {
+    margin-top: 42px;
+    gap: 16px;
+  }
+  .button {
+    min-height: 54px;
+    padding-inline: 28px;
+    font-size: 15px;
+  }
+
+  .work-section {
+    padding-bottom: 150px;
+  }
+  .section-heading-row {
+    padding-bottom: 34px;
+    margin-bottom: 62px;
+  }
+  .section-heading-row h2 {
+    font-size: 21px;
+  }
+  .section-heading-row span {
+    font-size: 12px;
+  }
+
+  .project-row {
+    grid-template-columns: minmax(0, 1.18fr) minmax(420px, .82fr);
+    gap: 56px;
+    margin-bottom: 132px;
+  }
+  .project-media {
+    width: 100%;
+    aspect-ratio: 1.44 / 1;
+  }
+  .project-summary {
+    padding-top: 20px;
+  }
+  .project-meta {
+    margin-bottom: 24px;
+    font-size: 13px;
+    line-height: 1.58;
+    letter-spacing: .07em;
+  }
+  .project-summary h3 {
+    margin-bottom: 21px;
+    font-size: 43px;
+    line-height: 1.02;
+  }
+  .project-copy {
+    max-width: 500px;
+    margin-bottom: 27px;
+    font-size: 20px;
+    line-height: 1.58;
+  }
+  .project-tags {
+    gap: 9px;
+    margin-bottom: 29px;
+  }
+  .project-tags span {
+    padding: 7px 10px;
+    font-size: 10px;
+  }
+  .case-link {
+    font-size: 15px;
+    line-height: 1.55;
+  }
+
+  .values-inner {
+    padding-top: 124px;
+    padding-bottom: 132px;
+  }
+  .eyebrow.light {
+    margin-bottom: 27px;
+    font-size: 14px;
+  }
+  .values-section h2 {
+    max-width: 1040px;
+    font-size: 55px;
+    line-height: 1.08;
+    font-weight: 650;
+  }
+  .values-grid {
+    gap: 76px;
+    margin-top: 82px;
+  }
+  .values-grid strong {
+    margin-bottom: 21px;
+    font-size: 32px;
+  }
+  .values-grid h3 {
+    margin-bottom: 17px;
+    font-size: 17px;
+    line-height: 1.3;
+  }
+  .values-grid p {
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  .site-footer {
+    min-height: 330px;
+    padding-top: 88px;
+    padding-bottom: 56px;
+  }
+  .footer-kicker {
+    margin-bottom: 23px;
+    font-size: 13px;
+  }
+  .footer-email {
+    font-size: 42px;
+  }
+  .copyright {
+    margin-top: 74px;
+    font-size: 12px;
+  }
+  .footer-right {
+    min-height: 188px;
+    padding-top: 54px;
+  }
+  .footer-links {
+    gap: 44px;
+  }
+  .footer-links a {
+    font-size: 16px;
+  }
+  .footer-right p {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 721px) and (max-width: 1000px) {
+  .page-shell { width: min(100% - 72px, 860px); }
+  .site-nav { min-height: 66px; }
+  .wordmark { font-size: 14px; }
+  .nav-links a { font-size: 11px; }
+  .hero .eyebrow { font-size: 12px; }
+  .hero h1 { font-weight: 560; line-height: 1; }
+  .hero-copy { font-size: 20px; }
+  .project-summary { padding-top: 14px; }
+  .project-meta { font-size: 11px; }
+  .case-link { font-size: 13px; }
+  .values-section h2 { font-size: 45px; line-height: 1.08; }
+  .values-grid h3 { font-size: 14px; }
+  .values-grid p { font-size: 13px; }
+}
+
+/* V6 — larger side margins, balanced project proportions, refined type scale */
+@media (min-width: 1001px) {
+  /* Increase the white space at both sides of the full homepage. */
+  .page-shell {
+    width: min(1010px, calc(100% - 220px));
+  }
+
+  /* Keep the navigation visually strong inside the narrower canvas. */
+  .site-nav {
+    min-height: 76px;
+  }
+  .wordmark {
+    font-size: 17px;
+  }
+  .nav-links {
+    gap: 46px;
+  }
+  .nav-links a {
+    font-size: 14px;
+  }
+
+  /* Hero: slightly heavier and tighter than V5. */
+  .hero {
+    padding-top: 94px;
+    padding-bottom: 128px;
+  }
+  .hero h1 {
+    font-size: clamp(74px, 6.35vw, 96px);
+    font-weight: 625;
+    line-height: .965;
+    letter-spacing: -.058em;
+  }
+  .hero-copy {
+    max-width: 820px;
+    font-size: 24px;
+    line-height: 1.53;
+  }
+  .button {
+    font-size: 16px;
+  }
+
+  /* Keep every image dominant over its accompanying text block. */
+  .project-row {
+    grid-template-columns: minmax(0, 1.23fr) minmax(390px, .77fr);
+    gap: 58px;
+    align-items: start;
+  }
+  .project-media {
+    aspect-ratio: 1.44 / 1;
+  }
+  .project-summary {
+    padding-top: 31px;
+  }
+  .project-meta {
+    margin-bottom: 22px;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .project-summary h3 {
+    margin-bottom: 18px;
+    font-size: 36px;
+    line-height: 1.08;
+    letter-spacing: -.035em;
+  }
+  .project-copy {
+    max-width: 440px;
+    margin-bottom: 24px;
+    font-size: 17px;
+    line-height: 1.54;
+  }
+  .project-tags {
+    margin-bottom: 26px;
+  }
+  .case-link {
+    font-size: 16px;
+  }
+
+  /* Keep the social links secondary to the email address. */
+  .footer-links a {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 721px) and (max-width: 1000px) {
+  .page-shell {
+    width: min(100% - 108px, 820px);
+  }
+  .hero h1 {
+    font-weight: 625;
+    line-height: .98;
+  }
+  .project-summary h3 {
+    font-size: 31px;
+  }
+  .project-copy {
+    font-size: 15.5px;
+  }
+  .footer-links a {
+    font-size: 12.5px;
+  }
+}
+
+/* V7 — wider canvas and closer Lovable typography/alignment */
+@media (min-width: 1001px) {
+  /* Expand the composition horizontally while retaining generous white space. */
+  .page-shell {
+    width: min(1160px, calc(100% - 128px));
+  }
+
+  /* Match the reference's compact, display-style hero lettering. */
+  .hero h1 {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: clamp(74px, 6.35vw, 96px);
+    font-weight: 700;
+    line-height: .91;
+    letter-spacing: -.064em;
+  }
+
+  .section-heading-row h2 {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -.035em;
+  }
+  .section-heading-row span {
+    font-size: 14px;
+    letter-spacing: .08em;
+  }
+
+  /* A wider row shortens the text block and keeps the imagery visually dominant. */
+  .project-row {
+    grid-template-columns: minmax(0, 1.22fr) minmax(420px, .78fr);
+    gap: 54px;
+  }
+  .project-summary {
+    padding-top: 13px;
+  }
+  .project-meta {
+    margin-bottom: 17px;
+    font-size: 10.5px;
+    line-height: 1.42;
+    letter-spacing: .075em;
+    white-space: nowrap;
+  }
+  .project-summary h3 {
+    margin-bottom: 16px;
+  }
+  .project-copy {
+    max-width: 455px;
+    margin-bottom: 21px;
+    font-size: 16.5px;
+    line-height: 1.49;
+  }
+  .project-tags {
+    margin-bottom: 22px;
+  }
+}
+
+@media (min-width: 721px) and (max-width: 1000px) {
+  .page-shell {
+    width: min(100% - 72px, 900px);
+  }
+  .hero h1 {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 700;
+    line-height: .93;
+    letter-spacing: -.06em;
+  }
+  .section-heading-row h2 { font-size: 19px; }
+  .section-heading-row span { font-size: 11px; }
+  .project-summary { padding-top: 10px; }
+  .project-meta {
+    font-size: 9px;
+    white-space: nowrap;
+  }
+}
+
+/* V8 — reference-matched hero type and equal project columns */
+@media (min-width: 1001px) {
+  /* The screenshot uses a compact neo-grotesk display face rather than Arial. */
+  .hero h1 {
+    font-family: "Inter Tight", "Inter", "Helvetica Neue", Arial, sans-serif;
+    font-size: clamp(74px, 6.15vw, 94px);
+    font-weight: 700;
+    line-height: .94;
+    letter-spacing: -.058em;
+    font-variation-settings: "opsz" 32;
+  }
+
+  /* Both sides of every project row now occupy exactly the same footprint. */
+  .project-row,
+  .project-row.project-row-reverse {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 52px;
+    align-items: start;
+  }
+  .project-row-reverse .project-media { order: 2; }
+  .project-row-reverse .project-summary { order: 1; }
+
+  .project-media,
+  .project-summary {
+    width: 100%;
+    min-width: 0;
+  }
+  .project-media {
+    aspect-ratio: 1.34 / 1;
+    overflow: hidden;
+  }
+  .project-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .project-summary {
+    box-sizing: border-box;
+    padding-top: 16px;
+  }
+
+  /* Larger than V7, but constrained to one line across every project. */
+  .project-meta {
+    width: 100%;
+    margin-bottom: 17px;
+    font-size: clamp(10.5px, .72vw, 12px);
+    line-height: 1.35;
+    letter-spacing: .055em;
+    white-space: nowrap;
+  }
+}
+
+@media (min-width: 721px) and (max-width: 1000px) {
+  .hero h1 {
+    font-family: "Inter Tight", "Inter", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 700;
+    line-height: .95;
+    letter-spacing: -.055em;
+  }
+  .project-row,
+  .project-row.project-row-reverse {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 34px;
+  }
+  .project-row-reverse .project-media { order: 2; }
+  .project-row-reverse .project-summary { order: 1; }
+  .project-media { aspect-ratio: 1.34 / 1; }
+  .project-meta {
+    font-size: 9.5px;
+    letter-spacing: .035em;
+    white-space: nowrap;
+  }
+}
+
+/* V9 — restore V7 hero and keep every project image equally dominant */
+@media (min-width: 1001px) {
+  /* Restore the V7 hero treatment exactly. */
+  .hero h1 {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: clamp(74px, 6.35vw, 96px);
+    font-weight: 700;
+    line-height: .91;
+    letter-spacing: -.064em;
+    font-variation-settings: normal;
+  }
+
+  /* Image remains the larger column on both left- and right-image rows. */
+  .project-row {
+    grid-template-columns: minmax(0, 1.34fr) minmax(390px, .66fr);
+    gap: 46px;
+    align-items: start;
+  }
+  .project-row.project-row-reverse {
+    grid-template-columns: minmax(390px, .66fr) minmax(0, 1.34fr);
+  }
+
+  .project-row-reverse .project-media { order: 2; }
+  .project-row-reverse .project-summary { order: 1; }
+
+  .project-media,
+  .project-summary {
+    width: 100%;
+    min-width: 0;
+  }
+
+  /* Identical image footprint in every row, regardless of side. */
+  .project-media {
+    aspect-ratio: 1.44 / 1;
+    overflow: hidden;
+  }
+  .project-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Text begins just below the image top and uses the full smaller column. */
+  .project-summary {
+    box-sizing: border-box;
+    padding-top: 13px;
+  }
+}
+
+@media (min-width: 721px) and (max-width: 1000px) {
+  .hero h1 {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 700;
+    line-height: .93;
+    letter-spacing: -.06em;
+    font-variation-settings: normal;
+  }
+
+  .project-row {
+    grid-template-columns: minmax(0, 1.25fr) minmax(260px, .75fr);
+    gap: 30px;
+  }
+  .project-row.project-row-reverse {
+    grid-template-columns: minmax(260px, .75fr) minmax(0, 1.25fr);
+  }
+  .project-row-reverse .project-media { order: 2; }
+  .project-row-reverse .project-summary { order: 1; }
+  .project-media { aspect-ratio: 1.44 / 1; }
+}
+
+
+/* V10 — wider canvas, V8-inspired hero, and single-line project titles */
+@media (min-width: 1001px) {
+  /* Extend the full composition toward both viewport edges. */
+  .page-shell {
+    width: min(1360px, calc(100% - 80px));
+  }
+
+  /* Bring the introductory label closer to the navigation. */
+  .hero {
+    padding-top: 58px;
+  }
+
+  /* Return to the V8 display face, enlarge it, and loosen the tracking. */
+  .hero h1 {
+    font-family: "Inter Tight", "Inter", "Helvetica Neue", Arial, sans-serif;
+    font-size: clamp(82px, 7.05vw, 108px);
+    font-weight: 700;
+    line-height: .94;
+    letter-spacing: -.035em;
+    font-variation-settings: "opsz" 32;
+  }
+
+  /* Preserve the image-dominant proportion while using the wider canvas. */
+  .project-row {
+    grid-template-columns: minmax(0, 1.34fr) minmax(420px, .66fr);
+    gap: 42px;
+  }
+  .project-row.project-row-reverse {
+    grid-template-columns: minmax(420px, .66fr) minmax(0, 1.34fr);
+  }
+
+  /* Keep standard project names on one line; LinkedIn intentionally uses two. */
+  .project-summary h3 {
+    white-space: nowrap;
+  }
+  .project-summary h3.project-title-long {
+    max-width: 430px;
+    white-space: normal;
+  }
+}
+
+@media (min-width: 721px) and (max-width: 1000px) {
+  .page-shell {
+    width: min(100% - 48px, 940px);
+  }
+  .hero {
+    padding-top: 58px;
+  }
+  .hero h1 {
+    font-family: "Inter Tight", "Inter", "Helvetica Neue", Arial, sans-serif;
+    font-size: clamp(62px, 8.4vw, 84px);
+    font-weight: 700;
+    line-height: .95;
+    letter-spacing: -.035em;
+    font-variation-settings: "opsz" 32;
+  }
+  .project-summary h3 {
+    white-space: normal;
+  }
+}
+
+/* V11 — rebalance canvas, hero scale, and values typography */
+@media (min-width: 1001px) {
+  /* Pull the composition back slightly from V10 while retaining a generous canvas. */
+  .page-shell {
+    width: min(1280px, calc(100% - 112px));
+  }
+
+  /* Keep the V8-inspired display style, but reduce its visual scale. */
+  .hero h1 {
+    font-size: clamp(76px, 6.45vw, 98px);
+  }
+
+  /* Give the black values section more presence and readability. */
+  .values-grid strong {
+    font-size: 27px;
+  }
+  .values-grid h3 {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+  .values-grid p {
+    font-size: 14.5px;
+    line-height: 1.62;
+  }
+}
+
+@media (min-width: 721px) and (max-width: 1000px) {
+  .page-shell {
+    width: min(100% - 64px, 900px);
+  }
+  .hero h1 {
+    font-size: clamp(58px, 7.7vw, 76px);
+  }
+  .values-grid strong {
+    font-size: 25px;
+  }
+  .values-grid h3 {
+    font-size: 14px;
+  }
+  .values-grid p {
+    font-size: 13px;
+    line-height: 1.58;
+  }
+}
+
+/* V13 — slightly narrower canvas with a more text-forward project grid */
+@media (min-width: 1001px) {
+  /* Pull the complete page in a little more than V12. */
+  .page-shell {
+    width: min(1220px, calc(100% - 144px));
+  }
+
+  /* Keep imagery dominant, but give project summaries noticeably more room. */
+  .project-row {
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr);
+    gap: 34px;
+  }
+
+  .project-row.project-row-reverse {
+    grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr);
+  }
+
+  .project-row-reverse .project-media { order: 2; }
+  .project-row-reverse .project-summary { order: 1; }
+
+  .project-media,
+  .project-summary {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .project-copy {
+    max-width: none;
+  }
+
+  .project-summary h3.project-title-long {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 721px) and (max-width: 1000px) {
+  .page-shell {
+    width: min(100% - 76px, 860px);
+  }
+
+  .project-row {
+    grid-template-columns: minmax(0, 1.08fr) minmax(0, .92fr);
+    gap: 28px;
+  }
+
+  .project-row.project-row-reverse {
+    grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr);
+  }
+
+  .project-copy {
+    max-width: none;
+  }
+}
+
+/* V14 — fuller project typography while preserving title line breaks */
+@media (min-width: 1001px) {
+  .project-meta {
+    margin-bottom: 18px;
+    font-size: 12px;
+    line-height: 1.42;
+    letter-spacing: .06em;
+    white-space: nowrap;
+  }
+
+  .project-summary h3 {
+    margin-bottom: 17px;
+    font-size: 38px;
+    line-height: 1.055;
+    letter-spacing: -.038em;
+  }
+
+  .project-summary h3.project-title-long {
+    max-width: 100%;
+    white-space: normal;
+  }
+
+  .project-copy {
+    max-width: none;
+    margin-bottom: 22px;
+    font-size: 17.5px;
+    line-height: 1.52;
+  }
+}
+
+@media (min-width: 721px) and (max-width: 1000px) {
+  .project-meta {
+    font-size: 10px;
+    line-height: 1.4;
+  }
+
+  .project-summary h3 {
+    font-size: 32px;
+    line-height: 1.07;
+  }
+
+  .project-copy {
+    font-size: 16px;
+    line-height: 1.52;
+  }
+}
+
+/* V15 — increase project breathing room and narrow the summary column */
+@media (min-width: 1001px) {
+  .project-row {
+    gap: 54px;
+  }
+
+  .project-summary {
+    width: 100%;
+    max-width: 465px;
+    justify-self: start;
+  }
+
+  .project-row-reverse .project-summary {
+    justify-self: end;
+  }
+
+  .project-copy {
+    max-width: 465px;
+  }
+}
+
+@media (min-width: 721px) and (max-width: 1000px) {
+  .project-row {
+    gap: 38px;
+  }
+
+  .project-summary {
+    width: 100%;
+    max-width: 390px;
+    justify-self: start;
+  }
+
+  .project-row-reverse .project-summary {
+    justify-self: end;
+  }
+
+  .project-copy {
+    max-width: 390px;
+  }
+}
+
+/* ABOUT REDESIGN — aligned with homepage visual system */
+.about-redesign {
+  margin: 0;
+  background: #fff;
+  color: #111;
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+}
+.about-redesign * { box-sizing: border-box; }
+.about-redesign .site-header { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,.96); border-bottom: 1px solid #ececec; }
+.about-redesign .nav-links .active { color: #111; font-weight: 700; }
+
+.about-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.12fr) minmax(300px, .68fr);
+  gap: clamp(64px, 8vw, 128px);
+  align-items: start;
+  padding-top: 76px;
+  padding-bottom: 88px;
+}
+.about-hero .eyebrow { margin: 0 0 24px; font-size: 13px; line-height: 1.3; letter-spacing: .12em; color: #8a8a8a; }
+.about-hero h1 {
+  margin: 0;
+  font-family: "Inter Tight", "Inter", sans-serif;
+  font-size: clamp(58px, 5vw, 78px);
+  line-height: .93;
+  letter-spacing: -.052em;
+  font-weight: 700;
+  color: #111;
+}
+.about-hero h1 span { color: #ff665b; }
+.about-lede { max-width: 660px; margin: 34px 0 0; font-size: 21px; line-height: 1.62; color: #777; }
+.about-portrait { margin: 0; aspect-ratio: .8 / 1; overflow: hidden; background: #eee; }
+.about-portrait img { width: 100%; height: 100%; display: block; object-fit: cover; filter: grayscale(100%); }
+
+.about-bio { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 48px; padding-top: 16px; padding-bottom: 100px; }
+.about-section-index { margin: 3px 0 0; font-size: 12px; letter-spacing: .12em; color: #999; }
+.about-bio-copy { max-width: 770px; padding-left: 48px; border-left: 1px solid #ddd; }
+.about-bio-copy p { margin: 0 0 24px; font-size: 18px; line-height: 1.72; color: #333; }
+.about-bio-copy p:last-child { margin-bottom: 0; }
+
+.about-capabilities { padding-top: 0; padding-bottom: 90px; }
+.about-section-heading { display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 22px; border-bottom: 1px solid #ddd; }
+.about-section-heading h2 { margin: 0; font-size: 22px; line-height: 1.2; font-weight: 700; letter-spacing: -.025em; }
+.about-section-heading span { font-size: 11px; letter-spacing: .16em; color: #999; }
+.capability-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 52px 84px; padding-top: 48px; }
+.capability-card { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 24px; align-items: start; }
+.capability-icon { width: 64px; height: 64px; display: grid; place-items: center; border-radius: 50%; background: #f6f6f6; font-size: 29px; color: #111; }
+.capability-card h3 { margin: 2px 0 11px; font-size: 21px; line-height: 1.2; font-weight: 700; letter-spacing: -.025em; }
+.capability-card p { margin: 0; max-width: 470px; font-size: 15.5px; line-height: 1.65; color: #666; }
+
+.about-philosophy {
+  min-height: 310px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 56px;
+  margin-bottom: 0;
+  padding: 48px 56px;
+  border-radius: 6px;
+  background: #101010;
+}
+.philosophy-kicker { margin: 0 0 24px; font-size: 12px; letter-spacing: .14em; color: #a8a8a8; }
+.about-philosophy h2 { margin: 0; font-size: clamp(34px, 3.2vw, 50px); line-height: 1.05; letter-spacing: -.04em; font-weight: 700; color: #fff; }
+.about-philosophy h2 span { color: #ff665b; }
+.philosophy-actions { display: flex; gap: 16px; flex: 0 0 auto; }
+.about-philosophy .button { min-width: 180px; display: inline-flex; align-items: center; justify-content: space-between; gap: 24px; padding: 18px 20px; border-radius: 3px; font-size: 14px; font-weight: 600; text-decoration: none; transition: .2s ease; }
+.button-light { color: #111; background: #fff; border: 1px solid #fff; }
+.button-light:hover { color: #ff665b; text-decoration: none; }
+.button-dark-outline { color: #fff; background: transparent; border: 1px solid #747474; }
+.button-dark-outline:hover { color: #ff665b; border-color: #ff665b; text-decoration: none; }
+
+.about-redesign .site-footer { padding-top: 86px; }
+
+@media (max-width: 1000px) {
+  .about-hero { grid-template-columns: 1fr .72fr; gap: 48px; padding-top: 64px; }
+  .about-hero h1 { font-size: clamp(50px, 6.5vw, 68px); }
+  .about-lede { font-size: 18px; }
+  .about-bio { grid-template-columns: 150px minmax(0,1fr); }
+  .about-bio-copy { padding-left: 32px; }
+  .capability-grid { gap: 44px 52px; }
+  .about-philosophy { align-items: flex-start; flex-direction: column; min-height: 0; }
+}
+
+@media (max-width: 720px) {
+  .about-hero { grid-template-columns: 1fr; gap: 44px; padding-top: 48px; padding-bottom: 64px; }
+  .about-hero h1 { font-size: clamp(46px, 13vw, 66px); }
+  .about-lede { font-size: 17px; }
+  .about-portrait { max-width: 520px; }
+  .about-bio { grid-template-columns: 1fr; gap: 24px; padding-bottom: 72px; }
+  .about-bio-copy { padding-left: 0; border-left: 0; }
+  .about-bio-copy p { font-size: 16px; }
+  .capability-grid { grid-template-columns: 1fr; gap: 40px; }
+  .capability-card { grid-template-columns: 54px minmax(0, 1fr); gap: 18px; }
+  .capability-icon { width: 54px; height: 54px; font-size: 24px; }
+  .about-philosophy { padding: 38px 28px; border-radius: 0; }
+  .philosophy-actions { width: 100%; flex-direction: column; }
+  .about-philosophy .button { width: 100%; }
+}
+
+/* ABOUT V17 — color portrait, corrected navigation states, full-bleed philosophy */
+.about-redesign a,
+.about-redesign a:visited {
+  text-decoration: none;
+}
+
+.about-redesign .wordmark,
+.about-redesign .wordmark:visited {
+  color: #111;
+}
+
+.about-redesign .nav-links a,
+.about-redesign .nav-links a:visited {
+  color: #777;
+  text-decoration: none;
+}
+
+.about-redesign .nav-links a.active,
+.about-redesign .nav-links a.active:visited {
+  color: #111;
+  font-weight: 700;
+}
+
+.about-redesign .wordmark:hover,
+.about-redesign .wordmark:focus-visible,
+.about-redesign .nav-links a:hover,
+.about-redesign .nav-links a:focus-visible,
+.about-redesign .nav-links a.active:hover,
+.about-redesign .nav-links a.active:focus-visible {
+  color: var(--coral);
+  text-decoration: none;
+}
+
+.about-redesign .about-portrait img {
+  filter: none;
+  object-position: center 46%;
+}
+
+.about-redesign .about-philosophy {
+  width: 100%;
+  min-height: 310px;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  background: #101010;
+}
+
+.about-redesign .about-philosophy-inner {
+  min-height: 310px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 56px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+@media (max-width: 1000px) {
+  .about-redesign .about-philosophy-inner {
+    min-height: 0;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 700px) {
+  .about-redesign .about-philosophy-inner {
+    padding-top: 38px;
+    padding-bottom: 38px;
+  }
+}
+
+/* Current-page navigation state shared with the About page. */
+.home-redesign .nav-links a,
+.home-redesign .nav-links a:visited {
+  color: #777;
+}
+
+.home-redesign .nav-links a.active,
+.home-redesign .nav-links a.active:visited {
+  color: #111;
+  font-weight: 700;
+}
+
+.home-redesign .nav-links a:hover,
+.home-redesign .nav-links a:focus-visible,
+.home-redesign .nav-links a.active:hover,
+.home-redesign .nav-links a.active:focus-visible {
+  color: var(--coral);
+}
+
+
+/* V18 tweaks */
+.about-philosophy{padding:120px 0;}
+.button-dark-outline span{color:#fff;transition:color .25s ease;}
+.button-dark-outline:hover span{color:var(--accent-color,#ff6f61);}
+.site-footer{align-items:end;}
+.footer-right{display:flex;align-items:flex-end;padding-bottom:10px;}
+.footer-links{align-items:flex-end;}
+
+/* About page: taller philosophy band and tighter button label/arrow spacing. */
+.about-redesign .about-philosophy,
+.about-redesign .about-philosophy-inner {
+  min-height: 390px;
+}
+
+.about-redesign .about-philosophy-inner {
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+
+.about-redesign .about-philosophy .button {
+  justify-content: center;
+  gap: 10px;
+}
+
+@media (max-width: 1000px) {
+  .about-redesign .about-philosophy,
+  .about-redesign .about-philosophy-inner {
+    min-height: 0;
+  }
+
+  .about-redesign .about-philosophy-inner {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+
+@media (max-width: 700px) {
+  .about-redesign .about-philosophy-inner {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
 }

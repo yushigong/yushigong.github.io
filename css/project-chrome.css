@@ -1,0 +1,131 @@
+/* v36 — shared project chrome locked to the homepage's final computed styles */
+@media (min-width: 1001px) {
+  body.case-study-redesign .page-shell,
+  body.case-study-redesign .case-header-section-container,
+  body.case-study-redesign .case-meta-wrap,
+  body.case-study-redesign .case-study-wider-container,
+  body.case-study-redesign .other-projects-section {
+    width: min(1220px, calc(100% - 144px)) !important;
+    max-width: none !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  body.case-study-redesign .site-header {
+    width: 100% !important;
+  }
+
+  body.case-study-redesign .site-nav.page-shell {
+    min-height: 76px !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+  }
+
+  body.case-study-redesign .site-nav .wordmark {
+    font-family: "Inter", "Helvetica Neue", Arial, sans-serif !important;
+    font-size: 17px !important;
+    line-height: 1 !important;
+    font-weight: 800 !important;
+    letter-spacing: -.045em !important;
+  }
+
+  body.case-study-redesign .site-nav .nav-links {
+    display: flex !important;
+    align-items: center !important;
+    gap: 46px !important;
+  }
+
+  body.case-study-redesign .site-nav .nav-links a {
+    font-family: "Inter", "Helvetica Neue", Arial, sans-serif !important;
+    font-size: 14px !important;
+    line-height: 1 !important;
+    font-weight: 650 !important;
+    letter-spacing: .055em !important;
+  }
+
+  body.case-study-redesign .site-footer.page-shell {
+    min-height: 330px !important;
+    padding: 88px 0 56px !important;
+    display: flex !important;
+    align-items: flex-end !important;
+    justify-content: space-between !important;
+    box-sizing: border-box !important;
+  }
+
+  body.case-study-redesign .site-footer .footer-kicker {
+    margin: 0 0 23px !important;
+    font-family: "Inter", "Helvetica Neue", Arial, sans-serif !important;
+    font-size: 13px !important;
+    line-height: 1 !important;
+    font-weight: 400 !important;
+    letter-spacing: .095em !important;
+    text-transform: uppercase !important;
+  }
+
+  body.case-study-redesign .site-footer .footer-email {
+    display: inline-block !important;
+    font-family: "Inter Tight", "Inter", "Helvetica Neue", Arial, sans-serif !important;
+    font-size: 42px !important;
+    line-height: 1.05 !important;
+    font-weight: 750 !important;
+    letter-spacing: -.04em !important;
+  }
+
+  body.case-study-redesign .site-footer .copyright {
+    margin: 74px 0 0 !important;
+    font-family: "Inter", "Helvetica Neue", Arial, sans-serif !important;
+    font-size: 12px !important;
+    line-height: 1 !important;
+    font-weight: 400 !important;
+  }
+
+  body.case-study-redesign .site-footer .footer-right {
+    min-height: 188px !important;
+    padding: 54px 0 10px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-end !important;
+    justify-content: space-between !important;
+    box-sizing: border-box !important;
+  }
+
+  body.case-study-redesign .site-footer .footer-links {
+    display: flex !important;
+    align-items: center !important;
+    gap: 44px !important;
+  }
+
+  body.case-study-redesign .site-footer .footer-links a {
+    font-family: "Inter", "Helvetica Neue", Arial, sans-serif !important;
+    font-size: 14px !important;
+    line-height: 1 !important;
+    font-weight: 600 !important;
+    letter-spacing: .075em !important;
+  }
+
+  body.case-study-redesign .site-footer .footer-right > p {
+    margin: 0 !important;
+    font-family: "Inter", "Helvetica Neue", Arial, sans-serif !important;
+    font-size: 12px !important;
+    line-height: 1 !important;
+    font-weight: 400 !important;
+  }
+}
+
+/* Other-project metadata uses the same horizontal rule length as section labels. */
+body.case-study-redesign .other-projects-section .design-date {
+  display: flex !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  gap: 12px !important;
+}
+body.case-study-redesign .other-projects-section .design-date .meta-rule {
+  display: inline-block !important;
+  flex: 0 0 40px !important;
+  width: 40px !important;
+  height: 1px !important;
+  background: currentColor !important;
+  opacity: .45 !important;
+}

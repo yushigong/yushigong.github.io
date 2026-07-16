@@ -1,0 +1,152 @@
+/* v37 — final project-page alignment fixes */
+@media (min-width: 1001px) {
+  /* Keep every wide project element on one shared canvas. */
+  body.case-study-redesign .site-nav.page-shell,
+  body.case-study-redesign .site-footer.page-shell,
+  body.case-study-redesign .case-header-section-container,
+  body.case-study-redesign .case-meta-wrap,
+  body.case-study-redesign .case-study-wider-container,
+  body.case-study-redesign .other-projects-section {
+    width: min(1220px, calc(100% - 144px)) !important;
+    max-width: none !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Navigation matches the homepage's final desktop type scale. */
+  body.case-study-redesign .site-nav.page-shell {
+    min-height: 76px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+  }
+  body.case-study-redesign .site-nav .wordmark {
+    font-family: "Inter", "Helvetica Neue", Arial, sans-serif !important;
+    font-size: 17px !important;
+    line-height: 1 !important;
+    font-weight: 800 !important;
+    letter-spacing: -0.045em !important;
+  }
+  body.case-study-redesign .site-nav .nav-links {
+    display: flex !important;
+    align-items: center !important;
+    gap: 46px !important;
+  }
+  body.case-study-redesign .site-nav .nav-links a {
+    font-family: "Inter", "Helvetica Neue", Arial, sans-serif !important;
+    font-size: 14px !important;
+    line-height: 1 !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.055em !important;
+  }
+
+  /* Give the title block a little more air above and below. */
+  body.case-study-redesign .case-header-section-container {
+    padding-top: 64px !important;
+  }
+  body.case-study-redesign .case-project-meta {
+    margin-bottom: 20px !important;
+  }
+  body.case-study-redesign .case-study-largest-header {
+    margin-top: 0 !important;
+    margin-bottom: 24px !important;
+  }
+  body.case-study-redesign .case-study-large-header1 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  body.case-study-redesign .case-header-section-container > .large-spacing {
+    display: block !important;
+    height: 58px !important;
+  }
+
+  /* Other-project metadata: same color, weight and type treatment throughout. */
+  body.case-study-redesign .other-projects-section .design-date,
+  body.case-study-redesign .other-projects-section .design-date > span {
+    font-family: "Inter", "Helvetica Neue", Arial, sans-serif !important;
+    font-size: 16px !important;
+    line-height: 1.35 !important;
+    font-weight: 500 !important;
+    letter-spacing: 0 !important;
+    color: #777 !important;
+  }
+  body.case-study-redesign .other-projects-section .design-date {
+    display: flex !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    gap: 14px !important;
+  }
+  body.case-study-redesign .other-projects-section .design-date .meta-rule {
+    flex: 0 0 40px !important;
+    width: 40px !important;
+    height: 1px !important;
+    background: #aaa !important;
+    opacity: 1 !important;
+  }
+
+  /* Homepage footer geometry and typography, with the links centered on the email line. */
+  body.case-study-redesign .site-footer.page-shell {
+    min-height: 330px !important;
+    padding-top: 88px !important;
+    padding-bottom: 56px !important;
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) auto !important;
+    column-gap: 64px !important;
+    align-items: stretch !important;
+  }
+  body.case-study-redesign .site-footer > div:first-child,
+  body.case-study-redesign .site-footer .footer-right {
+    min-height: 186px !important;
+    padding: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    box-sizing: border-box !important;
+  }
+  body.case-study-redesign .site-footer > div:first-child {
+    align-items: flex-start !important;
+  }
+  body.case-study-redesign .site-footer .footer-right {
+    align-items: flex-end !important;
+  }
+  body.case-study-redesign .site-footer .footer-kicker {
+    margin: 0 0 23px !important;
+    font-family: "Inter", "Helvetica Neue", Arial, sans-serif !important;
+    font-size: 13px !important;
+    line-height: 1 !important;
+    font-weight: 400 !important;
+    letter-spacing: 0.095em !important;
+  }
+  body.case-study-redesign .site-footer .footer-email {
+    margin: 0 !important;
+    font-family: "Inter Tight", "Inter", "Helvetica Neue", Arial, sans-serif !important;
+    font-size: 42px !important;
+    line-height: 1.05 !important;
+    font-weight: 750 !important;
+    letter-spacing: -0.04em !important;
+  }
+  body.case-study-redesign .site-footer .footer-links {
+    margin-top: 49px !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 44px !important;
+  }
+  body.case-study-redesign .site-footer .footer-links a {
+    font-family: "Inter", "Helvetica Neue", Arial, sans-serif !important;
+    font-size: 14px !important;
+    line-height: 1 !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.075em !important;
+  }
+  body.case-study-redesign .site-footer .copyright,
+  body.case-study-redesign .site-footer .footer-right > p {
+    margin-top: auto !important;
+    margin-bottom: 0 !important;
+    font-family: "Inter", "Helvetica Neue", Arial, sans-serif !important;
+    font-size: 12px !important;
+    line-height: 1 !important;
+    font-weight: 400 !important;
+  }
+}
