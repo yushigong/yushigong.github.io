@@ -150,3 +150,117 @@
     font-weight: 400 !important;
   }
 }
+
+/* DPoD Quorum case-study refinements */
+body.quorum-case-page .quorum-meta-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  gap: 24px !important;
+}
+
+body.quorum-case-page .quorum-meta-grid .case-meta-item {
+  min-width: 0;
+}
+
+body.quorum-case-page .case-study-subheading {
+  margin: 42px 0 0;
+  font-family: "Inter Tight", "Inter", "Helvetica Neue", Arial, sans-serif;
+  font-size: 22px;
+  line-height: 1.25;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #1f1f1f;
+}
+
+body.quorum-case-page .case-study-paragraph + .case-study-paragraph {
+  margin-top: 26px !important;
+}
+
+/* Keep a clear blank line between consecutive paragraphs on every case study. */
+body.case-study-redesign.unified-case-page .case-study-paragraph + .case-study-paragraph {
+  margin-top: 26px !important;
+}
+
+body.quorum-case-page .quorum-tight-heading + img,
+body.quorum-case-page img.quorum-tight-visual {
+  margin-top: 16px !important;
+}
+
+body.quorum-case-page .quorum-visual-wide {
+  position: relative;
+  left: 50%;
+  width: min(1180px, calc(100vw - 48px)) !important;
+  max-width: none !important;
+  transform: translateX(-50%);
+}
+
+body.quorum-case-page .quorum-flow-visual {
+  width: min(1320px, calc(100vw - 32px)) !important;
+}
+
+body.quorum-case-page .quorum-impact-grid,
+body.dpod-redesign-case-page .quorum-impact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin: 42px 0 48px;
+}
+
+body.quorum-case-page .quorum-impact-item,
+body.dpod-redesign-case-page .quorum-impact-item {
+  min-height: 150px;
+  padding: 28px 24px;
+  border-top: 4px solid #ff6f67;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 12px 34px rgba(30, 30, 30, 0.08);
+}
+
+body.quorum-case-page .quorum-impact-item strong,
+body.quorum-case-page .quorum-impact-item span,
+body.dpod-redesign-case-page .quorum-impact-item strong,
+body.dpod-redesign-case-page .quorum-impact-item span {
+  display: block;
+}
+
+body.quorum-case-page .quorum-impact-item strong,
+body.dpod-redesign-case-page .quorum-impact-item strong {
+  margin-bottom: 12px;
+  font-family: "Inter Tight", "Inter", "Helvetica Neue", Arial, sans-serif;
+  font-size: 38px;
+  line-height: 1;
+  font-weight: 750;
+  letter-spacing: -0.04em;
+  color: #1f1f1f;
+}
+
+body.quorum-case-page .quorum-impact-item span,
+body.dpod-redesign-case-page .quorum-impact-item span {
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.45;
+  color: #595959;
+}
+
+@media (max-width: 1100px) {
+  body.quorum-case-page .quorum-meta-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (max-width: 760px) {
+  body.quorum-case-page .quorum-meta-grid,
+  body.quorum-case-page .quorum-impact-grid,
+  body.dpod-redesign-case-page .quorum-impact-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  body.quorum-case-page .quorum-visual-wide,
+  body.quorum-case-page .quorum-flow-visual {
+    width: calc(100vw - 24px) !important;
+  }
+
+  body.quorum-case-page .quorum-impact-item,
+  body.dpod-redesign-case-page .quorum-impact-item {
+    min-height: 0;
+  }
+}

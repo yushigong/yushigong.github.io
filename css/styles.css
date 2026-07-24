@@ -2023,6 +2023,24 @@ body.home-redesign {
 .footer-right{display:flex;align-items:flex-end;padding-bottom:10px;}
 .footer-links{align-items:flex-end;}
 
+/* Keep the complete contact footer left-aligned on mobile across every page. */
+@media (max-width: 720px) {
+  .site-footer {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .site-footer > div {
+    width: 100%;
+  }
+
+  .footer-right,
+  .footer-links {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}
+
 /* About page: taller philosophy band and tighter button label/arrow spacing. */
 .about-redesign .about-philosophy,
 .about-redesign .about-philosophy-inner {
@@ -2064,4 +2082,82 @@ body.home-redesign {
   color: #fff;
   background: var(--coral);
   border-color: var(--coral);
+}
+/* Homepage project hierarchy */
+.home-redesign .other-work-section {
+  position: relative;
+  margin-top: 86px;
+  padding-top: 0;
+  padding-bottom: 92px;
+  background: #fff;
+  box-shadow: none;
+  clip-path: none;
+}
+
+.home-redesign #selected-work {
+  padding-bottom: 0;
+}
+
+.home-redesign #selected-work .project-row:last-child {
+  margin-bottom: 0;
+}
+
+.home-redesign .other-work-section .section-heading-row {
+  margin-bottom: 56px;
+}
+
+/* Accessible scroll reveal used across portfolio pages */
+.reveal-enabled .scroll-reveal {
+  opacity: 0;
+  transform: translate3d(0, 34px, 0);
+  transition:
+    opacity 700ms cubic-bezier(.2, .7, .2, 1) var(--reveal-delay, 0ms),
+    transform 700ms cubic-bezier(.2, .7, .2, 1) var(--reveal-delay, 0ms);
+  will-change: opacity, transform;
+}
+
+.reveal-enabled .scroll-reveal.is-revealed {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  will-change: auto;
+}
+
+.reveal-enabled .scroll-reveal.scroll-reveal-preserve-transform {
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: opacity 700ms cubic-bezier(.2, .7, .2, 1) var(--reveal-delay, 0ms);
+}
+
+.reveal-enabled .scroll-reveal.scroll-reveal-preserve-transform.is-revealed {
+  opacity: 1;
+  transform: translateX(-50%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-enabled .scroll-reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .reveal-enabled .scroll-reveal.scroll-reveal-preserve-transform,
+  .reveal-enabled .scroll-reveal.scroll-reveal-preserve-transform.is-revealed {
+    opacity: 1;
+    transform: translateX(-50%);
+    transition: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .home-redesign .other-work-section {
+    margin-top: 86px;
+    padding-top: 0;
+    padding-bottom: 64px;
+  }
+}
+
+@media (min-width: 1001px) {
+  .home-redesign .other-work-section {
+    margin-top: 126px;
+  }
 }
