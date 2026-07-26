@@ -10,8 +10,8 @@
   var selectors = [
     ".case-header-section-container > *",
     ".case-meta-item",
-    ".case-study-section-info-container > *:not(.large-spacing):not(.paragraph-spacing)",
-    ".case-study-section-info-container-image-below > *:not(.large-spacing):not(.paragraph-spacing)",
+    ".case-study-section-info-container > *:not(.large-spacing):not(.paragraph-spacing):not(.ccc-motion):not(.ccc-workflow-gallery)",
+    ".case-study-section-info-container-image-below > *:not(.large-spacing):not(.paragraph-spacing):not(.ccc-motion):not(.ccc-workflow-gallery)",
     ".hmw-inner > *",
     ".project-cta-inner > *",
     ".other-projects-section .case-study-card",
@@ -26,6 +26,19 @@
   ];
 
   var items = Array.prototype.slice.call(document.querySelectorAll(selectors.join(",")));
+
+  // Give every content image in the two newest DPoD case studies a clear upward reveal.
+  var caseImages = Array.prototype.slice.call(document.querySelectorAll(
+    ".quorum-case-page .case-study-section-info-container img, " +
+    ".quorum-case-page .case-study-section-info-container-image-below img, " +
+    ".dpod-redesign-case-page .case-study-section-info-container img:not(.ccc-motion-asset), " +
+    ".dpod-redesign-case-page .case-study-section-info-container-image-below img:not(.ccc-motion-asset)"
+  ));
+  caseImages.forEach(function (img) {
+    img.classList.add("case-image-rise");
+    if (items.indexOf(img) === -1) items.push(img);
+  });
+
   if (!items.length) return;
 
   document.documentElement.classList.add("reveal-enabled");
@@ -36,6 +49,11 @@
       item.classList.add("scroll-reveal-preserve-transform");
     }
     item.style.setProperty("--reveal-delay", Math.min((index % 4) * 55, 165) + "ms");
+  });
+
+  // Make the initial HMW read as a deliberate two-step reveal.
+  document.querySelectorAll(".hmw-band-initial .hmw-inner > *").forEach(function (item, index) {
+    item.style.setProperty("--reveal-delay", (index * 130) + "ms");
   });
 
   var observer = new IntersectionObserver(function (entries) {

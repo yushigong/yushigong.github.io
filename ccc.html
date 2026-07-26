@@ -18,7 +18,7 @@
 <script crossorigin="anonymous" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
 <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" rel="stylesheet">
 <script crossorigin="anonymous" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
-<link href="css/styles.css" rel="stylesheet">
+<link href="css/styles.css?v=3" rel="stylesheet">
 <link href="css/pages-styles.css" rel="stylesheet">
 <link href="css/project-chrome.css" rel="stylesheet">
 <link href="css/project-final.css" rel="stylesheet">
@@ -52,9 +52,9 @@
 </header>
 <div class="container-fluid main-body">
 <!-- HEADING+IMAGE  -->
-<div class="case-header-section-container"><p class="case-project-meta"><span>2025</span><span aria-hidden="true">·</span><span>Enterprise Platform Redesign</span><span aria-hidden="true">·</span><span>Team Project</span></p>
+<div class="case-header-section-container"><p class="case-project-meta"><span>2025</span><span aria-hidden="true">—</span><span>Platform Redesign</span><span aria-hidden="true">·</span><span>Enterprise Project</span></p>
 <h1 class="case-study-largest-header">Thales DPoD Redesign</h1>
-<h2 class="case-study-large-header1">Building a scalable design-system foundation for complex enterprise security workflows</h2>
+<h2 class="case-study-large-header1">Redesigning DPoD around a scalable design-system foundation for complex enterprise security workflows</h2>
 <div class="large-spacing"></div>
 <img alt="" class="img-responsive" src="img/cover-dpod-redesign-final.png">
 </div>
@@ -63,7 +63,7 @@
 <div class="case-meta-grid">
 <div class="case-meta-item">
 <h3 class="case-study-small-title">Team</h3>
-<p class="case-study-small-text">Product Designers, Product Managers, Engineers</p>
+<p class="case-study-small-text">Product Designer (myself),<br>Product Manager, Developers</p>
 </div>
 <div class="case-meta-item">
 <h3 class="case-study-small-title">Tools</h3>
@@ -82,9 +82,12 @@
 <div class="case-study-section-container shopify-alt-grey">
 <div class="case-study-section-info-container">
 <h3 class="case-study-small-header"><span class="section-number">01</span><span aria-hidden="true" class="section-rule"></span><span class="section-name">OVERVIEW</span></h3>
-<h1 class="case-study-large-header">Creating a shared foundation for a complex security platform</h1>
-<p class="case-study-paragraph">DPoD is Thales’ cloud-based platform for deploying and managing cryptographic services that help organizations protect sensitive data and encryption keys. As the product grew, its interface had accumulated custom patterns that no longer aligned with the broader Thales security portfolio.</p>
-<p class="case-study-paragraph">I helped lead a six-month platform redesign that aligned DPoD with the Imperva design system while preserving the workflows enterprise customers already relied on. The work combined a product-wide UI audit, design-system gap analysis, reusable component contributions, and the redesign of four critical service-management surfaces.</p>
+<h1 class="case-study-large-header">Redesigning DPoD through a shared enterprise design system</h1>
+<p class="case-study-paragraph">DPoD is Thales’ cloud-based platform for deploying and managing cryptographic services that help organizations protect sensitive data and encryption keys. As the product evolved, its interface accumulated custom patterns that no longer aligned with the broader Thales security portfolio.</p>
+<p class="case-study-paragraph">I led a six-month, product-wide redesign that aligned DPoD with the Imperva design system while preserving the complex enterprise workflows customers relied on. The work included a comprehensive UI audit, design-system gap analysis, reusable component contributions, and the redesign of DPoD’s core product experience. This case study highlights four representative workflows to demonstrate how the new system was applied.</p>
+<figure class="ccc-impact-motion ccc-motion">
+<img alt="Impact at a glance: product-wide redesign, more than 20 reusable components, approximately 40 percent projected efficiency gain, and one shared product language" class="ccc-motion-asset" src="img/ccc-impact-at-a-glance-v2.png">
+</figure>
 </div>
 </div>
 
@@ -93,8 +96,8 @@
 <h3 class="case-study-small-header"><span class="section-number">02</span><span aria-hidden="true" class="section-rule"></span><span class="section-name">WHAT PROMPTED THIS INTERVENTION</span></h3>
 <h1 class="case-study-large-header">Independent product evolution created a fragmented experience</h1>
 <p class="case-study-paragraph">DPoD and Imperva had evolved independently within the same security ecosystem. Their typography, navigation, components, and interaction patterns looked and behaved differently, while many DPoD interfaces relied on product-specific UI rather than shared system components.</p>
-<p class="case-study-paragraph">This fragmentation made the experience less predictable for users and created unnecessary design and engineering overhead. Each new workflow risked introducing another local pattern instead of strengthening a reusable product foundation.</p>
-<img alt="Comparison showing inconsistent interface patterns between DPoD and Imperva" class="img-responsive" src="img/ccc-problem.png">
+<p class="case-study-paragraph">This inconsistency made the product less predictable for users and forced design and engineering teams to maintain parallel solutions for similar needs. Without a shared foundation, every new workflow risked adding another local pattern.</p>
+<img alt="Wide comparison of the original DPoD and Imperva interfaces, emphasizing inconsistent navigation, typography, tables, and status states" class="img-responsive ccc-problem-visual ccc-rounded-visual" src="img/ccc-problem-final-v2.png">
 </div>
 </div>
 
@@ -108,7 +111,9 @@
 <li><strong>Custom patterns increased maintenance.</strong> Similar interface needs were repeatedly solved through product-specific components.</li>
 <li><strong>The shared system had coverage gaps.</strong> Some DPoD workflows could not be supported through direct component adoption alone.</li>
 </ul>
-<img alt="Audit of DPoD foundations, components, and interface patterns" class="img-responsive" src="img/ccc-audit.png">
+<figure class="ccc-audit-motion ccc-motion">
+<img alt="The audit identified inconsistent foundations, custom product patterns, and gaps in shared design-system coverage" class="ccc-motion-asset" src="img/ccc-audit-story-final.png">
+</figure>
 </div>
 </div>
 
@@ -119,80 +124,81 @@
 </div>
 </section>
 
-<div class="case-study-section-container shopify-alt-grey">
-<div class="case-study-section-info-container">
-<h3 class="case-study-small-header"><span class="section-number">05</span><span aria-hidden="true" class="section-rule"></span><span class="section-name">DESIGN PRINCIPLES</span></h3>
-<h1 class="case-study-large-header">Four principles guided the redesign</h1>
-<ul class="case-study-list">
-<li><strong>Adopt before inventing.</strong> Use established Imperva patterns whenever they could support the workflow effectively.</li>
-<li><strong>Preserve workflow clarity.</strong> Improve the interface without disrupting familiar service-management tasks.</li>
-<li><strong>Extend the system deliberately.</strong> Create new patterns only when a validated product need was not already covered.</li>
-<li><strong>Design for reuse.</strong> Define components, variants, and states that could support future workflows beyond one screen.</li>
-</ul>
-</div>
-</div>
-
 <div class="case-study-section-container">
 <div class="case-study-section-info-container">
-<h3 class="case-study-small-header"><span class="section-number">06</span><span aria-hidden="true" class="section-rule"></span><span class="section-name">DESIGN STRATEGY</span></h3>
+<h3 class="case-study-small-header"><span class="section-number">05</span><span aria-hidden="true" class="section-rule"></span><span class="section-name">DESIGN STRATEGY</span></h3>
 <h1 class="case-study-large-header">Moving from interface audit to system-led redesign</h1>
-<p class="case-study-paragraph">I structured the work as a four-part system migration: audit the current interface, map DPoD patterns to the shared library, contribute missing components and variants, and apply the expanded system to real product workflows.</p>
-<p class="case-study-paragraph">This sequence allowed the team to make redesign decisions from evidence rather than visual preference. It also connected every system contribution to a concrete product requirement.</p>
-<img alt="Four-step strategy covering UI audit, gap analysis, component contribution, and product redesign" class="img-responsive" src="img/ccc-strategy.png">
+<p class="case-study-paragraph">I structured the redesign around four stages: audit the existing DPoD experience, map product patterns to the shared Imperva system, contribute missing components and variants, and apply the expanded system across complete workflows.</p>
+<p class="case-study-paragraph">Three principles guided decisions throughout the process: adopt established patterns where they supported the workflow, preserve the clarity of familiar enterprise tasks, and extend the system only when DPoD introduced a validated product need.</p>
+<img alt="Four-stage DPoD design-system migration from interface audit and pattern mapping to component contribution and workflow application" class="img-responsive ccc-rounded-visual" src="img/ccc-strategy-final-v2.png">
 </div>
 </div>
 
 <div class="case-study-section-container shopify-alt-grey">
 <div class="case-study-section-info-container">
-<h3 class="case-study-small-header"><span class="section-number">07</span><span aria-hidden="true" class="section-rule"></span><span class="section-name">DESIGN PROPOSAL</span></h3>
+<h3 class="case-study-small-header"><span class="section-number">06</span><span aria-hidden="true" class="section-rule"></span><span class="section-name">DESIGN PROPOSAL</span></h3>
 <h1 class="case-study-large-header">A shared system tailored to DPoD’s product reality</h1>
-<p class="case-study-paragraph">Rather than treating the redesign as a one-time visual refresh, I proposed a system-led model. Existing Imperva components would establish the common foundation, while carefully defined additions would support DPoD-specific navigation, data density, service states, and task flows.</p>
-<p class="case-study-paragraph">The proposal connected three layers of work: shared foundations, reusable product components, and complete service-management experiences. Together, they created consistency at both the interface and implementation level.</p>
-<img alt="Three-layer design proposal connecting shared foundations, DPoD-ready components, and product workflows" class="img-responsive" src="img/ccc-design-proposal.png">
+<p class="case-study-paragraph">Rather than treating the work as a one-time visual refresh, I proposed a three-layer model: shared Imperva foundations, reusable components adapted for DPoD, and complete service-management workflows.</p>
+<p class="case-study-paragraph">This approach created consistency at the system level while preserving the navigation, data density, service states, and task structure required by an enterprise security platform.</p>
+<img alt="System proposal showing shared Imperva foundations and DPoD-specific extensions supporting four connected DPoD workflows" class="img-responsive ccc-rounded-visual" src="img/ccc-proposal-final-v2.png">
 </div>
 </div>
 
 <div class="case-study-section-container">
 <div class="case-study-section-info-container">
-<h3 class="case-study-small-header"><span class="section-number">08</span><span aria-hidden="true" class="section-rule"></span><span class="section-name">DESIGN DECISION #1</span></h3>
-<h1 class="case-study-large-header">Use the shared system selectively</h1>
-<p class="case-study-paragraph">The gap analysis showed that design-system adoption was not binary. Some foundations and components were fully supported, while navigation, tables, tabs, and empty states required adaptation or additional coverage.</p>
-<p class="case-study-paragraph">I used this mapping to determine which patterns could be adopted directly and which needed to preserve DPoD’s existing task structure. This created consistency across products without forcing DPoD into interaction patterns that did not fit its workflows.</p>
-<img alt="Gap analysis comparing DPoD patterns with Imperva design-system coverage" class="img-responsive" src="img/ccc-analysis.png">
+<h3 class="case-study-small-header"><span class="section-number">07</span><span aria-hidden="true" class="section-rule"></span><span class="section-name">DESIGN DECISION #1</span></h3>
+<h1 class="case-study-large-header">Choose the right migration path for each product pattern</h1>
+<p class="case-study-paragraph">Adopting the shared system was not a binary decision. Some foundations and controls could be reused directly, while navigation, data-heavy tables, service states, and task-specific interactions required adaptation or additional coverage.</p>
+<p class="case-study-paragraph">I evaluated each pattern through an adopt, adapt, or extend framework. This allowed DPoD to gain consistency without forcing specialized enterprise workflows into components that were not designed to support them.</p>
+<img alt="Simplified adopt, adapt, and extend framework showing how DPoD selectively applied the shared design system" class="img-responsive ccc-rounded-visual" src="img/ccc-adoption-map-final-v2.png">
 </div>
 </div>
 
 <div class="case-study-section-container shopify-alt-grey">
 <div class="case-study-section-info-container">
-<h3 class="case-study-small-header"><span class="section-number">09</span><span aria-hidden="true" class="section-rule"></span><span class="section-name">DESIGN DECISION #2</span></h3>
-<h1 class="case-study-large-header">Extend the system instead of creating local exceptions</h1>
-<p class="case-study-paragraph">Several recurring DPoD needs were not supported by the shared library. Solving them as product-specific exceptions would have recreated the fragmentation the redesign was intended to address.</p>
-<p class="case-study-paragraph">I designed reusable navigation, table, tab, icon, and state variations with defined structures and behaviors. These additions allowed DPoD to meet its product requirements while expanding the shared system for future enterprise workflows.</p>
-<img alt="Reusable navigation, table, tab, icon, typography, and color contributions" class="img-responsive" src="img/ccc-system.png">
+<h3 class="case-study-small-header"><span class="section-number">08</span><span aria-hidden="true" class="section-rule"></span><span class="section-name">DESIGN DECISION #2</span></h3>
+<h1 class="case-study-large-header">Contribute reusable solutions instead of creating DPoD-only exceptions</h1>
+<p class="case-study-paragraph">When the shared system could not support a validated DPoD requirement, the fastest solution would have been to create another local component. However, that would reproduce the fragmentation the redesign was intended to resolve.</p>
+<p class="case-study-paragraph">Instead, I defined reusable navigation, table, tab, icon, and state variants and contributed them back to the shared library. This supported DPoD’s immediate workflows while expanding the Imperva design system for future enterprise use cases.</p>
+<figure class="ccc-figma-motion ccc-motion">
+<img alt="Figma design-system library showing DPoD foundations, reusable components, and component variants" class="ccc-motion-asset" src="img/ccc-figma-library-final.png">
+</figure>
 </div>
 </div>
 
 <div class="case-study-section-container">
 <div class="case-study-section-info-container">
-<h3 class="case-study-small-header"><span class="section-number">10</span><span aria-hidden="true" class="section-rule"></span><span class="section-name">APPLYING THE SYSTEM</span></h3>
-<h1 class="case-study-large-header">Redesign complete workflows—not isolated screens</h1>
-<p class="case-study-paragraph">I applied the expanded system across four critical DPoD surfaces: Service Marketplace, My Services, Service Details, and Add Service.</p>
-<p class="case-study-paragraph">Working at the workflow level ensured that the redesign improved visual hierarchy and interaction consistency without changing the underlying task model users already understood. It also revealed where shared components needed additional flexibility before implementation.</p>
-<img alt="Before-and-after redesigns across key DPoD service-management interfaces" class="img-responsive" src="img/ccc-prototype.png">
+<h3 class="case-study-small-header"><span class="section-number">09</span><span aria-hidden="true" class="section-rule"></span><span class="section-name">DESIGN DECISION #3</span></h3>
+<h1 class="case-study-large-header">Scale the redesign across DPoD—not just individual screens</h1>
+<p class="case-study-paragraph">A scalable system could not be validated through isolated interface updates. It needed to support the connected workflows, information density, product states, and task structures found throughout DPoD.</p>
+<p class="case-study-paragraph">I applied the redesigned system across the broader product experience. This case study highlights four representative workflows—Service Marketplace, My Services, Service Details, and Add Service—to demonstrate how the new foundations and components translated into real product use.</p>
+<div class="ccc-workflow-gallery">
+<article class="ccc-workflow ccc-motion ccc-motion-from-left">
+<h2><span>01</span> Service Marketplace</h2>
+<img alt="Service Marketplace before and after, showing shared navigation, reusable service cards, and clearer hierarchy" class="ccc-motion-asset" src="img/ccc-workflow-marketplace.webp">
+</article>
+<article class="ccc-workflow ccc-motion ccc-motion-from-right">
+<h2><span>02</span> My Services</h2>
+<img alt="My Services before and after, showing a structured data table, scannable status tags, and clear row-level actions" class="ccc-motion-asset" src="img/ccc-workflow-my-services.webp">
+</article>
+<article class="ccc-workflow ccc-motion ccc-motion-from-left">
+<h2><span>03</span> Service Details</h2>
+<img alt="Service Details before and after, showing a unified service summary, standardized tabs, and a reusable data-table pattern" class="ccc-motion-asset" src="img/ccc-workflow-service-details.webp">
+</article>
+<article class="ccc-workflow ccc-motion ccc-motion-from-right">
+<h2><span>04</span> Add Service</h2>
+<img alt="Add Service before and after, showing a dedicated task page, clearer input hierarchy, and contextual guidance" class="ccc-motion-asset" src="img/ccc-workflow-add-service.webp">
+</article>
+</div>
 </div>
 </div>
 
 <div class="case-study-section-container shopify-alt-grey">
 <div class="case-study-section-info-container">
-<h3 class="case-study-small-header"><span class="section-number">11</span><span aria-hidden="true" class="section-rule"></span><span class="section-name">BUSINESS &amp; PRODUCT IMPACT</span></h3>
-<h1 class="case-study-large-header">Establishing a more scalable foundation for DPoD</h1>
-<p class="case-study-paragraph">Across six months, the redesign aligned two previously independent product experiences around one shared design language and applied the expanded system to four critical DPoD surfaces.</p>
-<p class="case-study-paragraph">The work replaced fragmented custom patterns with reusable foundations and component variants, giving designers and engineers a clearer reference for future features. It also demonstrated how the shared system could evolve to support complex enterprise workflows without sacrificing product-specific clarity. Formal post-launch product KPIs are still being collected.</p>
-<div class="quorum-impact-grid" aria-label="DPoD redesign project scope">
-<div class="quorum-impact-item"><strong>6 months</strong><span>End-to-end redesign initiative</span></div>
-<div class="quorum-impact-item"><strong>2</strong><span>Product experiences aligned</span></div>
-<div class="quorum-impact-item"><strong>4</strong><span>Critical DPoD surfaces redesigned</span></div>
-</div>
+<h3 class="case-study-small-header"><span class="section-number">10</span><span aria-hidden="true" class="section-rule"></span><span class="section-name">BUSINESS &amp; PRODUCT IMPACT</span></h3>
+<h1 class="case-study-large-header">Creating a more efficient and scalable foundation for DPoD</h1>
+<p class="case-study-paragraph">The product-wide redesign replaced fragmented interface patterns with reusable foundations and contributed more than 20 new components and variants to the shared Imperva design system. Based on the reduction in repeated implementation work, the new system was projected to improve design and development efficiency by approximately 40%.</p>
+<p class="case-study-paragraph">Aligning DPoD with the broader Thales security portfolio also created a more predictable experience for customers moving between products. This reduced relearning, strengthened product cohesion, and established a scalable foundation for faster feature delivery, future adoption, and long-term commercial growth.</p>
 </div>
 </div>
 
@@ -230,4 +236,6 @@
 
 </div>
 <script defer src="js/scroll-reveal.js"></script>
+<script defer src="js/site-effects.js"></script>
+<script defer src="js/ccc-motion.js"></script>
 </body></html>

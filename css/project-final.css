@@ -175,6 +175,12 @@ body.quorum-case-page .case-study-paragraph + .case-study-paragraph {
   margin-top: 26px !important;
 }
 
+body.dpod-redesign-case-page .ccc-rounded-visual {
+  overflow: hidden;
+  border-radius: 22px;
+  box-shadow: 0 24px 70px rgba(24, 31, 82, 0.10);
+}
+
 /* Keep a clear blank line between consecutive paragraphs on every case study. */
 body.case-study-redesign.unified-case-page .case-study-paragraph + .case-study-paragraph {
   margin-top: 26px !important;
@@ -195,6 +201,39 @@ body.quorum-case-page .quorum-visual-wide {
 
 body.quorum-case-page .quorum-flow-visual {
   width: min(1320px, calc(100vw - 32px)) !important;
+}
+
+body.quorum-case-page .case-study-motion {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 42px 0 0;
+  vertical-align: top;
+  background: #f8f7f6;
+}
+
+body.quorum-case-page .quorum-cover-motion {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  vertical-align: top;
+  background: #f1f0ef;
+}
+
+body.quorum-case-page .hmw-band-initial {
+  min-height: 440px !important;
+  background: #f5f3f2 !important;
+  color: #171717 !important;
+}
+
+body.quorum-case-page .hmw-band-initial .hmw-inner {
+  padding-top: 96px !important;
+  padding-bottom: 96px !important;
+}
+
+body.quorum-case-page .hmw-band-initial .hmw-inner h2 {
+  color: #171717 !important;
 }
 
 body.quorum-case-page .quorum-impact-grid,
@@ -262,5 +301,282 @@ body.dpod-redesign-case-page .quorum-impact-item span {
   body.quorum-case-page .quorum-impact-item,
   body.dpod-redesign-case-page .quorum-impact-item {
     min-height: 0;
+  }
+}
+
+/* DPoD redesign — contextual editorial visuals and motion */
+body.dpod-redesign-case-page .case-study-section-info-container > img,
+body.dpod-redesign-case-page .case-study-section-info-container-image-below > img {
+  display: block;
+  width: min(900px, 100%) !important;
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+
+body.dpod-redesign-case-page .case-study-section-info-container > img.ccc-problem-visual,
+body.dpod-redesign-case-page .case-study-section-info-container-image-below > img.ccc-problem-visual {
+  width: min(1180px, calc(100vw - 64px)) !important;
+}
+
+body.dpod-redesign-case-page .ccc-motion {
+  width: min(1040px, calc(100vw - 96px));
+  max-width: none;
+  margin: 48px 50% 0;
+  transform: translateX(-50%);
+  position: relative;
+}
+
+body.dpod-redesign-case-page .ccc-motion img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 !important;
+}
+
+body.dpod-redesign-case-page .ccc-audit-panels {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  overflow: hidden;
+}
+
+body.dpod-redesign-case-page .ccc-audit-panels img {
+  min-width: 0;
+}
+
+body.dpod-redesign-case-page .ccc-audit-mobile {
+  display: none;
+}
+
+body.dpod-redesign-case-page .ccc-figma-motion,
+body.dpod-redesign-case-page .ccc-audit-motion,
+body.dpod-redesign-case-page .ccc-component-motion,
+body.dpod-redesign-case-page .ccc-impact-motion {
+  overflow: hidden;
+  border-radius: 22px;
+  background: #f8f8ff;
+  box-shadow: 0 24px 70px rgba(24, 31, 82, .10);
+}
+
+/* The audit artwork already contains its own soft gradient. Keep the shared
+   radius and add elevation below the artwork only. */
+body.dpod-redesign-case-page .ccc-audit-motion {
+  margin-top: 8px !important;
+  overflow: hidden !important;
+  background: transparent;
+  border-radius: 22px !important;
+  box-shadow: none;
+  clip-path: inset(0 round 22px);
+  filter: drop-shadow(0 17px 30px rgba(24, 31, 82, .12));
+  isolation: isolate;
+}
+
+body.dpod-redesign-case-page .ccc-audit-motion > img {
+  border-radius: inherit;
+}
+
+.ccc-motion-enabled body.dpod-redesign-case-page .ccc-audit-motion {
+  opacity: .92;
+  transform: translateX(-50%) translateY(18px) scale(.985);
+  transition:
+    opacity 850ms cubic-bezier(.16,1,.3,1),
+    transform 1050ms cubic-bezier(.16,1,.3,1);
+}
+
+.ccc-motion-enabled body.dpod-redesign-case-page .ccc-audit-motion.is-in {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+}
+
+body.dpod-redesign-case-page .ccc-component-motion img {
+  transform: translate3d(0, var(--ccc-parallax-y, 0), 0) scale(1.025);
+  transition: transform 180ms linear;
+}
+
+body.dpod-redesign-case-page .ccc-workflow-gallery {
+  width: min(1180px, calc(100vw - 64px));
+  max-width: none;
+  margin: 56px 50% 0;
+  transform: translateX(-50%);
+}
+
+body.dpod-redesign-case-page .ccc-workflow {
+  width: 100%;
+  margin: 0 0 88px;
+}
+
+body.dpod-redesign-case-page .ccc-workflow:last-child {
+  margin-bottom: 0;
+}
+
+body.dpod-redesign-case-page .ccc-workflow h2 {
+  margin: 0 0 15px;
+  padding-left: 4px;
+  color: #62677c;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: .13em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+body.dpod-redesign-case-page .ccc-workflow h2 span {
+  display: inline-block;
+  margin-right: 10px;
+  color: #7567e8;
+}
+
+body.dpod-redesign-case-page .ccc-workflow img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 !important;
+  border-radius: 22px;
+  box-shadow: 0 24px 70px rgba(24, 31, 82, .10);
+}
+
+.ccc-motion-enabled body.dpod-redesign-case-page .ccc-audit-panels img {
+  opacity: .92;
+  transform: translate3d(0, 18px, 0);
+  transition:
+    opacity 700ms cubic-bezier(.16,1,.3,1),
+    transform 900ms cubic-bezier(.16,1,.3,1);
+}
+
+.ccc-motion-enabled body.dpod-redesign-case-page .ccc-audit-motion.is-in .ccc-audit-panels img {
+  opacity: 1;
+  transform: none;
+}
+
+.ccc-motion-enabled body.dpod-redesign-case-page .ccc-audit-motion.is-in .ccc-audit-panels img:nth-child(2) {
+  transition-delay: 150ms;
+}
+
+.ccc-motion-enabled body.dpod-redesign-case-page .ccc-audit-motion.is-in .ccc-audit-panels img:nth-child(3) {
+  transition-delay: 300ms;
+}
+
+.ccc-motion-enabled body.dpod-redesign-case-page .ccc-figma-motion {
+  opacity: .92;
+  transform: translateX(-50%) translateY(18px) scale(.985);
+  transition:
+    opacity 850ms cubic-bezier(.16,1,.3,1),
+    transform 1150ms cubic-bezier(.16,1,.3,1);
+}
+
+.ccc-motion-enabled body.dpod-redesign-case-page .ccc-figma-motion.is-in {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+}
+
+.ccc-motion-enabled body.dpod-redesign-case-page .ccc-component-motion {
+  opacity: 0;
+  transform: translateX(-50%) translateY(42px);
+  transition:
+    opacity 850ms cubic-bezier(.16,1,.3,1),
+    transform 1050ms cubic-bezier(.16,1,.3,1);
+}
+
+.ccc-motion-enabled body.dpod-redesign-case-page .ccc-component-motion.is-in {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.ccc-motion-enabled body.dpod-redesign-case-page .ccc-workflow {
+  opacity: .94;
+  transition:
+    opacity 780ms cubic-bezier(.16,1,.3,1),
+    transform 1100ms cubic-bezier(.16,1,.3,1);
+  will-change: opacity, transform;
+}
+
+.ccc-motion-enabled body.dpod-redesign-case-page .ccc-motion-from-left {
+  transform: translate3d(-18px, 0, 0);
+}
+
+.ccc-motion-enabled body.dpod-redesign-case-page .ccc-motion-from-right {
+  transform: translate3d(18px, 0, 0);
+}
+
+.ccc-motion-enabled body.dpod-redesign-case-page .ccc-workflow.is-in {
+  opacity: 1;
+  transform: none;
+  will-change: auto;
+}
+
+.ccc-motion-enabled body.dpod-redesign-case-page .ccc-impact-motion {
+  opacity: .92;
+  transform: translateX(-50%) translateY(18px) scale(.985);
+  transition:
+    opacity 850ms cubic-bezier(.16,1,.3,1),
+    transform 1150ms cubic-bezier(.16,1,.3,1);
+}
+
+.ccc-motion-enabled body.dpod-redesign-case-page .ccc-impact-motion.is-in {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+}
+
+@media (max-width: 800px) {
+  body.dpod-redesign-case-page .case-study-section-info-container > img.ccc-problem-visual,
+  body.dpod-redesign-case-page .case-study-section-info-container-image-below > img.ccc-problem-visual {
+    width: calc(100vw - 32px) !important;
+  }
+
+  body.dpod-redesign-case-page .ccc-motion,
+  body.dpod-redesign-case-page .ccc-workflow-gallery {
+    width: calc(100vw - 32px);
+  }
+
+  body.dpod-redesign-case-page .ccc-audit-panels {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  body.dpod-redesign-case-page .ccc-audit-mobile {
+    display: none;
+  }
+
+  body.dpod-redesign-case-page .ccc-workflow {
+    margin-bottom: 54px;
+  }
+
+  body.dpod-redesign-case-page .ccc-workflow h2 {
+    margin-bottom: 12px;
+    font-size: 12px;
+  }
+
+  body.dpod-redesign-case-page .ccc-workflow img,
+  body.dpod-redesign-case-page .ccc-figma-motion,
+  body.dpod-redesign-case-page .ccc-component-motion,
+  body.dpod-redesign-case-page .ccc-impact-motion {
+    border-radius: 14px;
+  }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ccc-motion-enabled body.dpod-redesign-case-page .ccc-motion,
+  .ccc-motion-enabled body.dpod-redesign-case-page .ccc-audit-panels img,
+  .ccc-motion-enabled body.dpod-redesign-case-page .ccc-audit-mobile,
+  .ccc-motion-enabled body.dpod-redesign-case-page .ccc-workflow {
+    opacity: 1;
+    clip-path: none;
+    filter: none;
+    transition: none;
+  }
+
+  .ccc-motion-enabled body.dpod-redesign-case-page .ccc-motion {
+    transform: translateX(-50%);
+  }
+
+  .ccc-motion-enabled body.dpod-redesign-case-page .ccc-workflow {
+    transform: none;
+  }
+
+  body.dpod-redesign-case-page .ccc-component-motion img {
+    transform: none;
+    transition: none;
   }
 }

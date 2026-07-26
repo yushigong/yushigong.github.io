@@ -17,7 +17,7 @@
 <script crossorigin="anonymous" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
 <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAhPVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" rel="stylesheet">
 <script crossorigin="anonymous" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
-<link href="css/styles.css" rel="stylesheet">
+<link href="css/styles.css?v=3" rel="stylesheet">
 <link href="css/pages-styles.css" rel="stylesheet">
 <link href="css/project-chrome.css" rel="stylesheet">
 <link href="css/project-final.css" rel="stylesheet">
@@ -49,18 +49,20 @@
 
 <div class="container-fluid main-body">
 <div class="case-header-section-container">
-<p class="case-project-meta"><span>2026</span><span aria-hidden="true">·</span><span>Approval &amp; Authorization</span><span aria-hidden="true">·</span><span>Team Project</span></p>
+<p class="case-project-meta"><span>2026</span><span aria-hidden="true">—</span><span>Multi-Party Authorization</span><span aria-hidden="true">·</span><span>Enterprise Project</span></p>
 <h1 class="case-study-largest-header">Thales DPoD Quorum</h1>
-<h2 class="case-study-large-header1">Designing a secure and traceable multi-party approval experience for high-risk operations</h2>
+<h2 class="case-study-large-header1">Designing a secure and traceable multi-party approval experience for high-risk cryptographic operations</h2>
 <div class="large-spacing"></div>
-<img alt="Thales DPoD Quorum project cover" class="img-responsive" src="img/cover-dpod-quorum-final.png">
+<video aria-label="Cross-role Quorum approval workflow shown inside a laptop" autoplay class="quorum-cover-motion" loop muted playsinline poster="img/cover-dpod-quorum-light-frame.png" preload="metadata">
+<source src="video/quorum-cover-light-frame.mp4" type="video/mp4">
+</video>
 </div>
 
 <div class="case-meta-wrap">
 <div class="case-meta-grid quorum-meta-grid">
 <div class="case-meta-item">
 <h3 class="case-study-small-title">Team</h3>
-<p class="case-study-small-text">Product Designer, Product Managers, Engineers</p>
+<p class="case-study-small-text">Product Designer (myself),<br>Product Manager, Developers</p>
 </div>
 <div class="case-meta-item">
 <h3 class="case-study-small-title">Tools</h3>
@@ -105,9 +107,16 @@
 </div>
 </div>
 
+<section class="hmw-band hmw-band-initial">
+<div class="hmw-inner">
+<h3 class="case-study-small-header"><span class="section-number">04</span><span aria-hidden="true" class="section-rule"></span><span class="section-name">INITIAL DESIGN CHALLENGE</span></h3>
+<h2>How might we add an approval safeguard for high-risk operations without disrupting existing DPoD workflows?</h2>
+</div>
+</section>
+
 <div class="case-study-section-container">
 <div class="case-study-section-info-container">
-<h3 class="case-study-small-header"><span class="section-number">04</span><span aria-hidden="true" class="section-rule"></span><span class="section-name">DEEPER DISCOVERY</span></h3>
+<h3 class="case-study-small-header"><span class="section-number">05</span><span aria-hidden="true" class="section-rule"></span><span class="section-name">DEEPER DISCOVERY</span></h3>
 <h1 class="case-study-large-header">One protected operation involved multiple roles</h1>
 <p class="case-study-paragraph">Further discussions with product managers revealed an additional layer of complexity: Quorum was not a single-user approval flow. An administrator determines which operations require protection, a requester initiates a protected operation, and predefined approvers review the resulting request.</p>
 <p class="case-study-paragraph">Each participant needed different information and actions, while the operation context and approval status had to remain consistent as the workflow moved between them.</p>
@@ -117,14 +126,14 @@
 
 <section class="hmw-band">
 <div class="hmw-inner">
-<h3 class="case-study-small-header"><span class="section-number">05</span><span aria-hidden="true" class="section-rule"></span><span class="section-name">REFRAMED DESIGN CHALLENGE</span></h3>
+<h3 class="case-study-small-header"><span class="section-number">06</span><span aria-hidden="true" class="section-rule"></span><span class="section-name">REFRAMED DESIGN CHALLENGE</span></h3>
 <h2>How might we design a Quorum experience that connects policy setup, request submission, and multi-party approval across different user roles?</h2>
 </div>
 </section>
 
 <div class="case-study-section-container shopify-alt-grey">
 <div class="case-study-section-info-container">
-<h3 class="case-study-small-header"><span class="section-number">06</span><span aria-hidden="true" class="section-rule"></span><span class="section-name">DESIGN PRINCIPLES</span></h3>
+<h3 class="case-study-small-header"><span class="section-number">07</span><span aria-hidden="true" class="section-rule"></span><span class="section-name">DESIGN PRINCIPLES</span></h3>
 <h1 class="case-study-large-header quorum-tight-heading">Four principles guided the Quorum experience</h1>
 <img alt="Four Quorum design principles: protect selectively, clarify responsibilities, preserve context, and make progress visible" class="img-responsive quorum-visual-wide quorum-tight-visual" src="img/dpod-quorum-design-principles-final.png">
 </div>
@@ -132,7 +141,7 @@
 
 <div class="case-study-section-container">
 <div class="case-study-section-info-container">
-<h3 class="case-study-small-header"><span class="section-number">07</span><span aria-hidden="true" class="section-rule"></span><span class="section-name">AI-ASSISTED EXPLORATION</span></h3>
+<h3 class="case-study-small-header"><span class="section-number">08</span><span aria-hidden="true" class="section-rule"></span><span class="section-name">AI-ASSISTED EXPLORATION</span></h3>
 <h1 class="case-study-large-header">Exploring interface directions with AI</h1>
 <p class="case-study-paragraph">After defining the roles, requirements, and user flow, I used Figma Make to explore interface directions for policy setup, request submission, approval, and status tracking. Structured prompts incorporated the feature requirements, workflow logic, and relevant DPoD design-system patterns.</p>
 <p class="case-study-paragraph">The generated concepts helped me compare alternative layouts and communicate interactions earlier in the process. I then evaluated and refined them based on usability, accessibility, technical feasibility, and consistency with the existing product.</p>
@@ -142,7 +151,7 @@
 
 <div class="case-study-section-container shopify-alt-grey">
 <div class="case-study-section-info-container">
-<h3 class="case-study-small-header"><span class="section-number">08</span><span aria-hidden="true" class="section-rule"></span><span class="section-name">DESIGN PROPOSAL</span></h3>
+<h3 class="case-study-small-header"><span class="section-number">09</span><span aria-hidden="true" class="section-rule"></span><span class="section-name">DESIGN PROPOSAL</span></h3>
 <h1 class="case-study-large-header">One connected Quorum workflow from policy setup to execution</h1>
 <p class="case-study-paragraph">I designed Quorum as a governance layer embedded within existing DPoD workflows. Administrators manage Quorum protection for high-risk operations, requesters submit approval requests when attempting those operations, and predefined approvers review each request before execution can continue.</p>
 <p class="case-study-paragraph">Although participants receive different information and actions, the protected operation, approval status, and decision history remain connected throughout the experience.</p>
@@ -152,49 +161,55 @@
 
 <div class="case-study-section-container">
 <div class="case-study-section-info-container">
-<h3 class="case-study-small-header"><span class="section-number">09</span><span aria-hidden="true" class="section-rule"></span><span class="section-name">DESIGN DECISION #1</span></h3>
+<h3 class="case-study-small-header"><span class="section-number">10</span><span aria-hidden="true" class="section-rule"></span><span class="section-name">DESIGN DECISION #1</span></h3>
 <h1 class="case-study-large-header">Apply Quorum only where additional protection is needed</h1>
 <p class="case-study-paragraph">Requiring approval for every operation would create unnecessary friction. Organizations needed to apply Quorum to high-risk operations while allowing unaffected tasks to continue through their existing workflows.</p>
 <p class="case-study-paragraph">I designed a centralized policy experience where administrators could review protected operations and enable or disable Quorum policies based on their organization’s security and governance requirements.</p>
-<img alt="Quorum policy configuration interface" class="img-responsive" src="img/dpod-prototype1.png">
+<video aria-label="Administrator configuring Quorum protection for selected operations" autoplay class="case-study-motion" loop muted playsinline preload="metadata">
+<source src="video/quorum-decision-1.mp4" type="video/mp4">
+</video>
 </div>
 </div>
 
 <div class="case-study-section-container shopify-alt-grey">
 <div class="case-study-section-info-container">
-<h3 class="case-study-small-header"><span class="section-number">10</span><span aria-hidden="true" class="section-rule"></span><span class="section-name">DESIGN DECISION #2</span></h3>
+<h3 class="case-study-small-header"><span class="section-number">11</span><span aria-hidden="true" class="section-rule"></span><span class="section-name">DESIGN DECISION #2</span></h3>
 <h1 class="case-study-large-header">Keep approval connected to the original operation</h1>
 <p class="case-study-paragraph">When a requester initiates a protected operation, the experience needs to explain why approval is required without making the interruption feel like an error or a dead end.</p>
 <p class="case-study-paragraph">I designed the request as a continuation of the original task. The affected service and operation remain visible, while approvers receive the context needed to evaluate the request. Once approval is granted, the requester can return to complete the original operation.</p>
-<img alt="Quorum request submission and approval context interface" class="img-responsive" src="img/dpod-prototype2.png">
+<video aria-label="Requester submitting a Quorum request for a protected operation" autoplay class="case-study-motion" loop muted playsinline preload="metadata">
+<source src="video/quorum-decision-2.mp4" type="video/mp4">
+</video>
 </div>
 </div>
 
 <div class="case-study-section-container">
 <div class="case-study-section-info-container">
-<h3 class="case-study-small-header"><span class="section-number">11</span><span aria-hidden="true" class="section-rule"></span><span class="section-name">DESIGN DECISION #3</span></h3>
+<h3 class="case-study-small-header"><span class="section-number">12</span><span aria-hidden="true" class="section-rule"></span><span class="section-name">DESIGN DECISION #3</span></h3>
 <h1 class="case-study-large-header">Turn complex approval states into clear next steps</h1>
 <p class="case-study-paragraph">A Quorum request can require responses from multiple approvers, so a generic “Pending” status did not provide enough information. Requesters and approvers needed to understand the current progress and whether an action was required from them.</p>
 <p class="case-study-paragraph">I designed a shared status model that communicates approvals received, remaining requirements, individual responses, and the next available action. This makes the workflow easier to follow from request submission through final authorization.</p>
-<img alt="Quorum status dashboard showing approval progress and next actions" class="img-responsive" src="img/dpod-prototype3.png">
-<div class="large-spacing"></div>
-<img alt="Quorum approval history interface" class="img-responsive" src="img/dpod-prototype4.png">
+<video aria-label="Cross-role Quorum workflow showing approval progress and the requester completing the protected operation" autoplay class="case-study-motion" loop muted playsinline preload="metadata">
+<source src="video/quorum-decision-3.mp4" type="video/mp4">
+</video>
 </div>
 </div>
 
 <div class="case-study-section-container shopify-alt-grey">
 <div class="case-study-section-info-container">
-<h3 class="case-study-small-header"><span class="section-number">12</span><span aria-hidden="true" class="section-rule"></span><span class="section-name">USER FEEDBACK &amp; ITERATION</span></h3>
+<h3 class="case-study-small-header"><span class="section-number">13</span><span aria-hidden="true" class="section-rule"></span><span class="section-name">USER FEEDBACK &amp; ITERATION</span></h3>
 <h1 class="case-study-large-header">Making Quorum policies editable as governance needs change</h1>
 <p class="case-study-paragraph">The initial design allowed administrators to enable or disable a Quorum policy, but not edit its configuration. Testing revealed that this was too restrictive because an organization’s governance requirements could change over time.</p>
 <p class="case-study-paragraph">I introduced an Edit Quorum Policy flow that allows administrators to update the policy configuration both before and after it is enabled. This provides greater flexibility without requiring them to disable or recreate the entire policy.</p>
-<img alt="Iteration showing the editable Quorum policy experience" class="img-responsive" src="img/dpod-testing2.png">
+<video aria-label="Iteration enabling administrators to edit an existing Quorum policy" autoplay class="case-study-motion" loop muted playsinline preload="metadata">
+<source src="video/quorum-iteration.mp4" type="video/mp4">
+</video>
 </div>
 </div>
 
 <div class="case-study-section-container">
 <div class="case-study-section-info-container">
-<h3 class="case-study-small-header"><span class="section-number">13</span><span aria-hidden="true" class="section-rule"></span><span class="section-name">BUSINESS IMPACT</span></h3>
+<h3 class="case-study-small-header"><span class="section-number">14</span><span aria-hidden="true" class="section-rule"></span><span class="section-name">BUSINESS IMPACT</span></h3>
 <h1 class="case-study-large-header">Strengthening DPoD’s enterprise governance and customer value</h1>
 <p class="case-study-paragraph">Launched in March 2026 after a 12-month initiative, Quorum strengthened DPoD’s support for enterprise security and compliance requirements. The capability expanded from four protected operations in its initial test release to more than 20, allowing customers to apply multi-party authorization across a broader range of high-risk workflows.</p>
 <p class="case-study-paragraph">A subsequent customer survey found that 92% of respondents were satisfied with DPoD’s functionality. Among surveyed Quorum users, 73% indicated an intention to renew DPoD, demonstrating positive renewal intent among customers using the capability.</p>
@@ -240,5 +255,6 @@
 </footer>
 </div>
 <script defer src="js/scroll-reveal.js"></script>
+<script defer src="js/site-effects.js"></script>
 </body>
 </html>
