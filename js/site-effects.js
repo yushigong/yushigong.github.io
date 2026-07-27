@@ -83,12 +83,7 @@
     window.setTimeout(function () { line.classList.add("is-in"); }, 80);
   });
 
-  // About hero: reveal the existing text block without changing its content.
-  var aboutTitle = document.querySelector(".about-redesign .about-hero h1");
-  if (aboutTitle) {
-    aboutTitle.classList.add("fx-title-reveal");
-    requestAnimationFrame(function () { aboutTitle.classList.add("is-in"); });
-  }
+  // About hero uses the same line-by-line motion language as the homepage.
   var portrait = document.querySelector(".about-redesign .about-portrait");
   if (portrait) {
     portrait.classList.add("fx-portrait-reveal");

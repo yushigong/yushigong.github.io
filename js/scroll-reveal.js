@@ -18,7 +18,6 @@
     ".home-redesign .hero > *",
     ".home-redesign .section-heading-row",
     ".home-redesign .project-row",
-    ".home-redesign .values-inner > *",
     ".about-redesign .about-hero > *",
     ".about-redesign .about-bio > *",
     ".about-redesign .about-capabilities > *",
@@ -70,4 +69,24 @@
   items.forEach(function (item) {
     observer.observe(item);
   });
+
+  // Give What I Value its own editorial sequence instead of the generic reveal.
+  var valuesSection = document.querySelector(".home-redesign .values-section");
+  if (valuesSection) {
+    valuesSection.classList.add("values-fx-ready");
+    var valueObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        valuesSection.classList.add("is-values-visible");
+        window.setTimeout(function () {
+          valuesSection.classList.add("values-entry-done");
+        }, 1300);
+        valueObserver.unobserve(valuesSection);
+      });
+    }, {
+      threshold: 0.22,
+      rootMargin: "0px 0px -10% 0px"
+    });
+    valueObserver.observe(valuesSection);
+  }
 })();

@@ -1853,7 +1853,7 @@ body.home-redesign {
   font-weight: 700;
   color: #111;
 }
-.about-hero h1 span { color: #ff665b; }
+.about-hero h1 em { color: #ff665b; font-style: normal; }
 .about-lede { max-width: 660px; margin: 34px 0 0; font-size: 21px; line-height: 1.62; color: #777; }
 .about-portrait { margin: 0; aspect-ratio: .8 / 1; overflow: hidden; background: #eee; }
 .about-portrait img { width: 100%; height: 100%; display: block; object-fit: cover; filter: grayscale(100%); }
@@ -2837,5 +2837,232 @@ body.home-redesign {
   .home-redesign .hero-line em::before {
     display: none;
     animation: none;
+  }
+}
+
+/* FX v7 — editorial reveal and focus for What I Value */
+.home-redesign .values-section.values-fx-ready .eyebrow,
+.home-redesign .values-section.values-fx-ready #values-title,
+.home-redesign .values-section.values-fx-ready .values-grid article {
+  opacity: 0;
+  transform: translate3d(0,24px,0);
+}
+
+.home-redesign .values-section.values-fx-ready.is-values-visible .eyebrow,
+.home-redesign .values-section.values-fx-ready.is-values-visible #values-title,
+.home-redesign .values-section.values-fx-ready.is-values-visible .values-grid article {
+  opacity: 1;
+  transform: translate3d(0,0,0);
+  transition:
+    opacity 720ms ease,
+    transform 820ms cubic-bezier(.16,1,.3,1);
+}
+
+.home-redesign .values-section.is-values-visible .eyebrow {
+  transition-delay: 0ms;
+}
+
+.home-redesign .values-section.is-values-visible #values-title {
+  transition-delay: 90ms;
+}
+
+.home-redesign .values-section.is-values-visible .values-grid article:nth-child(1) {
+  transition-delay: 220ms;
+}
+
+.home-redesign .values-section.is-values-visible .values-grid article:nth-child(2) {
+  transition-delay: 340ms;
+}
+
+.home-redesign .values-section.is-values-visible .values-grid article:nth-child(3) {
+  transition-delay: 460ms;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .home-redesign .values-section.values-entry-done .values-grid article {
+    position: relative;
+    transition:
+      opacity 360ms ease,
+      transform 520ms cubic-bezier(.16,1,.3,1) !important;
+  }
+
+  .home-redesign .values-section.values-entry-done .values-grid:hover article:not(:hover) {
+    opacity: .58;
+  }
+
+  .home-redesign .values-section.values-entry-done .values-grid article:hover {
+    transform: translate3d(0,-4px,0) !important;
+  }
+
+  .home-redesign .values-grid strong {
+    color: #777;
+    transition: color 300ms ease, transform 420ms cubic-bezier(.16,1,.3,1);
+  }
+
+  .home-redesign .values-grid article:hover strong {
+    color: var(--coral);
+    transform: translateX(3px);
+  }
+
+  .home-redesign .values-grid h3 {
+    position: relative;
+    width: max-content;
+    max-width: 100%;
+    transition: letter-spacing 420ms cubic-bezier(.16,1,.3,1);
+  }
+
+  .home-redesign .values-grid h3::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    width: 22px;
+    height: 1px;
+    background: var(--coral);
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 420ms cubic-bezier(.16,1,.3,1);
+  }
+
+  .home-redesign .values-grid article:hover h3 {
+    letter-spacing: .035em;
+  }
+
+  .home-redesign .values-grid article:hover h3::after {
+    transform: scaleX(1);
+  }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .home-redesign .values-section.values-fx-ready .eyebrow,
+  .home-redesign .values-section.values-fx-ready #values-title,
+  .home-redesign .values-section.values-fx-ready .values-grid article {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+}
+
+/* FX v8 — homepage-style kinetic type for the About hero */
+.about-redesign .about-hero h1 {
+  overflow: visible;
+}
+
+.about-redesign .about-hero-line {
+  display: block;
+  overflow: visible;
+  white-space: nowrap;
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+  transition: transform 620ms cubic-bezier(.16,1,.3,1);
+  will-change: transform;
+}
+
+.about-redesign .about-hero-line-inner {
+  display: block;
+  opacity: 0;
+  filter: blur(10px);
+  transform: translate3d(0,.62em,0) scale(.985);
+  animation: about-hero-line-lift 1050ms cubic-bezier(.16,1,.3,1) forwards;
+  will-change: opacity,filter,transform;
+}
+
+.about-redesign .about-hero-line:nth-child(1) .about-hero-line-inner { animation-delay: 140ms; }
+.about-redesign .about-hero-line:nth-child(2) .about-hero-line-inner { animation-delay: 280ms; }
+.about-redesign .about-hero-line:nth-child(3) .about-hero-line-inner { animation-delay: 420ms; }
+.about-redesign .about-hero-line:nth-child(4) .about-hero-line-inner { animation-delay: 560ms; }
+.about-redesign .about-hero-line:nth-child(5) .about-hero-line-inner { animation-delay: 700ms; }
+
+.about-redesign .about-hero h1 em {
+  position: relative;
+  display: inline-block;
+  isolation: isolate;
+  color: #ff665b;
+  font-style: normal;
+  font-weight: inherit;
+}
+
+@keyframes about-hero-line-lift {
+  0% { opacity:0; filter:blur(10px); transform:translate3d(0,.62em,0) scale(.985); }
+  55% { opacity:1; }
+  100% { opacity:1; filter:blur(0); transform:translate3d(0,0,0) scale(1); }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .about-redesign .about-hero h1 {
+    cursor: default;
+  }
+
+  .about-redesign .about-hero h1:hover .about-hero-line:nth-child(1) {
+    transform: translate3d(5px,-2px,0);
+  }
+
+  .about-redesign .about-hero h1:hover .about-hero-line:nth-child(2) {
+    transform: translate3d(-4px,-1px,0);
+  }
+
+  .about-redesign .about-hero h1:hover .about-hero-line:nth-child(3) {
+    transform: translate3d(6px,0,0);
+  }
+
+  .about-redesign .about-hero h1:hover .about-hero-line:nth-child(4) {
+    transform: translate3d(-3px,1px,0);
+  }
+
+  .about-redesign .about-hero h1:hover .about-hero-line:nth-child(5) {
+    transform: translate3d(7px,2px,0);
+  }
+
+  .about-redesign .about-hero h1 em::before {
+    content: attr(data-text);
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    color: transparent;
+    background: linear-gradient(100deg,#ff665b 8%,#ff9a76 42%,#fff0e8 50%,#ff7a68 58%,#ff665b 92%);
+    background-size: 240% 100%;
+    background-position: 110% 50%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .about-redesign .about-hero h1:hover em::before {
+    opacity: 1;
+    animation: about-accent-shimmer 720ms cubic-bezier(.16,1,.3,1) both;
+  }
+
+  .about-redesign .about-hero h1:hover .about-hero-line:nth-child(4) em::before {
+    animation-delay: 100ms;
+  }
+}
+
+@keyframes about-accent-shimmer {
+  0% { background-position: 110% 50%; }
+  100% { background-position: -110% 50%; }
+}
+
+@media (max-width:720px) {
+  .about-redesign .about-hero-line {
+    white-space: normal;
+  }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .about-redesign .about-hero-line,
+  .about-redesign .about-hero-line-inner {
+    opacity:1;
+    filter:none;
+    transform:none;
+    animation:none;
+    transition:none;
+  }
+
+  .about-redesign .about-hero h1 em::before {
+    display:none;
+    animation:none;
   }
 }
