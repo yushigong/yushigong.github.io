@@ -3822,6 +3822,7 @@ body.home-redesign {
   }
 
   .about-redesign .about-hero h1 {
+    font-size: clamp(38px, 10vw, 44px) !important;
     line-height: 1 !important;
     letter-spacing: -.045em !important;
   }
