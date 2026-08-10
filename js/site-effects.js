@@ -51,7 +51,7 @@
       var target = event.target;
       var project = target && target.closest(".home-redesign .project-row");
       var interactive = target && target.closest("a, button, [role='button'], .project-row, .capability-card");
-      var native = target && target.closest("input, textarea, select, video, [contenteditable='true']");
+      var native = target && target.closest("input, textarea, select, [contenteditable='true']");
       projectMode = !!project && !native;
       cursor.classList.toggle("is-project", projectMode);
       cursor.classList.toggle("is-hover", !!interactive && !native);
@@ -72,7 +72,7 @@
         animation.updatePlaybackRate(rate);
       });
     }
-    marquee.addEventListener("mouseenter", function () { setMarqueeRate(0.72); });
+    marquee.addEventListener("mouseenter", function () { setMarqueeRate(0.55); });
     marquee.addEventListener("mouseleave", function () { setMarqueeRate(1); });
   }
 

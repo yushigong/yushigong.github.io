@@ -2148,6 +2148,32 @@ body.home-redesign {
   }
 }
 
+/* Homepage V25 — single-line statement, clearer hierarchy and full-card cursor */
+@media (min-width: 1001px) {
+  .home-redesign .hero h1 {
+    font-size: clamp(52px, 4.1vw, 60px) !important;
+    line-height: 1.02;
+  }
+
+  .home-redesign .hero-intro-line {
+    margin-bottom: .44em;
+  }
+
+  .home-redesign .hero-title-break {
+    display: none;
+  }
+
+  .home-redesign .hero-statement-line {
+    white-space: nowrap !important;
+  }
+
+  .home-redesign .hero-statement-line .hero-line-inner {
+    width: max-content;
+    max-width: 100%;
+    white-space: nowrap;
+  }
+}
+
 @media (max-width: 767px) {
   .home-redesign .other-work-section {
     margin-top: 86px;
@@ -3064,5 +3090,766 @@ body.home-redesign {
   .about-redesign .about-hero h1 em::before {
     display:none;
     animation:none;
+  }
+}
+
+/* Homepage V16 — updated hero, relocated marquee and impact-led highlights */
+.home-redesign .hero {
+  padding-top: clamp(54px, 6.2vw, 90px);
+  padding-bottom: clamp(58px, 6.4vw, 92px);
+}
+
+.home-redesign .hero h1 {
+  width: 100%;
+  max-width: none;
+  font-size: clamp(42px, 4.65vw, 68px);
+  line-height: 1.04;
+  letter-spacing: -.058em;
+}
+
+.home-redesign .hero-intro-line {
+  margin-bottom: .18em;
+  font-size: .66em;
+  line-height: 1.08;
+  letter-spacing: -.045em;
+}
+
+.home-redesign .hero-intro-line strong {
+  font-weight: 750;
+}
+
+.home-redesign .hero-statement-line {
+  white-space: nowrap;
+}
+
+.home-redesign .hero-copy {
+  max-width: 850px;
+  margin-top: 28px;
+  font-size: clamp(15px, 1.42vw, 19px);
+  line-height: 1.55;
+}
+
+.home-redesign .portfolio-marquee-home {
+  margin-bottom: clamp(72px, 8vw, 116px);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: #111;
+}
+
+.home-redesign .portfolio-marquee-home .marquee-group span {
+  color: #fff;
+}
+
+.home-redesign .portfolio-marquee-home .marquee-group i {
+  color: var(--coral);
+}
+
+.project-highlights {
+  margin-top: 22px;
+  padding: 22px 24px 23px;
+  border: 1px solid rgba(255, 102, 91, .28);
+  border-radius: 20px;
+  background: #fffdfc;
+}
+
+.project-highlights-label {
+  margin: 0 0 16px;
+  color: #878793;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: .12em;
+}
+
+.project-highlights ul {
+  display: grid;
+  gap: 11px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.project-highlights li {
+  position: relative;
+  margin: 0;
+  padding-left: 20px;
+  color: #242426;
+  font-size: 12.5px;
+  font-weight: 650;
+  line-height: 1.4;
+  letter-spacing: -.014em;
+}
+
+.project-highlights li::before {
+  content: "";
+  position: absolute;
+  top: .48em;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--coral);
+}
+
+@media (max-width: 1100px) and (min-width: 721px) {
+  .home-redesign .hero-statement-line {
+    white-space: normal;
+  }
+
+  .project-highlights {
+    padding: 18px;
+  }
+
+  .project-highlights li {
+    font-size: 11.5px;
+  }
+}
+
+@media (max-width: 720px) {
+  .home-redesign .hero {
+    padding-top: 44px;
+    padding-bottom: 54px;
+  }
+
+  .home-redesign .hero h1 {
+    font-size: clamp(38px, 10.7vw, 56px);
+    line-height: 1.02;
+  }
+
+  .home-redesign .hero-intro-line {
+    margin-bottom: .34em;
+    font-size: .68em;
+  }
+
+  .home-redesign .hero-statement-line,
+  .home-redesign .hero-line {
+    white-space: normal;
+  }
+
+  .home-redesign .hero-copy {
+    margin-top: 24px;
+    font-size: 15px;
+  }
+
+  .home-redesign .portfolio-marquee-home {
+    margin-bottom: 66px;
+  }
+
+  .project-highlights {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 18px;
+  }
+
+  .project-highlights-label {
+    font-size: 9px;
+  }
+
+  .project-highlights li {
+    font-size: 13px;
+  }
+}
+
+/* Homepage V21 — requested fold height, exact nav-edge alignment, medium marquee */
+@media (min-width: 1001px) {
+  .home-redesign .hero {
+    min-height: max(680px, calc(100svh - 118px));
+    box-sizing: border-box;
+  }
+
+  .home-redesign .hero h1 {
+    width: 100% !important;
+    max-width: 100% !important;
+    font-size: clamp(44px, 3.45vw, 48px) !important;
+  }
+
+  .home-redesign .hero-statement-line {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap !important;
+  }
+
+  .home-redesign .hero-statement-line .hero-line-inner {
+    display: flex !important;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.home-redesign .portfolio-marquee-home {
+  padding: 13px 0 !important;
+}
+
+.home-redesign .portfolio-marquee-home .marquee-group {
+  gap: clamp(22px, 2.6vw, 40px) !important;
+  padding-right: clamp(22px, 2.6vw, 40px) !important;
+}
+
+.home-redesign .portfolio-marquee-home .marquee-group span {
+  font-size: clamp(25px, 2.35vw, 34px) !important;
+  line-height: 1 !important;
+}
+
+.home-redesign .portfolio-marquee-home .marquee-group i {
+  font-size: clamp(12px, 1.2vw, 17px) !important;
+}
+
+@media (max-width: 1000px) {
+  .home-redesign .hero-statement-line .hero-line-inner > span,
+  .home-redesign .hero-statement-line .hero-line-inner > em {
+    display: inline;
+  }
+
+  .home-redesign .hero-statement-line .hero-line-inner > span::after {
+    content: " ";
+  }
+}
+
+/* Homepage V22 — reference-matched hero density and natural headline spacing */
+@media (min-width: 1001px) {
+  .home-redesign .hero {
+    min-height: clamp(650px, 74svh, 760px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    box-sizing: border-box;
+  }
+
+  .home-redesign .hero h1 {
+    font-size: clamp(52px, 4.1vw, 60px) !important;
+  }
+
+  .home-redesign .hero-statement-line .hero-line-inner {
+    display: block !important;
+    width: max-content;
+    max-width: 100%;
+    word-spacing: normal;
+  }
+
+  .home-redesign .hero-statement-line .hero-line-inner > span,
+  .home-redesign .hero-statement-line .hero-line-inner > em {
+    display: inline;
+  }
+
+  .home-redesign .hero-statement-line .hero-line-inner > span::after {
+    content: " ";
+  }
+
+  .home-redesign .hero-copy {
+    margin-top: 32px;
+  }
+
+  .home-redesign .hero-actions {
+    margin-top: 30px;
+  }
+}
+
+/* Homepage V23 — larger two-line statement, smaller glow, clean accent hover */
+@media (min-width: 1001px) {
+  .home-redesign .hero h1 {
+    font-size: clamp(66px, 5.2vw, 76px) !important;
+    line-height: 1.06;
+  }
+
+  .home-redesign .hero-statement-line .hero-line-inner {
+    width: 100%;
+    max-width: 1120px;
+  }
+
+  .home-redesign .hero-title-break {
+    display: block;
+  }
+
+  .home-redesign .hero-copy {
+    margin-top: 34px;
+  }
+}
+
+.home-redesign .hero::before {
+  top: 50%;
+  right: clamp(1%, 3vw, 4%);
+  width: clamp(190px, 18vw, 280px);
+  background: radial-gradient(circle at 44% 42%, rgba(255,102,91,.16), rgba(255,132,112,.065) 45%, rgba(255,102,91,0) 72%);
+  filter: blur(7px);
+  opacity: .82;
+  transform: translate3d(0,-50%,0);
+  animation: none;
+}
+
+/* Remove the duplicate text layer that caused the coral words to ghost on hover. */
+.home-redesign .hero-line em::before,
+.home-redesign .hero h1:hover .hero-line em::before {
+  content: none !important;
+  display: none !important;
+  opacity: 0 !important;
+  animation: none !important;
+}
+
+@media (max-width: 1000px) {
+  .home-redesign .hero-title-break {
+    display: none;
+  }
+}
+
+/* Homepage V24 — refined hierarchy, animated aura, accent highlight and video cursor */
+.home-redesign .hero-intro-line {
+  font-weight: 500;
+}
+
+.home-redesign .hero-intro-line strong {
+  font-weight: 650;
+}
+
+.home-redesign .waving-hand {
+  display: inline-block;
+  transform-origin: 72% 78%;
+  animation: hero-wave 3.4s ease-in-out 1.1s infinite;
+  will-change: transform;
+}
+
+@keyframes hero-wave {
+  0%, 38%, 100% { transform: rotate(0deg); }
+  7% { transform: rotate(15deg); }
+  14% { transform: rotate(-8deg); }
+  21% { transform: rotate(14deg); }
+  28% { transform: rotate(-5deg); }
+}
+
+.home-redesign .hero::before {
+  top: 43%;
+  right: clamp(-2%, 1vw, 3%);
+  width: clamp(270px, 25vw, 400px);
+  background:
+    radial-gradient(circle at 38% 36%, rgba(255,102,91,.20), rgba(255,126,103,.10) 40%, rgba(255,102,91,.025) 64%, rgba(255,102,91,0) 75%);
+  filter: blur(10px);
+  opacity: .82;
+  transform: translate3d(0,-50%,0) scale(.96);
+  animation: hero-aura-drift 8.5s cubic-bezier(.45,.05,.55,.95) infinite;
+}
+
+.home-redesign .hero::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  top: 40%;
+  right: clamp(6%, 9vw, 12%);
+  width: clamp(110px, 10vw, 165px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,168,146,.16), rgba(255,102,91,.055) 48%, rgba(255,102,91,0) 72%);
+  filter: blur(9px);
+  opacity: .72;
+  transform: translate3d(0,-50%,0);
+  animation: hero-aura-breathe 6.2s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes hero-aura-drift {
+  0%, 100% { transform: translate3d(0,-50%,0) scale(.96); opacity:.72; }
+  33% { transform: translate3d(-24px,-45%,0) scale(1.035); opacity:.86; }
+  66% { transform: translate3d(18px,-54%,0) scale(1.01); opacity:.76; }
+}
+
+@keyframes hero-aura-breathe {
+  0%, 100% { transform: translate3d(0,-50%,0) scale(.9); opacity:.48; }
+  50% { transform: translate3d(-12px,-46%,0) scale(1.08); opacity:.76; }
+}
+
+.home-redesign .hero-line em {
+  position: relative;
+  z-index: 0;
+  cursor: default;
+}
+
+.home-redesign .hero-line em::after {
+  content: "" !important;
+  position: absolute;
+  z-index: -1;
+  left: -.08em;
+  right: -.08em;
+  bottom: .03em;
+  height: .34em;
+  display: block !important;
+  border-radius: .12em;
+  background: linear-gradient(90deg, rgba(255,102,91,.10), rgba(255,154,126,.28), rgba(255,102,91,.12));
+  transform: scaleX(0);
+  transform-origin: left center;
+  opacity: 0;
+  transition: transform 560ms cubic-bezier(.16,1,.3,1), opacity 220ms ease;
+  pointer-events: none;
+}
+
+.home-redesign .hero-line em:hover::after {
+  transform: scaleX(1);
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-redesign .waving-hand,
+  .home-redesign .hero::before,
+  .home-redesign .hero::after {
+    animation: none;
+  }
+}
+
+/* Compact two-column cards for supporting work */
+.home-redesign .other-work-section {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: clamp(28px, 5vw, 64px);
+  row-gap: clamp(58px, 7vw, 92px);
+}
+
+.home-redesign .other-work-section .section-heading-row {
+  grid-column: 1 / -1;
+  margin-bottom: 0;
+}
+
+.home-redesign .other-work-section .project-row,
+.home-redesign .other-work-section .project-row.project-row-reverse {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  transform: none;
+}
+
+.home-redesign .other-work-section .project-media,
+.home-redesign .other-work-section .project-row-reverse .project-media {
+  order: 1;
+  width: 100%;
+  aspect-ratio: 1.77 / 1;
+  border: 1px solid #deded9;
+  border-radius: 12px;
+}
+
+.home-redesign .other-work-section .project-summary,
+.home-redesign .other-work-section .project-row-reverse .project-summary {
+  order: 2;
+  padding: 27px 0 0;
+  transform: none;
+}
+
+.home-redesign .other-work-section .project-meta {
+  margin-bottom: 14px;
+  color: #777;
+  font-size: 10px;
+  letter-spacing: .07em;
+}
+
+.home-redesign .other-work-section .project-summary h3,
+.home-redesign .other-work-section .project-summary h3.project-title-long {
+  margin-bottom: 13px;
+  font-size: clamp(23px, 2.3vw, 32px);
+  line-height: 1.08;
+  white-space: normal;
+}
+
+.home-redesign .other-work-section .project-copy {
+  max-width: 570px;
+  margin-bottom: 15px;
+  color: #6a6a6a;
+  font-size: clamp(14px, 1.35vw, 17px);
+  line-height: 1.52;
+}
+
+.home-redesign .other-work-section .project-tags {
+  display: none;
+}
+
+.other-case-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--coral);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.other-case-link span {
+  transition: transform 220ms ease;
+}
+
+.home-redesign .other-work-section .project-summary:hover .other-case-link span,
+.home-redesign .other-work-section .project-summary:focus-visible .other-case-link span {
+  transform: translateX(4px);
+}
+
+@media (max-width: 720px) {
+  .home-redesign .other-work-section {
+    grid-template-columns: 1fr;
+    row-gap: 58px;
+  }
+
+  .home-redesign .other-work-section .section-heading-row {
+    grid-column: 1;
+  }
+
+  .home-redesign .other-work-section .project-summary,
+  .home-redesign .other-work-section .project-row-reverse .project-summary {
+    padding-top: 22px;
+  }
+
+  .home-redesign .other-work-section .project-summary h3,
+  .home-redesign .other-work-section .project-summary h3.project-title-long {
+    font-size: 25px;
+  }
+
+  .home-redesign .other-work-section .project-copy {
+    font-size: 15px;
+  }
+}
+
+/* Homepage V25 final overrides */
+@media (min-width: 1001px) {
+  .home-redesign .hero h1 {
+    font-size: clamp(52px, 4.1vw, 60px) !important;
+    line-height: 1.02;
+  }
+
+  .home-redesign .hero-intro-line {
+    margin-bottom: .44em;
+  }
+
+  .home-redesign .hero-title-break {
+    display: none;
+  }
+
+  .home-redesign .hero-statement-line,
+  .home-redesign .hero-statement-line .hero-line-inner {
+    white-space: nowrap !important;
+  }
+
+  .home-redesign .hero-statement-line .hero-line-inner {
+    width: max-content;
+    max-width: 100%;
+  }
+}
+
+/* Homepage V26 — typography aligned with the About page */
+@media (min-width: 1001px) {
+  .home-redesign .hero-intro-line {
+    margin-bottom: .78em;
+    font-family: "Inter Tight", "Inter", sans-serif;
+    font-size: clamp(28px, 2.2vw, 34px);
+    line-height: 1.1;
+    letter-spacing: -.035em;
+    font-weight: 500;
+  }
+
+  .home-redesign .hero-intro-line strong {
+    font-weight: 650;
+  }
+
+  .home-redesign .hero-copy {
+    max-width: 850px;
+    margin-top: 32px;
+    font-size: 21px;
+    line-height: 1.62;
+    color: #777;
+  }
+}
+
+/* Homepage V27 — equal breathing room above and below the statement */
+@media (min-width: 1001px) {
+  .home-redesign .hero-intro-line {
+    margin-bottom: 32px;
+  }
+
+  .home-redesign .hero-copy {
+    margin-top: 32px;
+  }
+}
+
+/* Homepage V28 — recruiter-focused positioning and portrait greeting */
+.home-redesign .hero-avatar {
+  display: block;
+  flex: 0 0 auto;
+  width: 68px;
+  height: 68px;
+  object-fit: contain;
+  border-radius: 50%;
+  box-shadow: 0 8px 24px rgba(22, 22, 24, .10);
+}
+
+.home-redesign .hero-intro-line .hero-line-inner {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+@media (min-width: 1001px) {
+  .home-redesign .hero h1 {
+    font-size: clamp(48px, 3.65vw, 56px) !important;
+  }
+
+  .home-redesign .hero-intro-line {
+    margin-bottom: 32px;
+  }
+
+  .home-redesign .hero-statement-line .hero-line-inner {
+    width: max-content;
+    max-width: 100%;
+  }
+
+  .home-redesign .hero-copy {
+    max-width: 940px;
+    margin-top: 32px;
+  }
+}
+
+@media (max-width: 720px) {
+  .home-redesign .hero-avatar {
+    width: 50px;
+    height: 50px;
+  }
+
+  .home-redesign .hero-intro-line .hero-line-inner {
+    gap: 12px;
+  }
+}
+
+/* Homepage V29 — About-matched statement and a single-line portrait greeting */
+.home-redesign .hero-line.hero-intro-line.fx-line .hero-line-inner,
+.home-redesign .hero-intro-line .hero-line-inner {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  flex-wrap: nowrap !important;
+  gap: 18px;
+}
+
+.home-redesign .hero-intro-line .hero-line-inner > span {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.home-redesign .hero-statement-line .hero-line-inner {
+  display: block !important;
+  font-family: "Inter Tight", "Inter", sans-serif;
+  font-weight: 700;
+  line-height: .93;
+  letter-spacing: -.052em;
+}
+
+.home-redesign .hero-statement-line em {
+  font-style: normal;
+}
+
+/* Entering anywhere on the statement reveals the accent highlight. */
+.home-redesign .hero-statement-line:hover em::after {
+  transform: scaleX(1);
+  opacity: 1;
+}
+
+@media (max-width: 720px) {
+  .home-redesign .hero-line.hero-intro-line.fx-line .hero-line-inner,
+  .home-redesign .hero-intro-line .hero-line-inner {
+    gap: 12px;
+  }
+}
+
+/* Shared display typography across the Home and About statements. */
+.home-redesign .hero-statement-line .hero-line-inner,
+.about-redesign .about-hero h1 {
+  font-family: "Inter Tight", "Inter", sans-serif !important;
+  font-weight: 700 !important;
+  line-height: .93;
+  letter-spacing: -.052em;
+  font-synthesis: none;
+}
+
+/* Homepage V34 — clearer separation between the greeting and statement. */
+@media (min-width: 1001px) {
+  .home-redesign .hero-intro-line {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 720px) {
+  .home-redesign .hero-intro-line {
+    margin-bottom: 36px;
+  }
+}
+
+/* V33 — lock identical font files and weight on every display-text layer. */
+.home-redesign .hero-statement-line,
+.home-redesign .hero-statement-line .hero-line-inner,
+.home-redesign .hero-statement-line em,
+.about-redesign .about-hero h1,
+.about-redesign .about-hero-line,
+.about-redesign .about-hero-line-inner,
+.about-redesign .about-hero h1 em {
+  font-family: "Inter Tight", "Inter", sans-serif !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-stretch: normal !important;
+  font-variation-settings: "wght" 700 !important;
+  font-synthesis: none !important;
+  letter-spacing: -.052em;
+}
+
+/* V35 — effective Hero separation and a lighter About composition. */
+@media (min-width: 1001px) {
+  .home-redesign .hero-line.hero-intro-line.fx-line,
+  .home-redesign .hero-line.hero-intro-line {
+    margin-bottom: 36px !important;
+  }
+
+  .about-redesign .about-hero h1 {
+    font-size: clamp(50px, 4.25vw, 68px) !important;
+    line-height: 1.02 !important;
+    letter-spacing: -.045em !important;
+  }
+}
+
+@media (max-width: 720px) {
+  .home-redesign .hero-line.hero-intro-line.fx-line,
+  .home-redesign .hero-line.hero-intro-line {
+    margin-bottom: 26px !important;
+  }
+
+  .about-redesign .about-hero h1 {
+    line-height: 1 !important;
+    letter-spacing: -.045em !important;
+  }
+}
+
+/* V39 — more open tracking for both primary display statements. */
+.home-redesign .hero-statement-line,
+.home-redesign .hero-statement-line .hero-line-inner,
+.home-redesign .hero-statement-line em,
+.about-redesign .about-hero h1,
+.about-redesign .about-hero-line,
+.about-redesign .about-hero-line-inner,
+.about-redesign .about-hero h1 em {
+  letter-spacing: -.03em !important;
+}
+
+/* V40 — add vertical breathing room to the multi-line About statement. */
+.about-redesign .about-hero h1,
+.about-redesign .about-hero-line,
+.about-redesign .about-hero-line-inner {
+  line-height: 1.08 !important;
+}
+
+/* V41 — keep the Home statement size while aligning its right edge to the nav grid. */
+@media (min-width: 1001px) {
+  .home-redesign .hero-statement-line,
+  .home-redesign .hero-statement-line .hero-line-inner,
+  .home-redesign .hero-statement-line em {
+    letter-spacing: -.042em !important;
   }
 }
