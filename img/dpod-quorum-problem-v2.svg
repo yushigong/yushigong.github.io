@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#FBFAF7"/>
+  <defs>
+    <style>
+      .ink{fill:#171918}.muted{fill:#5D605D}.coral{fill:#EF6252}.soft{fill:#FFF3EF}.line{stroke:#EF6252;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}.grayline{stroke:#CFCBC6;stroke-width:2;fill:none}.txt{font-family:Inter,Arial,sans-serif}.h{font:700 30px Inter,Arial,sans-serif;fill:#171918}.k{font:700 18px Inter,Arial,sans-serif;fill:#EF6252;letter-spacing:1.2px}.b{font:600 22px Inter,Arial,sans-serif;fill:#171918}.s{font:400 18px Inter,Arial,sans-serif;fill:#5D605D}.cap{font:600 18px Inter,Arial,sans-serif;fill:#171918}
+    </style>
+  </defs>
+  <!-- cards -->
+  <rect x="80" y="95" rx="28" ry="28" width="650" height="710" fill="#FFFDFC" stroke="#F2D8D1" stroke-width="2"/>
+  <rect x="870" y="95" rx="28" ry="28" width="650" height="710" fill="#FFFDFC" stroke="#F2D8D1" stroke-width="2"/>
+  <text x="405" y="150" text-anchor="middle" class="k">BEFORE · AUTHORIZATION ONLY</text>
+  <text x="1195" y="150" text-anchor="middle" class="k">AFTER · WITH QUORUM</text>
+
+  <!-- BEFORE users -->
+  <text x="405" y="215" text-anchor="middle" class="b">Multiple authorized users</text>
+  <!-- user icons -->
+  <g transform="translate(250,270)"><circle cx="0" cy="0" r="24" fill="none" stroke="#171918" stroke-width="3"/><path d="M-42 70c4-30 20-44 42-44s38 14 42 44" fill="none" stroke="#171918" stroke-width="3"/></g>
+  <g transform="translate(405,270)"><circle cx="0" cy="0" r="24" fill="none" stroke="#171918" stroke-width="3"/><path d="M-42 70c4-30 20-44 42-44s38 14 42 44" fill="none" stroke="#171918" stroke-width="3"/></g>
+  <g transform="translate(560,270)"><circle cx="0" cy="0" r="24" fill="none" stroke="#171918" stroke-width="3"/><path d="M-42 70c4-30 20-44 42-44s38 14 42 44" fill="none" stroke="#171918" stroke-width="3"/></g>
+  <path d="M250 362v45M405 362v45M560 362v45M250 407h310M405 407v52" class="line" stroke-dasharray="6 9"/>
+  <circle cx="405" cy="474" r="45" fill="#FFF3EF" stroke="#F4CFC7"/>
+  <g transform="translate(405,458)"><circle cx="0" cy="0" r="18" fill="none" stroke="#171918" stroke-width="3"/><path d="M-32 53c4-23 15-34 32-34s28 11 32 34" fill="none" stroke="#171918" stroke-width="3"/></g>
+  <path d="M405 522v38" class="grayline"/>
+  <path d="M397 551l8 9 8-9" class="grayline"/>
+  <rect x="225" y="575" rx="16" width="360" height="82" fill="#FFFFFF" stroke="#D9D4CE" stroke-width="2"/>
+  <!-- trash icon -->
+  <g transform="translate(270,616)" stroke="#EF6252" fill="none" stroke-width="3"><path d="M-12-14h24M-7-20h14M-9-10v25h18v-25M-4-5v14M4-5v14"/></g>
+  <text x="310" y="625" class="b">Delete Service</text>
+  <path d="M405 657v36" class="grayline"/>
+  <rect x="315" y="700" rx="13" width="180" height="54" fill="#EF6252"/>
+  <text x="405" y="735" text-anchor="middle" font-family="Inter,Arial" font-size="20" font-weight="700" fill="#fff">EXECUTE</text>
+  <text x="405" y="790" text-anchor="middle" class="cap">Any one authorized user can act independently</text>
+
+  <!-- middle arrow -->
+  <path d="M760 445h78M815 420l25 25-25 25" class="line" stroke-width="5"/>
+  <text x="800" y="505" text-anchor="middle" class="k">ADD OVERSIGHT</text>
+
+  <!-- AFTER flow -->
+  <text x="1195" y="215" text-anchor="middle" class="b">Requester</text>
+  <g transform="translate(1195,270)"><circle cx="0" cy="0" r="24" fill="none" stroke="#171918" stroke-width="3"/><path d="M-42 70c4-30 20-44 42-44s38 14 42 44" fill="none" stroke="#171918" stroke-width="3"/></g>
+  <path d="M1195 345v48" class="grayline"/><path d="M1187 384l8 9 8-9" class="grayline"/>
+  <rect x="1015" y="408" rx="16" width="360" height="82" fill="#FFFFFF" stroke="#D9D4CE" stroke-width="2"/>
+  <g transform="translate(1060,449)" stroke="#EF6252" fill="none" stroke-width="3"><path d="M-12-14h24M-7-20h14M-9-10v25h18v-25M-4-5v14M4-5v14"/></g>
+  <text x="1100" y="458" class="b">Delete Service</text>
+  <path d="M1195 490v42" class="grayline"/><path d="M1187 523l8 9 8-9" class="grayline"/>
+  <text x="1195" y="575" text-anchor="middle" class="b">Independent approval</text>
+  <g transform="translate(1115,625)"><circle cx="0" cy="0" r="22" fill="none" stroke="#171918" stroke-width="3"/><path d="M-38 65c4-28 18-41 38-41s34 13 38 41" fill="none" stroke="#171918" stroke-width="3"/></g>
+  <g transform="translate(1275,625)"><circle cx="0" cy="0" r="22" fill="none" stroke="#171918" stroke-width="3"/><path d="M-38 65c4-28 18-41 38-41s34 13 38 41" fill="none" stroke="#171918" stroke-width="3"/></g>
+  <path d="M1115 700h160M1195 700v32" class="line" stroke-dasharray="6 9"/>
+  <path d="M1187 723l8 9 8-9" class="line"/>
+  <rect x="1105" y="740" rx="13" width="180" height="54" fill="#171918"/>
+  <text x="1195" y="775" text-anchor="middle" font-family="Inter,Arial" font-size="20" font-weight="700" fill="#fff">EXECUTE</text>
+  <text x="1195" y="840" text-anchor="middle" class="cap">Selected operations require multi-party approval</text>
+</svg>

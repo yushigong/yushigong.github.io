@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#FBFAF7"/>
+  <defs><style>
+    .ink{fill:#171918}.muted{fill:#656761}.coral{fill:#EF6252}.pale{fill:#FFF3EF}.line{stroke:#E7DDD7;stroke-width:2}.txt{font-family:Inter,Arial,sans-serif}.step{font:700 16px Inter,Arial;fill:#EF6252;letter-spacing:.7px}.head{font:700 22px Inter,Arial;fill:#171918}.body{font:400 17px Inter,Arial;fill:#5D605D}.small{font:500 14px Inter,Arial;fill:#5D605D}.ui{font:600 14px Inter,Arial;fill:#171918}
+  </style></defs>
+  <!-- step rail -->
+  <g transform="translate(115,92)">
+    <circle cx="25" cy="25" r="25" fill="#EF6252"/><text x="25" y="31" text-anchor="middle" font-family="Inter" font-size="16" font-weight="700" fill="#fff">1</text>
+    <text x="68" y="31" class="step">SELECT A SERVICE</text>
+    <path d="M285 25h140" stroke="#EF6252" stroke-width="2"/><path d="M415 18l10 7-10 7" fill="none" stroke="#EF6252" stroke-width="2"/>
+    <circle cx="475" cy="25" r="25" fill="#EF6252"/><text x="475" y="31" text-anchor="middle" font-family="Inter" font-size="16" font-weight="700" fill="#fff">2</text>
+    <text x="518" y="31" class="step">CHOOSE OPERATIONS</text>
+    <path d="M760 25h140" stroke="#EF6252" stroke-width="2"/><path d="M890 18l10 7-10 7" fill="none" stroke="#EF6252" stroke-width="2"/>
+    <circle cx="950" cy="25" r="25" fill="#EF6252"/><text x="950" y="31" text-anchor="middle" font-family="Inter" font-size="16" font-weight="700" fill="#fff">3</text>
+    <text x="993" y="31" class="step">ASSIGN APPROVER GROUP</text>
+  </g>
+  <!-- UI frame -->
+  <rect x="115" y="190" width="1370" height="530" rx="22" fill="#fff" stroke="#E5DAD4" stroke-width="2"/>
+  <rect x="115" y="190" width="1370" height="68" rx="22" fill="#FFF8F5"/>
+  <text x="155" y="233" class="head">Create Quorum Policy · Service Level</text>
+  <line x1="570" y1="258" x2="570" y2="720" class="line"/>
+  <line x1="1030" y1="258" x2="1030" y2="720" class="line"/>
+
+  <!-- col1 -->
+  <text x="155" y="300" class="step">1 · SERVICE</text>
+  <text x="155" y="338" class="small">Choose the cryptographic service to protect</text>
+  <rect x="155" y="370" width="350" height="48" rx="9" fill="#fff" stroke="#D9D4CE"/>
+  <text x="177" y="400" class="small">Search services…</text>
+  <g class="ui">
+    <rect x="155" y="442" width="350" height="48" rx="8" fill="#FFF3EF"/><text x="177" y="472">Payment Service</text>
+    <text x="177" y="532">Key Management Service</text>
+    <text x="177" y="592">Data Encryption Service</text>
+    <text x="177" y="652">Messaging Service</text>
+  </g>
+
+  <!-- col2 -->
+  <text x="610" y="300" class="step">2 · OPERATIONS</text>
+  <text x="610" y="338" class="small">Select which actions require Quorum</text>
+  <g transform="translate(610,380)">
+    <rect x="0" y="0" width="24" height="24" rx="5" fill="#EF6252"/><path d="M6 12l4 4 8-9" fill="none" stroke="#fff" stroke-width="3"/>
+    <text x="40" y="18" class="ui">Delete Service</text>
+    <rect x="0" y="62" width="24" height="24" rx="5" fill="#fff" stroke="#CFCBC6"/><text x="40" y="80" class="ui">Disable Service</text>
+    <rect x="0" y="124" width="24" height="24" rx="5" fill="#fff" stroke="#CFCBC6"/><text x="40" y="142" class="ui">Rotate Keys</text>
+    <rect x="0" y="186" width="24" height="24" rx="5" fill="#fff" stroke="#CFCBC6"/><text x="40" y="204" class="ui">Update Configuration</text>
+  </g>
+
+  <!-- col3 -->
+  <text x="1070" y="300" class="step">3 · APPROVERS</text>
+  <text x="1070" y="338" class="small">Define who can approve and the threshold</text>
+  <text x="1070" y="390" class="small">Approver group</text>
+  <rect x="1070" y="410" width="350" height="54" rx="9" fill="#fff" stroke="#D9D4CE"/>
+  <text x="1092" y="444" class="ui">Security Administrators</text><path d="M1388 432l10 10 10-10" fill="none" stroke="#777" stroke-width="2"/>
+  <text x="1070" y="515" class="small">Required approvals</text>
+  <rect x="1070" y="535" width="170" height="54" rx="9" fill="#fff" stroke="#D9D4CE"/>
+  <text x="1092" y="569" class="ui">2 of 3</text><path d="M1204 557l10 10 10-10" fill="none" stroke="#777" stroke-width="2"/>
+
+  <!-- repeat callout -->
+  <path d="M800 755c0 55-50 70-145 70H360" fill="none" stroke="#EF6252" stroke-width="3" stroke-dasharray="7 8"/>
+  <circle cx="330" cy="825" r="22" fill="#FFF3EF" stroke="#EF6252" stroke-width="2"/>
+  <path d="M320 825h20M330 815v20" stroke="#EF6252" stroke-width="2"/>
+  <text x="370" y="833" font-family="Inter" font-size="23" font-weight="700" fill="#EF6252">Repeat for every service</text>
+  <text x="1110" y="817" text-anchor="middle" class="body">More services → more repeated setup and maintenance</text>
+</svg>
