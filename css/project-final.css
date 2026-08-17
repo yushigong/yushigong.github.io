@@ -580,3 +580,603 @@ body.dpod-redesign-case-page .ccc-workflow img {
     transition: none;
   }
 }
+
+/* ===== DPoD redesign 2026 story refresh ===== */
+body.dpod-redesign-case-page {
+  --ccc-coral: #ef6252;
+  --ccc-ink: #111111;
+  --ccc-muted: #696969;
+  --ccc-panel: #f7f7f6;
+  --ccc-blush: #fbf1ef;
+  --ccc-border: #e8e8e5;
+}
+
+body.dpod-redesign-case-page .ccc-value-grid,
+body.dpod-redesign-case-page .ccc-three-column-grid,
+body.dpod-redesign-case-page .ccc-impact-grid-new {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 42px;
+}
+
+body.dpod-redesign-case-page .ccc-value-item,
+body.dpod-redesign-case-page .ccc-impact-grid-new > div {
+  min-height: 165px;
+  border: 1px solid var(--ccc-border);
+  border-radius: 18px;
+  background: #fff;
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+body.dpod-redesign-case-page .ccc-value-item strong,
+body.dpod-redesign-case-page .ccc-impact-grid-new strong {
+  display: block;
+  font-family: 'Inter Tight', 'Inter', sans-serif;
+  font-size: clamp(34px, 4vw, 58px);
+  line-height: .96;
+  letter-spacing: -0.045em;
+  color: var(--ccc-coral);
+  margin-bottom: 12px;
+}
+
+body.dpod-redesign-case-page .ccc-value-item span,
+body.dpod-redesign-case-page .ccc-impact-grid-new > div > span {
+  font-size: 12px;
+  line-height: 1.35;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--ccc-muted);
+  font-weight: 700;
+}
+
+body.dpod-redesign-case-page .ccc-insight-card {
+  position: relative;
+  border: 1px solid var(--ccc-border);
+  border-radius: 18px;
+  background: #fff;
+  padding: 30px 28px 28px;
+  min-height: 310px;
+}
+
+body.dpod-redesign-case-page .ccc-insight-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 28px;
+  right: 28px;
+  height: 3px;
+  border-radius: 999px;
+  background: var(--ccc-coral);
+}
+
+body.dpod-redesign-case-page .ccc-card-label,
+body.dpod-redesign-case-page .ccc-hmw-goals span,
+body.dpod-redesign-case-page .ccc-two-value-grid span,
+body.dpod-redesign-case-page .ccc-redesign-principles > div > span,
+body.dpod-redesign-case-page .ccc-measure-next > span {
+  display: block;
+  color: var(--ccc-coral);
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+body.dpod-redesign-case-page .ccc-card-number {
+  display: inline-block;
+  margin-right: 8px;
+  color: #a7a7a2;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+body.dpod-redesign-case-page .ccc-insight-card h2 {
+  font-family: 'Inter Tight', 'Inter', sans-serif;
+  font-size: 24px;
+  line-height: 1.15;
+  letter-spacing: -.025em;
+  margin: 0 0 14px;
+  color: var(--ccc-ink);
+}
+
+body.dpod-redesign-case-page .ccc-insight-card p,
+body.dpod-redesign-case-page .ccc-two-value-grid p,
+body.dpod-redesign-case-page .ccc-redesign-principles p,
+body.dpod-redesign-case-page .ccc-system-side p,
+body.dpod-redesign-case-page .ccc-impact-grid-new p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--ccc-muted);
+  margin: 0;
+}
+
+body.dpod-redesign-case-page .ccc-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 22px;
+}
+
+body.dpod-redesign-case-page .ccc-chip-row span {
+  font-size: 12px;
+  line-height: 1;
+  padding: 9px 11px;
+  border-radius: 999px;
+  background: var(--ccc-blush);
+  color: #7b4b45;
+  white-space: nowrap;
+}
+
+body.dpod-redesign-case-page .ccc-takeaway {
+  margin-top: 34px;
+  padding: 22px 26px;
+  border-left: 4px solid var(--ccc-coral);
+  background: var(--ccc-blush);
+  border-radius: 0 14px 14px 0;
+  color: var(--ccc-ink);
+  font-size: 18px;
+  line-height: 1.55;
+}
+
+body.dpod-redesign-case-page .ccc-takeaway strong,
+body.dpod-redesign-case-page .ccc-takeaway span {
+  display: block;
+}
+
+body.dpod-redesign-case-page .ccc-takeaway span {
+  margin-top: 4px;
+  color: var(--ccc-muted);
+}
+
+body.dpod-redesign-case-page .ccc-hmw-band {
+  background: #111;
+}
+
+body.dpod-redesign-case-page .ccc-hmw-band .case-study-small-header,
+body.dpod-redesign-case-page .ccc-hmw-band .section-number,
+body.dpod-redesign-case-page .ccc-hmw-band .section-name,
+body.dpod-redesign-case-page .ccc-hmw-band .section-rule {
+  color: #fff;
+  border-color: rgba(255,255,255,.35);
+}
+
+body.dpod-redesign-case-page .ccc-hmw-kicker {
+  margin-top: 40px;
+  color: var(--ccc-coral);
+  font-size: 13px;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: .12em;
+}
+
+body.dpod-redesign-case-page .ccc-hmw-band h2 {
+  max-width: 1050px;
+  margin: 16px auto 0;
+  color: #fff;
+}
+
+body.dpod-redesign-case-page .ccc-hmw-goals {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin: 44px auto 0;
+  max-width: 1120px;
+}
+
+body.dpod-redesign-case-page .ccc-hmw-goals > div {
+  border-top: 1px solid rgba(255,255,255,.28);
+  padding-top: 18px;
+}
+
+body.dpod-redesign-case-page .ccc-hmw-goals strong {
+  display: block;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.45;
+  font-weight: 600;
+}
+
+body.dpod-redesign-case-page .ccc-hmw-goals span {
+  margin-bottom: 10px;
+}
+
+body.dpod-redesign-case-page .ccc-redesign-principles {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin: 38px 0 46px;
+}
+
+body.dpod-redesign-case-page .ccc-redesign-principles > div,
+body.dpod-redesign-case-page .ccc-two-value-grid > div {
+  padding: 26px;
+  border-radius: 16px;
+  background: var(--ccc-panel);
+  border: 1px solid var(--ccc-border);
+}
+
+body.dpod-redesign-case-page .ccc-redesign-principles strong,
+body.dpod-redesign-case-page .ccc-two-value-grid strong,
+body.dpod-redesign-case-page .ccc-system-side strong {
+  display: block;
+  font-family: 'Inter Tight', 'Inter', sans-serif;
+  color: var(--ccc-ink);
+  font-size: 21px;
+  line-height: 1.2;
+  letter-spacing: -.02em;
+  margin-bottom: 10px;
+}
+
+body.dpod-redesign-case-page .ccc-workflow-gallery-compact {
+  margin-top: 20px;
+}
+
+body.dpod-redesign-case-page .ccc-system-shift {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 24px;
+  align-items: stretch;
+  margin: 42px 0 22px;
+}
+
+body.dpod-redesign-case-page .ccc-system-side {
+  border: 1px solid var(--ccc-border);
+  border-radius: 18px;
+  padding: 28px;
+  background: #fff;
+}
+
+body.dpod-redesign-case-page .ccc-system-side-after {
+  background: var(--ccc-blush);
+  border-color: #f0d3cf;
+}
+
+body.dpod-redesign-case-page .ccc-system-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ccc-coral);
+  font-size: 38px;
+}
+
+body.dpod-redesign-case-page .ccc-mini-flow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin: 22px 0 16px;
+}
+
+body.dpod-redesign-case-page .ccc-mini-flow span {
+  text-align: center;
+  padding: 12px 8px;
+  border: 1px solid var(--ccc-border);
+  border-radius: 10px;
+  background: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  color: #535353;
+}
+
+body.dpod-redesign-case-page .ccc-big-quote {
+  font-family: 'Inter Tight', 'Inter', sans-serif;
+  font-size: clamp(30px, 4vw, 48px);
+  line-height: 1.05;
+  letter-spacing: -.04em;
+  color: var(--ccc-coral);
+  text-align: center;
+  margin: 24px 0 42px;
+}
+
+body.dpod-redesign-case-page .ccc-two-value-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 38px;
+}
+
+body.dpod-redesign-case-page .ccc-strategy-grid .ccc-insight-card {
+  min-height: 245px;
+}
+
+body.dpod-redesign-case-page .ccc-impact-grid-new > div {
+  align-items: flex-start;
+  text-align: left;
+  justify-content: flex-start;
+  min-height: 270px;
+}
+
+body.dpod-redesign-case-page .ccc-impact-grid-new > div > span {
+  margin-bottom: 18px;
+}
+
+body.dpod-redesign-case-page .ccc-impact-grid-new strong {
+  margin-bottom: 12px;
+}
+
+body.dpod-redesign-case-page .ccc-impact-grid-new h2 {
+  font-family: 'Inter Tight', 'Inter', sans-serif;
+  font-size: 24px;
+  margin: 0 0 12px;
+  color: var(--ccc-ink);
+}
+
+body.dpod-redesign-case-page .ccc-impact-closing {
+  max-width: 860px;
+  margin: 34px auto 0 !important;
+  text-align: center;
+  font-weight: 600;
+}
+
+body.dpod-redesign-case-page .ccc-reflection-section {
+  background: #fff8f6;
+}
+
+body.dpod-redesign-case-page .ccc-measure-next {
+  margin-top: 40px;
+  border-top: 1px solid #ead7d2;
+  padding-top: 24px;
+}
+
+body.dpod-redesign-case-page .ccc-measure-next > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+body.dpod-redesign-case-page .ccc-measure-next strong {
+  display: inline-flex;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: #fff;
+  border: 1px solid #ead7d2;
+  color: #4a3834;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  body.dpod-redesign-case-page .ccc-value-grid,
+  body.dpod-redesign-case-page .ccc-three-column-grid,
+  body.dpod-redesign-case-page .ccc-impact-grid-new,
+  body.dpod-redesign-case-page .ccc-hmw-goals,
+  body.dpod-redesign-case-page .ccc-redesign-principles {
+    grid-template-columns: 1fr;
+  }
+  body.dpod-redesign-case-page .ccc-two-value-grid {
+    grid-template-columns: 1fr;
+  }
+  body.dpod-redesign-case-page .ccc-system-shift {
+    grid-template-columns: 1fr;
+  }
+  body.dpod-redesign-case-page .ccc-system-arrow {
+    transform: rotate(90deg);
+    min-height: 46px;
+  }
+  body.dpod-redesign-case-page .ccc-insight-card,
+  body.dpod-redesign-case-page .ccc-impact-grid-new > div {
+    min-height: 0;
+  }
+}
+
+/* DPoD simplified case-study story — Unify → Improve → Scale */
+body.dpod-redesign-case-page .ccc-approach-grid { margin-top: 42px; }
+body.dpod-redesign-case-page .ccc-efficiency-shift { margin-top: 42px; }
+body.dpod-redesign-case-page .ccc-mini-flow-vertical { grid-template-columns: 1fr; max-width: 300px; margin-left: auto; margin-right: auto; }
+body.dpod-redesign-case-page .ccc-impact-final-ui { margin-top: 48px; }
+body.dpod-redesign-case-page .ccc-overview-metrics .ccc-value-item { text-align: center; }
+body.dpod-redesign-case-page .ccc-overview-metrics .ccc-value-item span { display:block; }
+
+
+/* DPoD simplified story — 2026-08-16 */
+body.dpod-redesign-case-page .ccc-impact-at-glance {
+  display:block;
+  width:100%;
+  margin:42px auto 32px;
+  border-radius:20px;
+}
+body.dpod-redesign-case-page .ccc-scale-value-grid { margin-top:34px; }
+body.dpod-redesign-case-page .ccc-impact-section { background:#fff; }
+body.dpod-redesign-case-page .ccc-impact-closing { max-width:820px; margin-top:28px; }
+@media (max-width: 767px) {
+  body.dpod-redesign-case-page .ccc-impact-at-glance { margin-top:28px; border-radius:14px; }
+}
+
+
+/* DPoD audit + impact refinements */
+body.dpod-redesign-case-page .ccc-audit-story-visual {
+  margin: 44px auto 0;
+  width: 100%;
+  display: block;
+}
+body.dpod-redesign-case-page .ccc-impact-closing {
+  max-width: 980px;
+  margin: 30px auto 0;
+  text-align: center;
+}
+body.dpod-redesign-case-page .ccc-impact-note {
+  display: block;
+  margin-top: 10px;
+  font-size: .82em;
+  color: #8b8b8b;
+}
+body.dpod-redesign-case-page .ccc-reflection-section .case-study-paragraph {
+  max-width: 980px;
+}
+
+/* DPoD audit map — align UNIFY / IMPROVE narrative and full-width visuals */
+body.dpod-redesign-case-page .ccc-audit-map {
+  width: 100%;
+  margin: 44px 0 0;
+  padding: 42px 48px;
+  border: 1px solid #e8e5e2;
+  border-radius: 20px;
+  background: #f7f7f6;
+  box-sizing: border-box;
+}
+body.dpod-redesign-case-page .ccc-audit-origin,
+body.dpod-redesign-case-page .ccc-audit-result { text-align:center; }
+body.dpod-redesign-case-page .ccc-audit-kicker,
+body.dpod-redesign-case-page .ccc-audit-number,
+body.dpod-redesign-case-page .ccc-audit-result span {
+  display:block; color:#ef6252; font-size:12px; font-weight:800; letter-spacing:.12em; text-transform:uppercase;
+}
+body.dpod-redesign-case-page .ccc-audit-origin strong { display:block; margin-top:9px; font-size:24px; line-height:1.25; color:#171717; }
+body.dpod-redesign-case-page .ccc-audit-origin p { max-width:650px; margin:10px auto 0; color:#666; font-size:15px; line-height:1.55; }
+body.dpod-redesign-case-page .ccc-audit-paths { display:grid; grid-template-columns:1fr 1fr; gap:22px; }
+body.dpod-redesign-case-page .ccc-audit-path { min-height:168px; padding:30px 32px; border:1px solid #dedbd8; border-radius:16px; background:#fff; text-align:center; }
+body.dpod-redesign-case-page .ccc-audit-path strong { display:block; margin:10px auto 12px; font-size:20px; line-height:1.3; color:#171717; }
+body.dpod-redesign-case-page .ccc-audit-path p { margin:0 auto; max-width:420px; color:#696969; font-size:14px; line-height:1.6; }
+body.dpod-redesign-case-page .ccc-audit-branches,
+body.dpod-redesign-case-page .ccc-audit-merge { position:relative; height:54px; max-width:58%; margin:0 auto; }
+body.dpod-redesign-case-page .ccc-audit-branches i,
+body.dpod-redesign-case-page .ccc-audit-merge i { position:absolute; left:50%; top:0; width:1px; height:28px; background:#ef6252; }
+body.dpod-redesign-case-page .ccc-audit-branches span,
+body.dpod-redesign-case-page .ccc-audit-merge span { position:absolute; top:27px; width:50%; height:1px; background:#ef6252; }
+body.dpod-redesign-case-page .ccc-audit-branches span:first-child,
+body.dpod-redesign-case-page .ccc-audit-merge span:first-child { left:0; }
+body.dpod-redesign-case-page .ccc-audit-branches span:last-child,
+body.dpod-redesign-case-page .ccc-audit-merge span:last-child { right:0; }
+body.dpod-redesign-case-page .ccc-audit-branches span:first-child:after,
+body.dpod-redesign-case-page .ccc-audit-branches span:last-child:after { content:""; position:absolute; top:0; width:1px; height:27px; background:#ef6252; }
+body.dpod-redesign-case-page .ccc-audit-branches span:first-child:after { left:0; }
+body.dpod-redesign-case-page .ccc-audit-branches span:last-child:after { right:0; }
+body.dpod-redesign-case-page .ccc-audit-merge { transform:rotate(180deg); margin-top:0; }
+body.dpod-redesign-case-page .ccc-audit-result { padding-top:2px; }
+body.dpod-redesign-case-page .ccc-audit-result strong { display:block; margin-top:8px; font-size:22px; line-height:1.3; color:#171717; }
+body.dpod-redesign-case-page .ccc-impact-at-glance { width:100%; max-width:none; margin-left:0; margin-right:0; }
+body.dpod-redesign-case-page .ccc-impact-closing { width:100%; max-width:100%; text-align:center; margin:30px auto 0; }
+@media (max-width:767px) {
+  body.dpod-redesign-case-page .ccc-audit-map { padding:30px 20px; border-radius:14px; }
+  body.dpod-redesign-case-page .ccc-audit-paths { grid-template-columns:1fr; gap:14px; }
+  body.dpod-redesign-case-page .ccc-audit-branches,
+  body.dpod-redesign-case-page .ccc-audit-merge { display:none; }
+  body.dpod-redesign-case-page .ccc-audit-paths { margin:26px 0; }
+  body.dpod-redesign-case-page .ccc-audit-path { min-height:0; padding:24px 20px; }
+}
+
+
+/* DPoD audit clarity + true wide impact — 2026-08-16 */
+body.dpod-redesign-case-page .ccc-audit-findings {
+  width:min(1180px, calc(100vw - 64px));
+  margin:44px 50% 0;
+  transform:translateX(-50%);
+  display:grid; grid-template-columns:1fr 180px 1.15fr; align-items:stretch; gap:22px;
+  padding:34px; border:1px solid #e8e5e2; border-radius:20px; background:#f7f7f6; box-sizing:border-box;
+}
+body.dpod-redesign-case-page .ccc-audit-review,
+body.dpod-redesign-case-page .ccc-audit-findings-list > div { background:#fff; border:1px solid #e2dfdc; border-radius:16px; padding:28px; }
+body.dpod-redesign-case-page .ccc-audit-kicker,
+body.dpod-redesign-case-page .ccc-audit-findings-list span,
+body.dpod-redesign-case-page .ccc-audit-decision span { display:block; color:#ef6252; font-size:12px; font-weight:800; letter-spacing:.12em; text-transform:uppercase; }
+body.dpod-redesign-case-page .ccc-audit-review > strong { display:block; margin:10px 0 18px; font-size:24px; color:#171717; }
+body.dpod-redesign-case-page .ccc-audit-tags { display:flex; flex-wrap:wrap; gap:8px; }
+body.dpod-redesign-case-page .ccc-audit-tags span { color:#555; background:#f3f2f1; border-radius:999px; padding:8px 11px; font-size:12px; font-weight:600; letter-spacing:0; text-transform:none; }
+body.dpod-redesign-case-page .ccc-audit-decision { display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; }
+body.dpod-redesign-case-page .ccc-audit-decision strong { margin-top:10px; font-size:18px; line-height:1.3; color:#171717; }
+body.dpod-redesign-case-page .ccc-audit-decision i { margin-top:18px; color:#ef6252; font-size:34px; font-style:normal; font-weight:400; }
+body.dpod-redesign-case-page .ccc-audit-findings-list { display:grid; gap:12px; }
+body.dpod-redesign-case-page .ccc-audit-findings-list strong { display:block; margin:8px 0 8px; font-size:18px; color:#171717; }
+body.dpod-redesign-case-page .ccc-audit-findings-list p { margin:0; color:#666; font-size:14px; line-height:1.55; }
+body.dpod-redesign-case-page .case-study-section-info-container > img.ccc-impact-at-glance {
+  display:block; width:min(1180px, calc(100vw - 64px)) !important; max-width:none !important;
+  margin:42px 50% 32px !important; transform:translateX(-50%);
+}
+@media(max-width:767px){
+ body.dpod-redesign-case-page .ccc-audit-findings { width:calc(100vw - 24px); grid-template-columns:1fr; padding:20px; gap:14px; }
+ body.dpod-redesign-case-page .ccc-audit-decision i { transform:rotate(90deg); margin:10px 0; }
+ body.dpod-redesign-case-page .case-study-section-info-container > img.ccc-impact-at-glance { width:calc(100vw - 24px) !important; margin-top:28px !important; }
+}
+
+/* DPoD wide visual centering fix — 2026-08-16 */
+body.dpod-redesign-case-page .ccc-audit-findings {
+  position: relative;
+  left: 50%;
+  width: min(1180px, calc(100vw - 64px));
+  margin: 44px 0 0;
+  transform: translateX(-50%);
+}
+body.dpod-redesign-case-page .case-study-section-info-container > img.ccc-impact-at-glance {
+  position: relative;
+  left: 50%;
+  display: block;
+  width: min(1180px, calc(100vw - 64px)) !important;
+  max-width: none !important;
+  margin: 42px 0 32px !important;
+  transform: translateX(-50%);
+}
+@media (max-width: 767px) {
+  body.dpod-redesign-case-page .ccc-audit-findings {
+    width: calc(100vw - 24px);
+  }
+  body.dpod-redesign-case-page .case-study-section-info-container > img.ccc-impact-at-glance {
+    width: calc(100vw - 24px) !important;
+  }
+}
+
+
+/* DPoD true full-width centering + quieter audit takeaway — 2026-08-16 final */
+body.dpod-redesign-case-page .ccc-audit-findings,
+body.dpod-redesign-case-page .case-study-section-info-container > img.ccc-impact-at-glance {
+  position: static !important;
+  left: auto !important;
+  transform: none !important;
+  width: min(1180px, calc(100vw - 64px)) !important;
+  max-width: none !important;
+  margin-left: calc(50% - 50vw + 32px) !important;
+  margin-right: 0 !important;
+  box-sizing: border-box;
+}
+body.dpod-redesign-case-page .ccc-audit-findings {
+  margin-top: 44px !important;
+}
+body.dpod-redesign-case-page .case-study-section-info-container > img.ccc-impact-at-glance {
+  margin-top: 42px !important;
+  margin-bottom: 32px !important;
+}
+body.dpod-redesign-case-page .ccc-big-quote.ccc-audit-takeaway {
+  color: #171717 !important;
+}
+body.dpod-redesign-case-page .ccc-big-quote.ccc-audit-takeaway .ccc-audit-emphasis {
+  color: #ef6252;
+}
+@media (max-width: 767px) {
+  body.dpod-redesign-case-page .ccc-audit-findings,
+  body.dpod-redesign-case-page .case-study-section-info-container > img.ccc-impact-at-glance {
+    width: calc(100vw - 24px) !important;
+    margin-left: calc(50% - 50vw + 12px) !important;
+  }
+}
+
+
+/* DPoD wide visual alignment + concise takeaway — 2026-08-16 v7 */
+body.dpod-redesign-case-page .ccc-audit-findings,
+body.dpod-redesign-case-page .case-study-section-info-container > img.ccc-impact-at-glance {
+  position: relative !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: min(1180px, calc(100vw - 64px)) !important;
+  max-width: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  box-sizing: border-box;
+}
+body.dpod-redesign-case-page .ccc-audit-findings { margin-top: 44px !important; }
+body.dpod-redesign-case-page .case-study-section-info-container > img.ccc-impact-at-glance { margin-top: 42px !important; margin-bottom: 32px !important; }
+body.dpod-redesign-case-page .ccc-big-quote.ccc-audit-takeaway {
+  color: var(--ccc-coral) !important;
+  font-weight: 700;
+}
+@media (max-width: 767px) {
+  body.dpod-redesign-case-page .ccc-audit-findings,
+  body.dpod-redesign-case-page .case-study-section-info-container > img.ccc-impact-at-glance {
+    width: calc(100vw - 24px) !important;
+  }
+}
