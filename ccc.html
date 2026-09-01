@@ -21,7 +21,7 @@
 <link href="css/styles.css?v=42" rel="stylesheet">
 <link href="css/pages-styles.css" rel="stylesheet">
 <link href="css/project-chrome.css" rel="stylesheet">
-<link href="css/project-final.css?v=20260816" rel="stylesheet">
+<link href="css/project-final.css?v=20260831b" rel="stylesheet">
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -55,9 +55,9 @@
 <!-- HEADING+IMAGE  -->
 <div class="case-header-section-container"><p class="case-project-meta"><span>2025</span><span aria-hidden="true">·</span><span>B2B SaaS</span><span aria-hidden="true">·</span><span>Design System</span><span aria-hidden="true">·</span><span>Enterprise Platform</span></p>
 <h1 class="case-study-largest-header">Thales Platform Redesign</h1>
-<h2 class="case-study-large-header1">Unifying DPoD with the shared design system while improving key parts of the experience</h2>
+<h2 class="case-study-large-header1">Aligning DPoD with a shared design system without erasing product context</h2>
 <div class="large-spacing"></div>
-<img alt="" class="img-responsive" src="img/cover-dpod-redesign-final.png">
+<img alt="DPoD platform redesign shown across key enterprise service workflows" class="img-responsive" src="img/cover-dpod-redesign-final.png">
 </div>
 <!-- OVERVIEW SUMMARY -->
 <div class="case-meta-wrap">
@@ -73,8 +73,8 @@
 <div class="case-study-section-info-container">
 <h3 class="case-study-small-header"><span class="section-number">01</span><span aria-hidden="true" class="section-rule"></span><span class="section-name">OVERVIEW</span></h3>
 <h1 class="case-study-large-header">Bringing DPoD into a more unified Thales product experience</h1>
-<p class="case-study-paragraph">DPoD is Thales’ cloud-based platform for deploying and managing cryptographic services that help organizations protect sensitive data and encryption keys.</p>
-<p class="case-study-paragraph">As Thales’ product portfolio evolved, DPoD and Imperva had developed different visual languages, components, and interaction patterns. I led the redesign of DPoD using the shared Imperva design system—bringing the product into a more consistent visual language while making targeted usability improvements along the way.</p>
+<p class="case-study-paragraph">DPoD is Thales’ cloud platform for deploying and managing enterprise cryptographic services. As Thales’ product portfolio evolved, DPoD and other products in the ecosystem had developed different visual languages, components, and interaction patterns.</p>
+<p class="case-study-paragraph">I led the <strong>platform-wide redesign of DPoD</strong> using a shared design-system foundation. Rather than treating the work as a visual migration, I determined where DPoD should align with shared patterns, where product-specific experiences should be preserved, and where targeted UX improvements were justified. This case study highlights five representative experiences from the broader redesign.</p>
 <div class="ccc-value-grid ccc-overview-metrics">
   <div class="ccc-value-item"><strong>+35%</strong><span>User satisfaction</span></div>
   <div class="ccc-value-item"><strong>20+</strong><span>Reusable components &amp; variants</span></div>
@@ -86,89 +86,144 @@
 <div class="case-study-section-container">
 <div class="case-study-section-info-container">
 <h3 class="case-study-small-header"><span class="section-number">02</span><span aria-hidden="true" class="section-rule"></span><span class="section-name">THE PROBLEM</span></h3>
-<h1 class="case-study-large-header">DPoD no longer felt consistent with the broader product ecosystem</h1>
-<p class="case-study-paragraph">DPoD and Imperva had evolved with different visual languages, components, and interaction patterns. As Thales moved toward a more unified product experience, DPoD needed to align with the shared design direction.</p>
-<div class="ccc-takeaway"><strong>The opportunity wasn’t to reinvent DPoD.</strong><span>It was to bring the product into the shared system without disrupting familiar enterprise workflows.</span></div>
+<h1 class="case-study-large-header">Consistency without disrupting a mature product</h1>
+<p class="case-study-paragraph">DPoD had evolved independently from the broader product ecosystem, creating differences across navigation, components, visual hierarchy, and interaction patterns.</p>
+<p class="case-study-paragraph">Aligning DPoD with the shared system could improve consistency and reduce duplicated design and engineering effort. But DPoD was also a mature enterprise product with established workflows and product-specific needs.</p>
+<p class="case-study-paragraph">Imperva’s design system provided the shared foundation for the migration, giving us established patterns to evaluate against DPoD’s product context.</p>
 <img alt="Comparison of the original DPoD and Imperva interfaces, showing different visual languages and component patterns" class="img-responsive ccc-problem-visual ccc-rounded-visual" src="img/ccc-problem-final-v2.png">
+<div class="ccc-hmw-block"><span>HOW MIGHT WE</span><p>How might we align DPoD with a shared design system without losing the product context and workflows that still worked well?</p></div>
 </div>
 </div>
 
 <div class="case-study-section-container shopify-alt-grey">
 <div class="case-study-section-info-container">
-<h3 class="case-study-small-header"><span class="section-number">03</span><span aria-hidden="true" class="section-rule"></span><span class="section-name">AUDIT &amp; OPPORTUNITIES</span></h3>
-<h1 class="case-study-large-header">Not everything needed to be redesigned.</h1>
-<p class="case-study-paragraph">I audited DPoD’s core screens and workflows against Imperva’s shared design system to understand where the experience was simply inconsistent—and where users would actually benefit from a UX change.</p>
-<div class="ccc-audit-findings" aria-label="DPoD audit showing what was reviewed and the two types of opportunities found">
-  <div class="ccc-audit-review">
-    <span class="ccc-audit-kicker">WHAT I REVIEWED</span>
-    <strong>Existing DPoD</strong>
-    <div class="ccc-audit-tags"><span>Navigation</span><span>Components</span><span>Visual hierarchy</span><span>Core workflows</span><span>Service discovery</span></div>
-  </div>
-  <div class="ccc-audit-decision"><span>AUDIT</span><strong>Alignment or UX change?</strong><i aria-hidden="true">→</i></div>
-  <div class="ccc-audit-findings-list">
-    <div><span>SYSTEM GAPS</span><strong>Align what was inconsistent</strong><p>Established Imperva patterns could solve most visual and component differences without changing familiar workflows.</p></div>
-    <div><span>UX OPPORTUNITIES</span><strong>Improve where friction was real</strong><p>Service discovery, information hierarchy, and selected interactions had clear opportunities for targeted refinement.</p></div>
-  </div>
+<h3 class="case-study-small-header"><span class="section-number">03</span><span aria-hidden="true" class="section-rule"></span><span class="section-name">AUDIT &amp; DESIGN PRINCIPLES</span></h3>
+<h1 class="case-study-large-header">Not every difference represented the same problem</h1>
+<p class="case-study-paragraph">I audited DPoD’s core screens and workflows against the shared Imperva design system to understand what could be reused directly—and where a different response was justified.</p>
+<div class="ccc-audit-3col" aria-label="Three audit outcomes used to guide the redesign">
+  <article><span>01 · ALIGN</span><h2>System inconsistency</h2><p>The workflow already worked, but its components or visual language had diverged from the shared system.</p><strong>Align with established patterns.</strong></article>
+  <article><span>02 · PRESERVE &amp; EXTEND</span><h2>Product-specific value</h2><p>The DPoD pattern served its task better than the available shared pattern.</p><strong>Preserve the interaction model and extend only when justified.</strong></article>
+  <article><span>03 · IMPROVE</span><h2>Existing UX debt</h2><p>Some familiar patterns had become harder to use or scale as the product evolved.</p><strong>Use the migration for targeted UX improvement.</strong></article>
 </div>
-<div class="ccc-big-quote ccc-audit-takeaway">Preserve the familiar. Fix the friction.</div>
+<div class="ccc-scope-decision">
+  <span class="ccc-scope-decision-kicker">SCOPE DECISION</span>
+  <p>Product initially scoped the initiative around UI consistency. The audit surfaced a small number of high-value UX issues, so I proposed—and we aligned on—a migration-first approach with targeted improvements rather than a broader redesign.</p>
+  <strong class="ccc-scope-decision-summary">Align broadly. Improve selectively.</strong>
+</div>
 </div>
 </div>
 
+<div class="case-study-section-container shopify-alt-grey ccc-decisions-section">
+<div class="case-study-section-info-container">
+<h3 class="case-study-small-header"><span class="section-number">04</span><span aria-hidden="true" class="section-rule"></span><span class="section-name">KEY DESIGN DECISIONS</span></h3>
+<h1 class="case-study-large-header">Three decisions shaped the redesign</h1>
+<p class="case-study-paragraph">These three decisions show how I applied the audit principles in practice—aligning with the shared system when it fit, extending it when product context required more, and improving targeted UX debt.</p>
+
+<section class="ccc-decision-block">
+<p class="ccc-decision-kicker">DECISION 01 · PRESERVE &amp; EXTEND</p>
+<h2 class="ccc-decision-insight">Preserve the interaction model when the shared pattern serves a different task</h2>
+<p class="case-study-paragraph">Imperva’s Marketplace was optimized for quickly scanning and connecting integrations through compact horizontal rows and direct actions. DPoD supported a different task: browsing and evaluating cryptographic services before entering a deeper service experience.</p>
+<p class="case-study-paragraph">Engineering preferred reusing the existing Imperva pattern to minimize new component variants. I was concerned that optimizing for system consistency would weaken the service-discovery experience DPoD users already relied on.</p>
+<figure class="ccc-marketplace-comparison-image">
+  <img src="img/ccc-marketplace-pattern-comparison.png" alt="Imperva Marketplace uses compact horizontal integration rows, while DPoD Marketplace uses vertical service cards for service discovery and deeper evaluation">
+</figure>
+<p class="ccc-tradeoff-label">TRADE-OFF · CONSISTENCY VS TASK FIT</p>
+<div class="ccc-decision-option-grid">
+  <article class="ccc-decision-option-card">
+    <span class="option-kicker">Option A</span>
+    <h3>Reuse Imperva Marketplace</h3>
+    <div class="ccc-decision-option-group"><strong>Benefits</strong><ul><li>Maximum cross-product consistency</li><li>Lower implementation and maintenance effort</li></ul></div>
+    <div class="ccc-decision-option-group"><strong>Trade-off</strong><ul><li>Optimized for integration scanning rather than deeper service evaluation</li></ul></div>
+  </article>
+  <article class="ccc-decision-option-card chosen">
+    <span class="option-kicker">Option B</span><span class="chosen-badge">Chosen</span>
+    <h3>Preserve DPoD vertical model</h3>
+    <div class="ccc-decision-option-group"><strong>Benefits</strong><ul><li>Better supports service discovery</li><li>Preserves a deeper dedicated detail experience</li></ul></div>
+    <div class="ccc-decision-option-group"><strong>Trade-off</strong><ul><li>Requires one additional product-specific variant</li></ul></div>
+  </article>
+</div>
+<p class="case-study-paragraph ccc-decision-resolution">We aligned on preserving DPoD’s vertical browsing model while reusing the shared visual foundations and introducing only the variant the product genuinely needed.</p>
+<article class="ccc-workflow ccc-motion ccc-motion-from-left"><h2><span>01</span> Service Marketplace</h2><img alt="Service Marketplace before and after redesign" class="ccc-motion-asset" src="img/ccc-workflow-marketplace.webp"></article>
+</section>
+
+<section class="ccc-decision-block">
+<p class="ccc-decision-kicker">DECISION 02 · ALIGN</p>
+<h2 class="ccc-decision-insight">Adopt the shared pattern when it better supports the task</h2>
+<p class="case-study-paragraph">DPoD originally configured services inside a modal. As setup became more complex, the shared full-page pattern provided more space, clearer hierarchy, and better orientation through breadcrumbs.</p>
+<p class="ccc-tradeoff-label">TRADE-OFF · FAMILIARITY VS SCALABILITY</p>
+<div class="ccc-decision-option-grid">
+  <article class="ccc-decision-option-card">
+    <span class="option-kicker">Option A</span>
+    <h3>Keep the modal</h3>
+    <div class="ccc-decision-option-group"><strong>Benefits</strong><ul><li>Familiar to existing users</li><li>Smaller migration scope</li></ul></div>
+    <div class="ccc-decision-option-group"><strong>Trade-off</strong><ul><li>Limited space and harder to scale as configuration grows</li></ul></div>
+  </article>
+  <article class="ccc-decision-option-card chosen">
+    <span class="option-kicker">Option B</span><span class="chosen-badge">Chosen</span>
+    <h3>Use full-page configuration</h3>
+    <div class="ccc-decision-option-group"><strong>Benefits</strong><ul><li>Clearer hierarchy and more room for complex setup</li><li>Better orientation through breadcrumbs</li></ul></div>
+    <div class="ccc-decision-option-group"><strong>Trade-off</strong><ul><li>Changes a familiar interaction pattern</li></ul></div>
+  </article>
+</div>
+<p class="case-study-paragraph ccc-decision-resolution">Because consistency and usability pointed in the same direction, we adopted the shared full-page pattern.</p>
+<article class="ccc-workflow ccc-motion ccc-motion-from-right"><h2><span>02</span> Add Service</h2><img alt="Add Service before and after redesign" class="ccc-motion-asset" src="img/ccc-workflow-add-service.webp"></article>
+</section>
+
+<section class="ccc-decision-block">
+<p class="ccc-decision-kicker">DECISION 03 · IMPROVE</p>
+<h2 class="ccc-decision-insight">Improve the structure when familiarity no longer scales</h2>
+<p class="case-study-paragraph">Account settings had accumulated inside DPoD’s user menu, making the structure increasingly crowded and difficult to scale. This was one of the targeted UX issues identified during the audit.</p>
+<p class="ccc-tradeoff-label">TRADE-OFF · MINIMAL CHANGE VS SCALABLE IA</p>
+<div class="ccc-decision-option-grid">
+  <article class="ccc-decision-option-card">
+    <span class="option-kicker">Option A</span>
+    <h3>Keep the user menu</h3>
+    <div class="ccc-decision-option-group"><strong>Benefits</strong><ul><li>Familiar to existing users</li><li>Minimal implementation scope</li></ul></div>
+    <div class="ccc-decision-option-group"><strong>Trade-off</strong><ul><li>Increasingly crowded and difficult to scale</li></ul></div>
+  </article>
+  <article class="ccc-decision-option-card chosen">
+    <span class="option-kicker">Option B</span><span class="chosen-badge">Chosen</span>
+    <h3>Create a dedicated Account page</h3>
+    <div class="ccc-decision-option-group"><strong>Benefits</strong><ul><li>Clearer grouping of settings and account actions</li><li>Creates room for admin tools such as quorum requests and messages</li></ul></div>
+    <div class="ccc-decision-option-group"><strong>Trade-off</strong><ul><li>Requires users to learn a new entry point</li></ul></div>
+  </article>
+</div>
+<p class="case-study-paragraph ccc-decision-resolution">Rather than migrating a structure we already knew would not scale, I moved account settings into a dedicated experience.</p>
+<article class="ccc-workflow ccc-motion ccc-motion-from-left"><h2><span>03</span> Account</h2><div class="ccc-account-image-frame"><img alt="Account settings moved from a growing user menu into a dedicated Account page with clearer grouping and scalable admin tools" class="ccc-motion-asset" src="img/ccc-workflow-account.png?v=20260901"></div></article>
+</section>
+
+<section class="ccc-preserve-section">
+<p class="ccc-decision-kicker">ALIGN &amp; PRESERVE</p>
+<h2>Where the workflow already worked, preserve it</h2>
+<p class="case-study-paragraph">Not every workflow required structural change. For mature areas such as <strong>My Services</strong> and <strong>Service Details</strong>, the underlying interaction model already worked well. I preserved those workflows and focused on applying the shared hierarchy, components, spacing, and visual language consistently.</p>
+<div class="ccc-preserve-gallery">
+  <article class="ccc-workflow ccc-motion ccc-motion-from-left"><h2><span>04</span> My Services</h2><img alt="My Services before and after redesign" class="ccc-motion-asset" src="img/ccc-workflow-my-services.webp"></article>
+  <article class="ccc-workflow ccc-motion ccc-motion-from-right"><h2><span>05</span> Service Details</h2><img alt="Service Details before and after redesign" class="ccc-motion-asset" src="img/ccc-workflow-service-details.webp"></article>
+</div>
+</section>
+</div>
+</div>
 
 <div class="case-study-section-container">
 <div class="case-study-section-info-container">
-<h3 class="case-study-small-header"><span class="section-number">04</span><span aria-hidden="true" class="section-rule"></span><span class="section-name">EXPERIENCE REDESIGN</span></h3>
-<h1 class="case-study-large-header">Modernize the experience without disrupting familiar workflows</h1>
-<p class="case-study-paragraph">Most workflows did not need to be reinvented. I focused on applying the new visual system consistently while improving a few areas where clearer hierarchy and interaction patterns could make the experience easier to use.</p>
-<div class="ccc-redesign-principles">
-  <div><span>01</span><strong>Clearer visual hierarchy</strong><p>Used the shared typography, spacing, color, and component hierarchy to make dense enterprise screens easier to scan.</p></div>
-  <div><span>02</span><strong>Better service discovery</strong><p>Improved how services were presented so users could understand available options and find the right starting point more quickly.</p></div>
-  <div><span>03</span><strong>Targeted interaction refinements</strong><p>Improved selected interactions where the existing experience created friction—without changing workflows simply for the sake of redesign.</p></div>
-</div>
-<div class="ccc-workflow-gallery">
-<article class="ccc-workflow ccc-motion ccc-motion-from-left"><h2><span>01</span> Service Marketplace</h2><img alt="Service Marketplace before and after redesign" class="ccc-motion-asset" src="img/ccc-workflow-marketplace.webp"></article>
-<article class="ccc-workflow ccc-motion ccc-motion-from-right"><h2><span>02</span> Add Service</h2><img alt="Add Service before and after redesign" class="ccc-motion-asset" src="img/ccc-workflow-add-service.webp"></article>
-<article class="ccc-workflow ccc-motion ccc-motion-from-left"><h2><span>03</span> My Services</h2><img alt="My Services before and after redesign" class="ccc-motion-asset" src="img/ccc-workflow-my-services.webp"></article>
-<article class="ccc-workflow ccc-motion ccc-motion-from-right"><h2><span>04</span> Service Details</h2><img alt="Service Details before and after redesign" class="ccc-motion-asset" src="img/ccc-workflow-service-details.webp"></article>
-</div>
-</div>
-</div>
-
-<div class="case-study-section-container shopify-alt-grey">
-<div class="case-study-section-info-container">
 <h3 class="case-study-small-header"><span class="section-number">05</span><span aria-hidden="true" class="section-rule"></span><span class="section-name">DESIGN SYSTEM &amp; SCALE</span></h3>
-<h1 class="case-study-large-header">Turn the redesign into a reusable foundation</h1>
-<p class="case-study-paragraph">Rather than rebuilding every screen independently, I worked with the Design and Engineering teams to translate the shared Imperva design language into reusable DPoD components and patterns. This let the redesign scale across the product while reducing repeated design and implementation work.</p>
-<div class="ccc-system-shift" aria-label="From one-off screens to reusable components">
-  <div class="ccc-system-side"><span class="ccc-card-label">BEFORE</span><strong>Repeat similar solutions</strong><div class="ccc-mini-flow"><span>Design</span><span>Build</span><span>Repeat</span></div><p>More duplicated effort</p></div>
-  <div class="ccc-system-arrow">→</div>
-  <div class="ccc-system-side ccc-system-side-after"><span class="ccc-card-label">SHARED SYSTEM</span><strong>Reuse a common foundation</strong><div class="ccc-mini-flow"><span>Component</span><span>Pattern</span><span>Screen</span></div><p>More consistent design &amp; development</p></div>
-</div>
-<div class="ccc-big-quote">Design once. Reuse across the product.</div>
+<h1 class="case-study-large-header">Contribute validated patterns back to the system</h1>
+<p class="case-study-paragraph">When a workflow exposed a genuine gap, I validated new patterns in product context before formalizing them as extensions to the shared Imperva design system. This kept the library intentional: new variants represented reusable product needs, not one-off screen solutions.</p>
 <figure class="ccc-figma-motion ccc-motion"><img alt="Figma design-system library showing reusable foundations, components, and variants used by DPoD" class="ccc-motion-asset" src="img/ccc-figma-library-final.png"></figure>
 <div class="ccc-two-value-grid ccc-scale-value-grid">
-  <div><span>FOR DESIGN</span><strong>Reuse instead of redesign</strong><p>Shared components made new screens faster to create while keeping visual and interaction patterns consistent.</p></div>
-  <div><span>FOR ENGINEERING</span><strong>Build once, reuse more</strong><p>Consistent specifications reduced repeated implementation and made design-to-development handoff clearer.</p></div>
+  <div><span>FOR DESIGN</span><strong>Reuse instead of redesign</strong><p>Shared components and variants gave designers a consistent starting point for future workflows.</p></div>
+  <div><span>FOR ENGINEERING</span><strong>Build once, reuse more</strong><p>Consistent specifications reduced repeated implementation work and made design-to-development handoff clearer.</p></div>
 </div>
 </div>
 </div>
 
-<div class="case-study-section-container ccc-impact-section">
+<div class="case-study-section-container ccc-impact-section shopify-alt-grey">
 <div class="case-study-section-info-container">
 <h3 class="case-study-small-header"><span class="section-number">06</span><span aria-hidden="true" class="section-rule"></span><span class="section-name">IMPACT</span></h3>
-<h1 class="case-study-large-header">One redesign. A stronger shared product language.</h1>
-<p class="case-study-paragraph">The redesign did more than refresh DPoD visually. It brought the product closer to Imperva’s shared language, improved clarity across key workflows, and established a reusable foundation that Design and Engineering could continue building on instead of solving the same UI problems screen by screen.</p>
+<h1 class="case-study-large-header">A more unified product—and a stronger foundation for future work</h1>
+<p class="case-study-paragraph">The redesign brought DPoD closer to the broader Thales product language while preserving the workflows and product-specific patterns that continued to serve users well.</p>
+<p class="case-study-paragraph">User satisfaction improved by 35%, and the system introduced more than 20 reusable components and variants. By reducing repeated design and implementation work, the team projected an efficiency gain of roughly 40% for future product development.</p>
 <img alt="DPoD redesign impact at a glance: 20+ reusable components, product-wide redesign, projected efficiency gain, and one shared product language" class="img-responsive ccc-rounded-visual ccc-impact-at-glance" src="img/ccc-impact-at-a-glance-v2.png">
-<p class="case-study-paragraph ccc-impact-closing">Post-test surveys showed a <strong>35% improvement in user satisfaction</strong>, while the reusable component approach was projected to deliver roughly a <strong>40% efficiency gain</strong> by reducing repeated design and implementation work. Together, these changes gave DPoD a more consistent product language and a stronger foundation for future cross-product experiences.</p>
-</div>
-</div>
-
-<div class="case-study-section-container ccc-reflection-section">
-<div class="case-study-section-info-container">
-<h3 class="case-study-small-header"><span class="section-name">WHAT I LEARNED</span></h3>
-<h1 class="case-study-large-header">A successful redesign doesn’t have to reinvent everything.</h1>
-<p class="case-study-paragraph">The biggest lesson was learning to separate inconsistency from actual usability problems. Not every existing workflow needed a new interaction model; in many places, applying a stronger shared system was enough to make the experience clearer and more coherent.</p>
-<p class="case-study-paragraph">I also saw how a design-system redesign can create value beyond visual consistency. Reusable components gave Design and Engineering a shared foundation, reduced repeated decisions, and made future product work easier to scale. The strongest outcome came from balancing system alignment with targeted UX improvements—changing what created real friction while preserving what users already understood.</p>
 </div>
 </div>
 
@@ -183,7 +238,7 @@
 <div class="other-projects-heading"><h1 class="case-study-large-header">My Other Projects</h1><a href="index.html">VIEW ALL PROJECTS →</a></div>
 
 
-<div class="row"><div class="case-study-card-container col-md-6"><div class="case-study-card" onclick="location.href='dpod.html';"><div class="project-image-container"><img alt="Thales DPoD Quorum project cover" class="img-responsive project-image" src="img/cover-dpod-quorum-card-v5.png"><div class="project-information"><h3 class="design-date">2026<span aria-hidden="true" class="meta-rule"></span><span>B2B SaaS · 0→1 · Complex Workflows · Cybersecurity</span></h3><h1 class="design-title">Thales Quorum Approval</h1><h1 class="design-description">Enabling secure multi-party authorization for high-risk operations</h1><div class="tag_case_study">product design</div><div class="tag_case_study">AI-assisted design</div><div class="tag_case_study">UI/UX</div><a href="dpod.html"><button class="design-read-study-btn" type="button">Read Case Study →</button></a></div></div></div></div>
+<div class="row"><div class="case-study-card-container col-md-6"><div class="case-study-card" onclick="location.href='dpod.html';"><div class="project-image-container"><img alt="Thales DPoD Quorum project cover" class="img-responsive project-image" src="img/cover-dpod-quorum-card-v5.png"><div class="project-information"><h3 class="design-date">2026<span aria-hidden="true" class="meta-rule"></span><span>B2B SaaS · 0→1 · Complex Workflows · Cybersecurity</span></h3><h1 class="design-title">Thales Quorum Approval</h1><h1 class="design-description">Adding multi-party approval to high-risk cryptographic operations</h1><div class="tag_case_study">product design</div><div class="tag_case_study">AI-assisted design</div><div class="tag_case_study">UI/UX</div><a href="dpod.html"><button class="design-read-study-btn" type="button">Read Case Study →</button></a></div></div></div></div>
 <div class="case-study-card-container col-md-6"><div class="case-study-card" onclick="location.href='fitto.html';"><div class="project-image-container"><img alt="LinkedIn Discovery project cover" class="img-responsive project-image" src="img/cover-linkedin-home-final.png"><div class="project-information"><h3 class="design-date">2021<span aria-hidden="true" class="meta-rule"></span><span>Feature Design · Mobile · Social Networking</span></h3><h1 class="design-title">LinkedIn Discovery</h1><h1 class="design-description">Helping users discover more professional information and resources</h1><div class="tag_case_study">interaction design</div><div class="tag_case_study">user research</div><div class="tag_case_study">UI/UX</div><a href="fitto.html"><button class="design-read-study-btn" type="button">Read Case Study →</button></a></div></div></div></div></div>
 </div>
 </div>
@@ -209,4 +264,3 @@
 <script defer src="js/site-effects.js"></script>
 <script defer src="js/ccc-motion.js"></script>
 </body></html>
-

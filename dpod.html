@@ -54,7 +54,20 @@
 .quorum-case-page .quorum-hmw .label{display:block;margin-bottom:10px;font-size:12px;font-weight:700;letter-spacing:.1em;color:#ef6252!important;text-transform:uppercase}
 .quorum-case-page .quorum-hmw *{color:#fff!important}.quorum-case-page .quorum-hmw .label{color:#ef6252!important}
 .quorum-case-page .quorum-hmw p{margin:0;font-family:"Inter Tight",Inter,sans-serif;font-size:clamp(24px,3.3vw,34px);line-height:1.2;font-weight:650;letter-spacing:-.03em;color:#fff !important}
-.quorum-case-page .quorum-tradeoff-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:28px 0}.quorum-case-page .quorum-tradeoff-grid>div{padding:20px;text-align:center;border-top:2px solid #ef6252;background:#fff}.quorum-case-page .quorum-tradeoff-grid span{display:block;margin-bottom:7px;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#777}.quorum-case-page .quorum-tradeoff-grid strong{display:block;font-size:16px;line-height:1.4;color:#171918}.quorum-case-page img[src$="quorum-service-level-early.png"]{margin-top:28px;padding:20px;background:#f6f6f5;border:1px solid #e3e1dd;border-radius:16px;box-shadow:0 14px 36px rgba(23,25,24,.055)}
+.quorum-case-page .quorum-tradeoff-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:28px 0}.quorum-case-page .quorum-tradeoff-grid>div{padding:20px;text-align:center;border-top:2px solid #ef6252;background:#fff}.quorum-case-page .quorum-tradeoff-grid span{display:block;margin-bottom:7px;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#777}.quorum-case-page .quorum-tradeoff-grid strong{display:block;font-size:16px;line-height:1.4;color:#171918}
+.quorum-case-page .quorum-option-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:30px 0 28px}
+.quorum-case-page .quorum-option-card{position:relative;padding:26px 28px;border:1px solid #dfddd8;border-top:3px solid #ef6252;border-radius:14px;background:#fff}
+.quorum-case-page .quorum-option-card.chosen{border-top-color:#277260}
+.quorum-case-page .quorum-option-card .option-kicker{display:block;margin-bottom:8px;font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#777}
+.quorum-case-page .quorum-option-card.chosen .option-kicker{color:#277260}
+.quorum-case-page .quorum-option-card h3{margin:0 0 20px;font-family:"Inter Tight",Inter,sans-serif;font-size:24px;line-height:1.15;font-weight:650;letter-spacing:-.025em;color:#171918}
+.quorum-case-page .quorum-option-group{margin-top:17px;padding-top:17px;border-top:1px solid #ece9e4}
+.quorum-case-page .quorum-option-group:first-of-type{margin-top:0;padding-top:0;border-top:0}
+.quorum-case-page .quorum-option-group strong{display:block;margin-bottom:8px;font-size:12px;letter-spacing:.07em;text-transform:uppercase;color:#777}
+.quorum-case-page .quorum-option-group ul{margin:0;padding-left:18px;color:#50514f}
+.quorum-case-page .quorum-option-group li{margin:6px 0;font-size:15px;line-height:1.5}
+.quorum-case-page .quorum-option-card .chosen-badge{position:absolute;right:22px;top:20px;padding:5px 9px;border-radius:999px;background:#eef6f2;color:#277260;font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.quorum-case-page img[src$="quorum-service-level-early.png"]{margin-top:28px;padding:20px;background:#f6f6f5;border:1px solid #e3e1dd;border-radius:16px;box-shadow:0 14px 36px rgba(23,25,24,.055)}
 .quorum-case-page .quorum-subsection{margin-top:52px}
 .quorum-case-page .quorum-subsection:first-of-type{margin-top:34px}
 .quorum-case-page .quorum-subsection-kicker{margin:0 0 10px;font-size:13px;font-weight:700;letter-spacing:.08em;color:#ef6252;text-transform:uppercase}
@@ -84,7 +97,7 @@
 .quorum-case-page .quorum-reflection .case-study-large-header{color:#171918 !important;margin-top:14px}
 .quorum-case-page .quorum-reflection .case-study-paragraph{color:#50514f !important}
 .quorum-case-page .quorum-reflection .future-note{margin-top:24px;padding-top:22px;border-top:1px solid #ead8d2}
-@media(max-width:767px){.quorum-case-page .quorum-overview-highlights,.quorum-case-page .quorum-iteration-grid,.quorum-case-page .quorum-tradeoff-grid{grid-template-columns:1fr}.quorum-case-page .quorum-reflection{padding:28px 24px}.quorum-case-page .quorum-before-after{grid-template-columns:1fr}.quorum-case-page .quorum-arrow{transform:rotate(90deg)}}
+@media(max-width:767px){.quorum-case-page .quorum-overview-highlights,.quorum-case-page .quorum-iteration-grid,.quorum-case-page .quorum-tradeoff-grid,.quorum-case-page .quorum-option-grid{grid-template-columns:1fr}.quorum-case-page .quorum-reflection{padding:28px 24px}.quorum-case-page .quorum-before-after{grid-template-columns:1fr}.quorum-case-page .quorum-arrow{transform:rotate(90deg)}}
 </style>
 </head>
 <body class="case-study-redesign unified-case-page quorum-case-page">
@@ -136,8 +149,8 @@
 <div class="case-study-section-info-container">
 <h3 class="case-study-small-header"><span class="section-number">01</span><span aria-hidden="true" class="section-rule"></span><span class="section-name">OVERVIEW</span></h3>
 <h1 class="case-study-large-header">Designing multi-party governance for high-risk cryptographic operations</h1>
-<p class="case-study-paragraph">DPoD is Thales’ cloud-based platform for deploying and managing cryptographic services that help organizations protect sensitive data and encryption keys. As enterprise security and compliance requirements grew, customers needed stronger governance over high-risk operations that could still be performed by a single authorized user.</p>
-<p class="case-study-paragraph">I led the end-to-end design of Quorum, a 0→1 governance capability spanning policy configuration, request submission, multi-party approval, execution, and audit history. Working closely with product and engineering, I helped shape the governance model, simplify its configuration, and design the cross-role experience from concept through validation and launch.</p>
+<p class="case-study-paragraph">DPoD is Thales’ cloud platform for deploying and managing enterprise cryptographic services. As security and compliance requirements grew, customers needed stronger governance over high-risk operations.</p>
+<p class="case-study-paragraph">I led the end-to-end design of Quorum, a 0→1 governance capability spanning policy configuration, request submission, multi-party approval, execution, and audit history. Working closely with Product and Engineering, I helped define the governance model, simplify configuration, and design the cross-role experience from concept through validation and launch.</p>
 <div class="quorum-solution-summary"><span class="label">THE SOLUTION</span><p>A global, operation-based governance layer that adds multi-party approval to selected high-risk operations without taking users out of their existing DPoD workflows.</p></div>
 <div class="quorum-overview-highlights" aria-label="Quorum project highlights">
 <div class="quorum-overview-highlight"><strong>0→1</strong><span>Shipped governance capability</span></div>
@@ -152,7 +165,7 @@
 <h3 class="case-study-small-header"><span class="section-number">02</span><span aria-hidden="true" class="section-rule"></span><span class="section-name">THE PROBLEM</span></h3>
 <h1 class="case-study-large-header">Authorization alone wasn't enough</h1>
 <p class="case-study-paragraph">DPoD used role-based permissions to control which operations users could access. Depending on their role, multiple authorized users could have permission to perform the same sensitive action.</p>
-<p class="case-study-paragraph">The risk was that authorization still allowed any one of those users to complete a high-impact operation independently. For actions such as deleting a cryptographic service, customers needed an additional layer of governance before execution.</p>
+<p class="case-study-paragraph">The risk was that authorization still allowed any one of those users to <strong>complete a high-impact operation independently</strong>. For actions such as deleting a cryptographic service, customers needed an additional layer of governance before execution.</p>
 <div class="quorum-framing" aria-label="Authorization compared with Quorum"><div class="frame"><span class="label">Authorization</span><strong>“Can this user act?”</strong></div><div class="arrow">→</div><div class="frame"><span class="label">Quorum</span><strong>“Should this action require independent agreement?”</strong></div></div>
 <img alt="Before and after comparison: authorization only lets one authorized user execute independently, while Quorum requires multi-party approval" class="img-responsive quorum-visual-wide" src="img/dpod-quorum-problem-clean.png">
 </div>
@@ -161,31 +174,45 @@
 <div class="case-study-section-container shopify-alt-grey">
 <div class="case-study-section-info-container">
 <h3 class="case-study-small-header"><span class="section-number">03</span><span aria-hidden="true" class="section-rule"></span><span class="section-name">CUSTOMER RESEARCH</span></h3>
-<h1 class="case-study-large-header">Customers wanted stronger governance without more complexity</h1>
+<h1 class="case-study-large-header">What customers needed from stronger governance</h1>
 <p class="case-study-paragraph">Early enterprise customer interviews helped us understand what stronger governance needed to accomplish. Across customers, three needs consistently surfaced: prevent a single person from independently completing sensitive actions, keep approval inside DPoD, and maintain a traceable record of every decision.</p>
 <img alt="Enterprise customer interview insights: prevent single-person risk, keep approval inside the product, and make every step traceable" class="img-responsive quorum-visual-wide" src="img/dpod-quorum-key-insights-final.png">
+<div class="quorum-hmw"><span class="label" style="color:#ef6252!important">HOW MIGHT WE</span><p style="color:#fff!important">How might we add independent approval to high-risk operations while keeping the workflow in-context and traceable?</p></div>
 </div>
 </div>
 
 <div class="case-study-section-container">
 <div class="case-study-section-info-container">
 <h3 class="case-study-small-header"><span class="section-number">04</span><span aria-hidden="true" class="section-rule"></span><span class="section-name">INITIAL DIRECTION</span></h3>
-<h1 class="case-study-large-header">Our first model offered granular control—but required too much setup</h1>
-<p class="case-study-paragraph">Our initial concept applied Quorum at the service level. Administrators first selected a cryptographic service, chose which operations required Quorum, and assigned the appropriate approver group.</p>
-<p class="case-study-paragraph">This provided precise control, but the same setup had to be repeated for every service. As customers managed more services, maintaining similar policies would require more time and repetitive administrative work.</p>
-<img alt="Initial service-level Quorum configuration model showing repeated setup across services" class="img-responsive quorum-visual-wide" src="img/quorum-service-level-early.png">
-<div class="quorum-hmw"><span class="label" style="color:#ef6252!important">HOW MIGHT WE</span><p style="color:#fff!important">How might we reduce configuration effort without compromising governance?</p></div>
+<h1 class="case-study-large-header">Our first model prioritized service-level flexibility</h1>
+<p class="case-study-paragraph">Our initial concept applied Quorum at the service level. Administrators selected a cryptographic service, chose which operations required Quorum, and assigned the appropriate approver group.</p>
+<p class="case-study-paragraph">Different services could have different security needs, so this model allowed each service to use its own governance policy and offered <strong>maximum flexibility</strong>.</p>
+<img alt="Initial service-level Quorum configuration model" class="img-responsive quorum-visual-wide" src="img/quorum-service-level-early.png">
 </div>
 </div>
 
 <div class="case-study-section-container shopify-alt-grey">
 <div class="case-study-section-info-container">
 <h3 class="case-study-small-header"><span class="section-number">05</span><span aria-hidden="true" class="section-rule"></span><span class="section-name">CUSTOMER RESEARCH &amp; TURNING POINT</span></h3>
-<h1 class="case-study-large-header">Customer research pushed us toward a simpler global model</h1>
-<p class="case-study-paragraph">Testing the service-level prototype with major enterprise customers revealed a clear tension: they valued Quorum’s security, but not the repeated setup required across individual services. <strong>They wanted governance to be simpler and more predictable to manage.</strong></p>
-<p class="case-study-paragraph">I worked with Product Managers, the Design Team, and Engineering to evaluate the trade-off between simplifying the experience and preserving meaningful governance.</p>
-<div class="quorum-tradeoff-grid" aria-label="Decision priorities"><div><span>User experience</span><strong>Reduce repeated configuration</strong></div><div><span>Security / Product</span><strong>Preserve meaningful governance</strong></div><div><span>Engineering</span><strong>Reduce implementation complexity</strong></div></div>
-<p class="case-study-paragraph"><strong>We removed service-level configuration and moved to a global, operation-based model:</strong> administrators choose which high-risk operations require Quorum, and the policy then applies consistently across services.</p>
+<h1 class="case-study-large-header">Research exposed a trade-off: flexibility vs simplicity</h1>
+<p class="case-study-paragraph">Testing the service-level prototype revealed a clear tension: customers valued the added governance, but questioned the need to repeat similar configuration across individual services.</p>
+<p class="case-study-paragraph">Product initially favored preserving service-level flexibility, while I was concerned about repeated setup and long-term configuration and maintenance complexity as customers scaled.</p>
+<div class="quorum-option-grid" aria-label="Service-level and global Quorum policy options">
+<div class="quorum-option-card">
+<span class="option-kicker">Option A</span>
+<h3>Service-level configuration</h3>
+<div class="quorum-option-group"><strong>Benefits</strong><ul><li>Maximum flexibility</li><li>Different services can use different governance policies</li></ul></div>
+<div class="quorum-option-group"><strong>Trade-offs</strong><ul><li>Repetitive setup across services</li><li>Higher configuration and maintenance effort</li><li>Greater engineering complexity</li></ul></div>
+</div>
+<div class="quorum-option-card chosen">
+<span class="option-kicker">Option B</span><span class="chosen-badge">Chosen</span>
+<h3>Global operation-based policy</h3>
+<div class="quorum-option-group"><strong>Benefits</strong><ul><li>Simpler to configure and maintain</li><li>More consistent governance across services</li><li>Easier to scale as more operations are added</li></ul></div>
+<div class="quorum-option-group"><strong>Trade-off</strong><ul><li>Less service-level customization</li></ul></div>
+</div>
+</div>
+<p class="case-study-paragraph">Using customer feedback and engineering implications, we aligned on a global operation-based model.</p>
+<p class="case-study-paragraph">We intentionally <strong>gave up some service-level customization</strong> for a simpler, more consistent model that could scale.</p>
 <img alt="Before and after comparison showing Quorum moving from repeated service-level configuration to one global operation-level policy" class="img-responsive quorum-visual-wide" src="img/dpod-quorum-turning-point-v3.svg">
 </div>
 </div>
@@ -194,7 +221,7 @@
 <div class="case-study-section-info-container">
 <h3 class="case-study-small-header"><span class="section-number">06</span><span aria-hidden="true" class="section-rule"></span><span class="section-name">EXPERIENCE ARCHITECTURE</span></h3>
 <h1 class="case-study-large-header">One governance workflow, three roles</h1>
-<p class="case-study-paragraph">With the governance model established, the next challenge was designing for three roles with different responsibilities.</p>
+<p class="case-study-paragraph">With the global policy model established, the next challenge was designing the workflow across the people involved. We aligned with the CipherTrust team on the core governance model and role responsibilities, then adapted it to DPoD’s workflows—resulting in three distinct roles: <strong>Administrator, Requester, and Approver.</strong></p>
 <img alt="Administrator, requester, and approver roles and responsibilities in Quorum" class="img-responsive quorum-visual-wide" src="img/dpod-quorum-roles-final.png">
 </div>
 </div>
@@ -202,13 +229,13 @@
 <div class="case-study-section-container shopify-alt-grey">
 <div class="case-study-section-info-container">
 <h3 class="case-study-small-header"><span class="section-number">07</span><span aria-hidden="true" class="section-rule"></span><span class="section-name">KEY UX DECISIONS</span></h3>
-<h1 class="case-study-large-header">Designing one connected experience across three roles</h1>
+<h1 class="case-study-large-header">Designing role-specific experiences around one protected operation</h1>
 <p class="case-study-paragraph">I designed each role around the same protected operation while tailoring the interface to what each user needed to configure, understand, and do next.</p>
 
 <div class="quorum-subsection">
 <p class="quorum-subsection-kicker">01 · Administrator</p>
 <h2>Configure protection once, not service by service</h2>
-<p class="case-study-paragraph">Administrators configure Quorum around selected high-risk operations rather than individual services. Once enabled, the policy applies consistently across all services, eliminating repeated configuration.</p>
+<p class="case-study-paragraph">Administrators configure Quorum around selected high-risk operations rather than individual services. Once enabled, the policy applies consistently across services, eliminating repeated setup.</p>
 <p class="quorum-decision-title"><span>Design decision</span>Centralize policy configuration</p>
 <video aria-label="Administrator configuring global Quorum protection for selected operations" autoplay class="case-study-motion" loop muted playsinline preload="metadata"><source src="video/quorum-decision-1.mp4" type="video/mp4"></video>
 </div>
@@ -227,7 +254,7 @@
 <h2>Give approvers the context to decide—and requesters the visibility to follow up</h2>
 <p class="case-study-paragraph">Approvers see the requester, affected service, protected operation, and the controls they need to approve or reject. Requesters see the same request from a progress perspective, including who has responded and who is still pending.</p>
 <p class="quorum-decision-title"><span>Design decision</span>Make progress actionable</p>
-<p class="case-study-paragraph"><strong>Why a list view?</strong> A list supports fast scanning across multiple Quorum requests, making it easier to compare status, identify what needs attention, and manage requests at scale.</p>
+<p class="case-study-paragraph"><strong>Why a list view?</strong> It supports fast scanning across multiple requests and makes pending actions easier to identify.</p>
 <video aria-label="Quorum approval status showing progress, individual approver responses, and next actions" autoplay class="case-study-motion" loop muted playsinline preload="metadata"><source src="video/quorum-decision-3.mp4" type="video/mp4"></video>
 </div>
 </div>
@@ -243,15 +270,15 @@
 <p class="quorum-subsection-kicker">01 · Adaptability</p>
 <h2>Make policies adaptable as governance needs change</h2>
 <p class="case-study-paragraph">The initial prototype allowed administrators to enable or disable a policy, but not edit its configuration. Internal stakeholder testing showed that governance requirements could change over time.</p>
-<p class="case-study-paragraph">Requiring administrators to disable and recreate a policy would introduce unnecessary maintenance work, so I added an Edit Policy flow that allowed configuration to evolve without rebuilding the policy from scratch.</p>
+<p class="case-study-paragraph">Rather than forcing administrators to disable and recreate a policy, I added an <strong>Edit Policy flow</strong> so configurations could evolve over time.</p>
 <video aria-label="Iteration enabling administrators to edit an existing Quorum policy" autoplay class="case-study-motion" loop muted playsinline preload="metadata"><source src="video/quorum-iteration.mp4" type="video/mp4"></video>
 </div>
 
 <div class="quorum-subsection">
 <p class="quorum-subsection-kicker">02 · Actionability</p>
-<h2>Turn approval progress from a number into a next step</h2>
-<p class="case-study-paragraph">The early prototype summarized progress as <strong>2 of 3 approvals received</strong>. Testing showed that this answered how many approvals were missing—but not who was still blocking the request.</p>
-<p class="case-study-paragraph">I replaced the aggregate-only status with named approvers and individual states, allowing requesters to identify who had not responded and follow up directly.</p>
+<h2>“2 of 3 approved” was visible—but not actionable</h2>
+<p class="case-study-paragraph">The early prototype summarized progress as 2 of 3 approvals received. Testing showed that users understood one approval was missing, but still could not tell who needed to act next.</p>
+<p class="case-study-paragraph">I replaced the aggregate-only status with <strong>named approvers and individual states</strong>, allowing requesters to identify who was still pending and follow up directly.</p>
 <div class="quorum-iteration-grid" aria-label="Approval progress before and after iteration">
 <div class="quorum-iteration-card"><span class="phase">Before</span><h3>Aggregate progress only</h3><div class="quorum-state"><small>Approval progress</small><strong>2 / 3 approved</strong></div><p class="case-study-paragraph">Users could see that one approval was missing, but not who was blocking the request.</p></div>
 <div class="quorum-iteration-card"><span class="phase">After</span><h3>Named approvers + individual status</h3><div class="quorum-state"><small>2 / 3 approved</small><div class="quorum-progress-list"><div class="quorum-progress-row"><span>Sarah Lee</span><span class="approved">Approved</span></div><div class="quorum-progress-row"><span>David Kim</span><span class="approved">Approved</span></div><div class="quorum-progress-row"><span>Michael Chen</span><span class="pending">Pending</span></div></div></div><p class="case-study-paragraph">Progress became actionable, not just visible.</p></div>
@@ -264,15 +291,14 @@
 <div class="case-study-section-info-container">
 <h3 class="case-study-small-header"><span class="section-number">09</span><span aria-hidden="true" class="section-rule"></span><span class="section-name">IMPACT</span></h3>
 <h1 class="case-study-large-header">A simpler model created a foundation that could scale</h1>
-<p class="case-study-paragraph">The simplified operation-level model gave Quorum a scalable foundation. After launch, the capability expanded from four protected operations in the initial release to more than 20, extending multi-party governance across a broader range of high-risk workflows.</p>
-<p class="case-study-paragraph">Three months after release, a DPoD customer survey included specific questions about the Quorum experience. <strong>92% of respondents to the Quorum satisfaction question reported being satisfied with the feature.</strong> Among surveyed Quorum users, <strong>73% indicated an intention to renew DPoD</strong>, providing an additional positive customer signal after launch.</p>
+<p class="case-study-paragraph">The operation-based model gave Quorum a scalable foundation. The initial release supported four protected operations, and the capability later expanded to more than 20 without requiring a different configuration model for every service.</p>
+<p class="case-study-paragraph">Three months after launch, 92% of surveyed respondents reported being satisfied with Quorum, while 73% of surveyed Quorum users indicated an intention to renew DPoD.</p>
 <div class="quorum-impact-grid" aria-label="Quorum impact metrics"><div class="quorum-impact-item"><strong>4 → 20+</strong><span>Protected operations</span></div><div class="quorum-impact-item"><strong>92%</strong><span>Satisfied with Quorum</span></div><div class="quorum-impact-item"><strong>73%</strong><span>Surveyed Quorum users indicating renewal intent</span></div></div>
 <div class="quorum-reflection">
 <h3 class="case-study-small-header"><span class="section-number">→</span><span aria-hidden="true" class="section-rule"></span><span class="section-name">WHAT I LEARNED</span></h3>
 <h1 class="case-study-large-header">The goal isn't maximum flexibility. It's the right level of flexibility.</h1>
-<p class="case-study-paragraph">We started with a highly configurable service-level model, but customer research showed that granular control can become operational overhead when it creates repeated work without adding enough value.</p>
-<p class="case-study-paragraph">The final model simplified configuration while preserving flexibility where it mattered: choosing which operations to protect, adapting policies as governance needs changed, and giving users actionable approval visibility.</p>
-<p class="case-study-paragraph future-note"><strong>If I continued the work,</strong> I would instrument approval completion time, request expiration and abandonment, and policy-edit behavior to better understand Quorum's operational impact at scale.</p>
+<p class="case-study-paragraph">Research showed me that <strong>more configurability does not automatically create more value</strong>. The final model preserved flexibility where users needed it while simplifying the parts that did not need to vary by service.</p>
+<p class="case-study-paragraph future-note">If I continued the work, I would track approval completion time, request expiration and abandonment, and policy-edit behavior to understand how the workflow performs at scale.</p>
 </div>
 </div>
 </div>
@@ -288,7 +314,7 @@
 <div class="case-study-section-info-container case-study-wider-container other-projects-section">
 <div class="other-projects-heading"><h1 class="case-study-large-header">My Other Projects</h1><a href="index.html">VIEW ALL PROJECTS →</a></div>
 <div class="row">
-<div class="case-study-card-container col-md-6"><div class="case-study-card" onclick="location.href='ccc.html';"><div class="project-image-container"><img alt="Thales DPoD Redesign project cover" class="img-responsive project-image" src="img/cover-dpod-redesign-final.png"><div class="project-information"><h3 class="design-date">2025<span aria-hidden="true" class="meta-rule"></span><span>B2B SaaS · Design System · Enterprise Platform</span></h3><h1 class="design-title">Thales Platform Redesign</h1><h1 class="design-description">Creating a consistent, scalable interface for enterprise security services</h1><div class="tag_case_study">product design</div><div class="tag_case_study">design system</div><div class="tag_case_study">UI/UX</div><a href="ccc.html"><button class="design-read-study-btn" type="button">Read Case Study →</button></a></div></div></div></div>
+<div class="case-study-card-container col-md-6"><div class="case-study-card" onclick="location.href='ccc.html';"><div class="project-image-container"><img alt="Thales DPoD Redesign project cover" class="img-responsive project-image" src="img/cover-dpod-redesign-final.png"><div class="project-information"><h3 class="design-date">2025<span aria-hidden="true" class="meta-rule"></span><span>B2B SaaS · Design System · Enterprise Platform</span></h3><h1 class="design-title">Thales Platform Redesign</h1><h1 class="design-description">Aligning a mature enterprise platform with a shared system while preserving product context</h1><div class="tag_case_study">product design</div><div class="tag_case_study">design system</div><div class="tag_case_study">UI/UX</div><a href="ccc.html"><button class="design-read-study-btn" type="button">Read Case Study →</button></a></div></div></div></div>
 <div class="case-study-card-container col-md-6"><div class="case-study-card" onclick="location.href='fitto.html';"><div class="project-image-container"><img alt="LinkedIn Discovery project cover" class="img-responsive project-image" src="img/cover-linkedin-home-final.png"><div class="project-information"><h3 class="design-date">2021<span aria-hidden="true" class="meta-rule"></span><span>Feature Design · Mobile · Social Networking</span></h3><h1 class="design-title">LinkedIn Discovery</h1><h1 class="design-description">Helping users discover more professional information and resources</h1><div class="tag_case_study">interaction design</div><div class="tag_case_study">user research</div><div class="tag_case_study">UI/UX</div><a href="fitto.html"><button class="design-read-study-btn" type="button">Read Case Study →</button></a></div></div></div></div>
 </div>
 </div>

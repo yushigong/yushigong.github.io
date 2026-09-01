@@ -2398,3 +2398,45 @@ img.text-image-non-card-image {
 .case-study-redesign .nav-links a.active:focus-visible {
   color: var(--case-coral) !important;
 }
+
+/* Global case-study copy balance: match the Quorum v4 desktop paragraph width exactly.
+   Keep the existing 1000px content rail; only let paragraph copy use the full rail
+   instead of the older 920px paragraph cap. */
+@media (min-width:1200px) {
+  .case-study-redesign .case-study-paragraph {
+    max-width: 100% !important;
+  }
+}
+
+/* Align Design Challenge / HMW copy to the same centered content rail
+   as the standard case-study paragraphs below. */
+@media (min-width: 1001px) {
+  .case-study-redesign .hmw-inner {
+    width: min(var(--case-copy), calc(100% - 64px)) !important;
+  }
+
+  .case-study-redesign .hmw-inner h2 {
+    width: 100% !important;
+    max-width: 100% !important;
+    text-wrap: balance !important;
+  }
+}
+
+/* Final HMW alignment fix: use the exact same 1000px content rail as body copy,
+   and let the headline fill that rail naturally instead of balanced wrapping. */
+@media (min-width: 1001px) {
+  .case-study-redesign .hmw-inner {
+    width: min(var(--case-copy), calc(100% - 64px)) !important;
+    max-width: none !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .case-study-redesign .hmw-inner h2 {
+    width: 100% !important;
+    max-width: none !important;
+    text-wrap: wrap !important;
+  }
+}
