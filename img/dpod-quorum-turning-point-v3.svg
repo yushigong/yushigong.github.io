@@ -41,8 +41,8 @@
       <circle cx="-10" cy="-7" r="8"/><circle cx="10" cy="-7" r="8"/>
       <path d="M-27 19c2-13 9-20 17-20s15 7 17 20M-7 19c2-13 9-20 17-20s15 7 17 20"/>
     </g>
-    <text x="0" y="10" text-anchor="middle" class="k" fill="#EF6252">CUSTOMER RESEARCH</text>
-    <text x="0" y="38" text-anchor="middle" class="s">+ PM / Engineering trade-off</text>
+    <text x="0" y="10" text-anchor="middle" class="k" fill="#EF6252">CUSTOMER FEEDBACK</text>
+    <text x="0" y="38" text-anchor="middle" class="s">+ team trade-off</text>
     <path d="M-70 92H70M50 72l22 20-22 20" class="line" stroke-width="5"/>
   </g>
 
@@ -66,5 +66,5 @@
 
   <!-- TAKEAWAY -->
   <rect x="370" y="650" width="860" height="92" rx="20" fill="#171918"/>
-  <text x="800" y="708" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="29" font-weight="700" fill="#fff">Global by scope. Selective by operation.</text>
+  <text x="800" y="708" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="25" font-weight="700" fill="#fff">Consistency and scalability over maximum configurability</text>
 </svg>
