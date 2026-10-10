@@ -1,0 +1,31 @@
+Mobile QA report — October 10, 2026
+
+Scope
+- index.html (home)
+- about.html
+- dpod.html
+- ccc.html
+- ges.html
+- fitto.html
+- shopify.html
+- tcr.html
+- energy.html
+- playground.html
+
+Method
+- Rendered local HTML and local stylesheets in headless Chromium.
+- Checked viewport widths: 320, 360, 375, 390, 414, 430, 480, 576, 640, 720, 768, 820, 860, 900, 1000, 1024, and 1280 pixels.
+- Inspected document/body scroll widths and key navigation/chapter-heading geometry.
+- Remote CDN styles and page JavaScript were not fully exercised; a Bootstrap 3 layout approximation was used for static testing where needed.
+
+Results
+- 10 pages x 17 viewport widths = 170 layout checks.
+- 0 page-level horizontal-overflow cases in the tested render after the fixes.
+- Long chapter labels in case studies can wrap instead of running outside their text area.
+- Related-project cards stack and align to the content area on mobile.
+- Decorative homepage marquee overflow is clipped at narrower tablet widths.
+- Mobile nav items did not overlap in the checked widths.
+
+Limitations
+- This does not replace final live-device testing with real image/video assets, external font/CDN loading, JavaScript-driven animations, touch behavior, and browser-specific rendering.
+- Recommended final spot-check: iPhone Safari at 375/390/430px, a compact 320px viewport, and Android Chrome.

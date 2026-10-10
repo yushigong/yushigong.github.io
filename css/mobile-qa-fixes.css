@@ -1,0 +1,149 @@
+/* Mobile QA fixes — shared, non-destructive responsive safeguards.
+   Loaded after page styles so these rules can correct mobile-only edge cases. */
+
+/* Keep media assets inside their layout without overriding intentional art direction. */
+img,
+video,
+iframe,
+canvas {
+  max-width: 100%;
+}
+
+@media (max-width: 1100px) {
+  /* The animated marquee is intentionally wider than the viewport. Clip only
+     its decorative overflow at the home main level, not the page itself. */
+  body.home-redesign main {
+    overflow-x: clip;
+  }
+}
+
+@media (max-width: 767px) {
+  /* Some chapter labels were fixed-width flex rows. Let longer titles wrap. */
+  h3.case-study-small-header {
+    display: flex !important;
+    align-items: flex-start !important;
+    flex-wrap: wrap !important;
+    max-width: 100%;
+  }
+
+  h3.case-study-small-header .section-number {
+    flex: 0 0 auto !important;
+  }
+
+  h3.case-study-small-header .section-rule {
+    flex: 0 0 28px !important;
+    margin-top: .55em;
+  }
+
+  h3.case-study-small-header .section-name {
+    flex: 1 1 205px !important;
+    min-width: 0 !important;
+    max-width: 100%;
+    white-space: normal !important;
+    overflow-wrap: break-word;
+    word-break: normal;
+    line-height: 1.35 !important;
+  }
+
+  /* Bootstrap rows use negative side margins on desktop. On the mobile
+     related-projects section, keep cards aligned to the section's own canvas. */
+  .other-projects-section > .row {
+    width: auto !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .other-projects-section .case-study-card-container {
+    float: none !important;
+    width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    box-sizing: border-box;
+  }
+
+  .other-projects-section .case-study-card,
+  .other-projects-section .project-image-container,
+  .other-projects-section .project-information {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+  .other-projects-section .other-projects-heading {
+    display: flex !important;
+    align-items: baseline !important;
+    flex-wrap: wrap !important;
+    column-gap: 14px;
+    row-gap: 12px;
+  }
+
+  .other-projects-section .other-projects-heading > a {
+    max-width: 100%;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  /* Keep case-study sections and embeds fluid on small viewports. */
+  .case-study-section-container,
+  .case-study-section-info-container,
+  .case-study-section-info-container-image-below,
+  .case-study-section-info-container.row,
+  .video-wrapper {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .case-study-redesign .case-study-largest-header,
+  .case-study-redesign .case-study-large-header,
+  .case-study-redesign .case-study-large-header1,
+  .case-study-paragraph,
+  .case-study-list,
+  .case-study-list li {
+    overflow-wrap: break-word;
+    word-break: normal;
+  }
+
+  .case-study-redesign .nav-links {
+    flex-wrap: wrap !important;
+    justify-content: flex-end;
+    gap: clamp(10px, 2.8vw, 18px) !important;
+    min-width: 0;
+  }
+
+  .case-study-redesign .nav-links a {
+    white-space: nowrap;
+  }
+
+  .case-study-redesign .case-footer {
+    flex-wrap: wrap;
+  }
+
+  .case-study-redesign .case-footer-email {
+    overflow-wrap: anywhere;
+  }
+
+  .case-study-redesign .case-footer-links {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .quorum-meta-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .quorum-meta-grid > * {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+}
+
+@media (max-width: 360px) {
+  /* Give the longest chapter labels a little more room on compact phones. */
+  h3.case-study-small-header {
+    column-gap: 10px !important;
+  }
+
+  h3.case-study-small-header .section-name {
+    flex-basis: 180px !important;
+  }
+}
